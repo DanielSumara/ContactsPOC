@@ -1,0 +1,700 @@
+// !$*UTF8*$!
+{
+	archiveVersion = 1;
+	classes = {
+	};
+	objectVersion = 50;
+	objects = {
+
+/* Begin PBXBuildFile section */
+		090937EE24EFE13A0025F222 /* RestService.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 090937E424EFE13A0025F222 /* RestService.framework */; };
+		090937F324EFE13A0025F222 /* RestServiceTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = 090937F224EFE13A0025F222 /* RestServiceTests.swift */; };
+		090937F524EFE13A0025F222 /* RestService.h in Headers */ = {isa = PBXBuildFile; fileRef = 090937E724EFE13A0025F222 /* RestService.h */; settings = {ATTRIBUTES = (Public, ); }; };
+		0909380C24EFE1530025F222 /* RestModels.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 0909380324EFE1530025F222 /* RestModels.framework */; };
+		0909381124EFE1530025F222 /* RestModelsTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = 0909381024EFE1530025F222 /* RestModelsTests.swift */; };
+		0909381324EFE1530025F222 /* RestModels.h in Headers */ = {isa = PBXBuildFile; fileRef = 0909380524EFE1530025F222 /* RestModels.h */; settings = {ATTRIBUTES = (Public, ); }; };
+/* End PBXBuildFile section */
+
+/* Begin PBXContainerItemProxy section */
+		090937EF24EFE13A0025F222 /* PBXContainerItemProxy */ = {
+			isa = PBXContainerItemProxy;
+			containerPortal = 090937DB24EFE13A0025F222 /* Project object */;
+			proxyType = 1;
+			remoteGlobalIDString = 090937E324EFE13A0025F222;
+			remoteInfo = RestService;
+		};
+		0909380D24EFE1530025F222 /* PBXContainerItemProxy */ = {
+			isa = PBXContainerItemProxy;
+			containerPortal = 090937DB24EFE13A0025F222 /* Project object */;
+			proxyType = 1;
+			remoteGlobalIDString = 0909380224EFE1530025F222;
+			remoteInfo = RestModels;
+		};
+/* End PBXContainerItemProxy section */
+
+/* Begin PBXFileReference section */
+		090937E424EFE13A0025F222 /* RestService.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = RestService.framework; sourceTree = BUILT_PRODUCTS_DIR; };
+		090937E724EFE13A0025F222 /* RestService.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = RestService.h; sourceTree = "<group>"; };
+		090937E824EFE13A0025F222 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		090937ED24EFE13A0025F222 /* RestServiceTests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = RestServiceTests.xctest; sourceTree = BUILT_PRODUCTS_DIR; };
+		090937F224EFE13A0025F222 /* RestServiceTests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = RestServiceTests.swift; sourceTree = "<group>"; };
+		090937F424EFE13A0025F222 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		0909380324EFE1530025F222 /* RestModels.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = RestModels.framework; sourceTree = BUILT_PRODUCTS_DIR; };
+		0909380524EFE1530025F222 /* RestModels.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = RestModels.h; sourceTree = "<group>"; };
+		0909380624EFE1530025F222 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		0909380B24EFE1530025F222 /* RestModelsTests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = RestModelsTests.xctest; sourceTree = BUILT_PRODUCTS_DIR; };
+		0909381024EFE1530025F222 /* RestModelsTests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = RestModelsTests.swift; sourceTree = "<group>"; };
+		0909381224EFE1530025F222 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+/* End PBXFileReference section */
+
+/* Begin PBXFrameworksBuildPhase section */
+		090937E124EFE13A0025F222 /* Frameworks */ = {
+			isa = PBXFrameworksBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		090937EA24EFE13A0025F222 /* Frameworks */ = {
+			isa = PBXFrameworksBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				090937EE24EFE13A0025F222 /* RestService.framework in Frameworks */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		0909380024EFE1530025F222 /* Frameworks */ = {
+			isa = PBXFrameworksBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		0909380824EFE1530025F222 /* Frameworks */ = {
+			isa = PBXFrameworksBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				0909380C24EFE1530025F222 /* RestModels.framework in Frameworks */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXFrameworksBuildPhase section */
+
+/* Begin PBXGroup section */
+		090937DA24EFE13A0025F222 = {
+			isa = PBXGroup;
+			children = (
+				090937E624EFE13A0025F222 /* RestService */,
+				090937F124EFE13A0025F222 /* RestServiceTests */,
+				0909380424EFE1530025F222 /* RestModels */,
+				0909380F24EFE1530025F222 /* RestModelsTests */,
+				090937E524EFE13A0025F222 /* Products */,
+			);
+			sourceTree = "<group>";
+		};
+		090937E524EFE13A0025F222 /* Products */ = {
+			isa = PBXGroup;
+			children = (
+				090937E424EFE13A0025F222 /* RestService.framework */,
+				090937ED24EFE13A0025F222 /* RestServiceTests.xctest */,
+				0909380324EFE1530025F222 /* RestModels.framework */,
+				0909380B24EFE1530025F222 /* RestModelsTests.xctest */,
+			);
+			name = Products;
+			sourceTree = "<group>";
+		};
+		090937E624EFE13A0025F222 /* RestService */ = {
+			isa = PBXGroup;
+			children = (
+				090937E724EFE13A0025F222 /* RestService.h */,
+				090937E824EFE13A0025F222 /* Info.plist */,
+			);
+			path = RestService;
+			sourceTree = "<group>";
+		};
+		090937F124EFE13A0025F222 /* RestServiceTests */ = {
+			isa = PBXGroup;
+			children = (
+				090937F224EFE13A0025F222 /* RestServiceTests.swift */,
+				090937F424EFE13A0025F222 /* Info.plist */,
+			);
+			path = RestServiceTests;
+			sourceTree = "<group>";
+		};
+		0909380424EFE1530025F222 /* RestModels */ = {
+			isa = PBXGroup;
+			children = (
+				0909380524EFE1530025F222 /* RestModels.h */,
+				0909380624EFE1530025F222 /* Info.plist */,
+			);
+			path = RestModels;
+			sourceTree = "<group>";
+		};
+		0909380F24EFE1530025F222 /* RestModelsTests */ = {
+			isa = PBXGroup;
+			children = (
+				0909381024EFE1530025F222 /* RestModelsTests.swift */,
+				0909381224EFE1530025F222 /* Info.plist */,
+			);
+			path = RestModelsTests;
+			sourceTree = "<group>";
+		};
+/* End PBXGroup section */
+
+/* Begin PBXHeadersBuildPhase section */
+		090937DF24EFE13A0025F222 /* Headers */ = {
+			isa = PBXHeadersBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				090937F524EFE13A0025F222 /* RestService.h in Headers */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		090937FE24EFE1530025F222 /* Headers */ = {
+			isa = PBXHeadersBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				0909381324EFE1530025F222 /* RestModels.h in Headers */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXHeadersBuildPhase section */
+
+/* Begin PBXNativeTarget section */
+		090937E324EFE13A0025F222 /* RestService */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = 090937F824EFE13A0025F222 /* Build configuration list for PBXNativeTarget "RestService" */;
+			buildPhases = (
+				090937DF24EFE13A0025F222 /* Headers */,
+				090937E024EFE13A0025F222 /* Sources */,
+				090937E124EFE13A0025F222 /* Frameworks */,
+				090937E224EFE13A0025F222 /* Resources */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+			);
+			name = RestService;
+			productName = RestService;
+			productReference = 090937E424EFE13A0025F222 /* RestService.framework */;
+			productType = "com.apple.product-type.framework";
+		};
+		090937EC24EFE13A0025F222 /* RestServiceTests */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = 090937FB24EFE13A0025F222 /* Build configuration list for PBXNativeTarget "RestServiceTests" */;
+			buildPhases = (
+				090937E924EFE13A0025F222 /* Sources */,
+				090937EA24EFE13A0025F222 /* Frameworks */,
+				090937EB24EFE13A0025F222 /* Resources */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+				090937F024EFE13A0025F222 /* PBXTargetDependency */,
+			);
+			name = RestServiceTests;
+			productName = RestServiceTests;
+			productReference = 090937ED24EFE13A0025F222 /* RestServiceTests.xctest */;
+			productType = "com.apple.product-type.bundle.unit-test";
+		};
+		0909380224EFE1530025F222 /* RestModels */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = 0909381424EFE1530025F222 /* Build configuration list for PBXNativeTarget "RestModels" */;
+			buildPhases = (
+				090937FE24EFE1530025F222 /* Headers */,
+				090937FF24EFE1530025F222 /* Sources */,
+				0909380024EFE1530025F222 /* Frameworks */,
+				0909380124EFE1530025F222 /* Resources */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+			);
+			name = RestModels;
+			productName = RestModels;
+			productReference = 0909380324EFE1530025F222 /* RestModels.framework */;
+			productType = "com.apple.product-type.framework";
+		};
+		0909380A24EFE1530025F222 /* RestModelsTests */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = 0909381724EFE1530025F222 /* Build configuration list for PBXNativeTarget "RestModelsTests" */;
+			buildPhases = (
+				0909380724EFE1530025F222 /* Sources */,
+				0909380824EFE1530025F222 /* Frameworks */,
+				0909380924EFE1530025F222 /* Resources */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+				0909380E24EFE1530025F222 /* PBXTargetDependency */,
+			);
+			name = RestModelsTests;
+			productName = RestModelsTests;
+			productReference = 0909380B24EFE1530025F222 /* RestModelsTests.xctest */;
+			productType = "com.apple.product-type.bundle.unit-test";
+		};
+/* End PBXNativeTarget section */
+
+/* Begin PBXProject section */
+		090937DB24EFE13A0025F222 /* Project object */ = {
+			isa = PBXProject;
+			attributes = {
+				LastSwiftUpdateCheck = 1160;
+				LastUpgradeCheck = 1160;
+				ORGANIZATIONNAME = "Daniel Sumara";
+				TargetAttributes = {
+					090937E324EFE13A0025F222 = {
+						CreatedOnToolsVersion = 11.6;
+					};
+					090937EC24EFE13A0025F222 = {
+						CreatedOnToolsVersion = 11.6;
+					};
+					0909380224EFE1530025F222 = {
+						CreatedOnToolsVersion = 11.6;
+					};
+					0909380A24EFE1530025F222 = {
+						CreatedOnToolsVersion = 11.6;
+					};
+				};
+			};
+			buildConfigurationList = 090937DE24EFE13A0025F222 /* Build configuration list for PBXProject "RestService" */;
+			compatibilityVersion = "Xcode 9.3";
+			developmentRegion = en;
+			hasScannedForEncodings = 0;
+			knownRegions = (
+				en,
+				Base,
+			);
+			mainGroup = 090937DA24EFE13A0025F222;
+			productRefGroup = 090937E524EFE13A0025F222 /* Products */;
+			projectDirPath = "";
+			projectRoot = "";
+			targets = (
+				090937E324EFE13A0025F222 /* RestService */,
+				090937EC24EFE13A0025F222 /* RestServiceTests */,
+				0909380224EFE1530025F222 /* RestModels */,
+				0909380A24EFE1530025F222 /* RestModelsTests */,
+			);
+		};
+/* End PBXProject section */
+
+/* Begin PBXResourcesBuildPhase section */
+		090937E224EFE13A0025F222 /* Resources */ = {
+			isa = PBXResourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		090937EB24EFE13A0025F222 /* Resources */ = {
+			isa = PBXResourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		0909380124EFE1530025F222 /* Resources */ = {
+			isa = PBXResourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		0909380924EFE1530025F222 /* Resources */ = {
+			isa = PBXResourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXResourcesBuildPhase section */
+
+/* Begin PBXSourcesBuildPhase section */
+		090937E024EFE13A0025F222 /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		090937E924EFE13A0025F222 /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				090937F324EFE13A0025F222 /* RestServiceTests.swift in Sources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		090937FF24EFE1530025F222 /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		0909380724EFE1530025F222 /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				0909381124EFE1530025F222 /* RestModelsTests.swift in Sources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXSourcesBuildPhase section */
+
+/* Begin PBXTargetDependency section */
+		090937F024EFE13A0025F222 /* PBXTargetDependency */ = {
+			isa = PBXTargetDependency;
+			target = 090937E324EFE13A0025F222 /* RestService */;
+			targetProxy = 090937EF24EFE13A0025F222 /* PBXContainerItemProxy */;
+		};
+		0909380E24EFE1530025F222 /* PBXTargetDependency */ = {
+			isa = PBXTargetDependency;
+			target = 0909380224EFE1530025F222 /* RestModels */;
+			targetProxy = 0909380D24EFE1530025F222 /* PBXContainerItemProxy */;
+		};
+/* End PBXTargetDependency section */
+
+/* Begin XCBuildConfiguration section */
+		090937F624EFE13A0025F222 /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_SEARCH_USER_PATHS = NO;
+				CLANG_ANALYZER_NONNULL = YES;
+				CLANG_ANALYZER_NUMBER_OBJECT_CONVERSION = YES_AGGRESSIVE;
+				CLANG_CXX_LANGUAGE_STANDARD = "gnu++14";
+				CLANG_CXX_LIBRARY = "libc++";
+				CLANG_ENABLE_MODULES = YES;
+				CLANG_ENABLE_OBJC_ARC = YES;
+				CLANG_ENABLE_OBJC_WEAK = YES;
+				CLANG_WARN_BLOCK_CAPTURE_AUTORELEASING = YES;
+				CLANG_WARN_BOOL_CONVERSION = YES;
+				CLANG_WARN_COMMA = YES;
+				CLANG_WARN_CONSTANT_CONVERSION = YES;
+				CLANG_WARN_DEPRECATED_OBJC_IMPLEMENTATIONS = YES;
+				CLANG_WARN_DIRECT_OBJC_ISA_USAGE = YES_ERROR;
+				CLANG_WARN_DOCUMENTATION_COMMENTS = YES;
+				CLANG_WARN_EMPTY_BODY = YES;
+				CLANG_WARN_ENUM_CONVERSION = YES;
+				CLANG_WARN_INFINITE_RECURSION = YES;
+				CLANG_WARN_INT_CONVERSION = YES;
+				CLANG_WARN_NON_LITERAL_NULL_CONVERSION = YES;
+				CLANG_WARN_OBJC_IMPLICIT_RETAIN_SELF = YES;
+				CLANG_WARN_OBJC_LITERAL_CONVERSION = YES;
+				CLANG_WARN_OBJC_ROOT_CLASS = YES_ERROR;
+				CLANG_WARN_RANGE_LOOP_ANALYSIS = YES;
+				CLANG_WARN_STRICT_PROTOTYPES = YES;
+				CLANG_WARN_SUSPICIOUS_MOVE = YES;
+				CLANG_WARN_UNGUARDED_AVAILABILITY = YES_AGGRESSIVE;
+				CLANG_WARN_UNREACHABLE_CODE = YES;
+				CLANG_WARN__DUPLICATE_METHOD_MATCH = YES;
+				COPY_PHASE_STRIP = NO;
+				CURRENT_PROJECT_VERSION = 1;
+				DEBUG_INFORMATION_FORMAT = dwarf;
+				ENABLE_STRICT_OBJC_MSGSEND = YES;
+				ENABLE_TESTABILITY = YES;
+				GCC_C_LANGUAGE_STANDARD = gnu11;
+				GCC_DYNAMIC_NO_PIC = NO;
+				GCC_NO_COMMON_BLOCKS = YES;
+				GCC_OPTIMIZATION_LEVEL = 0;
+				GCC_PREPROCESSOR_DEFINITIONS = (
+					"DEBUG=1",
+					"$(inherited)",
+				);
+				GCC_WARN_64_TO_32_BIT_CONVERSION = YES;
+				GCC_WARN_ABOUT_RETURN_TYPE = YES_ERROR;
+				GCC_WARN_UNDECLARED_SELECTOR = YES;
+				GCC_WARN_UNINITIALIZED_AUTOS = YES_AGGRESSIVE;
+				GCC_WARN_UNUSED_FUNCTION = YES;
+				GCC_WARN_UNUSED_VARIABLE = YES;
+				IPHONEOS_DEPLOYMENT_TARGET = 12.0;
+				MTL_ENABLE_DEBUG_INFO = INCLUDE_SOURCE;
+				MTL_FAST_MATH = YES;
+				ONLY_ACTIVE_ARCH = YES;
+				SDKROOT = iphoneos;
+				SWIFT_ACTIVE_COMPILATION_CONDITIONS = DEBUG;
+				SWIFT_OPTIMIZATION_LEVEL = "-Onone";
+				VERSIONING_SYSTEM = "apple-generic";
+				VERSION_INFO_PREFIX = "";
+			};
+			name = Debug;
+		};
+		090937F724EFE13A0025F222 /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_SEARCH_USER_PATHS = NO;
+				CLANG_ANALYZER_NONNULL = YES;
+				CLANG_ANALYZER_NUMBER_OBJECT_CONVERSION = YES_AGGRESSIVE;
+				CLANG_CXX_LANGUAGE_STANDARD = "gnu++14";
+				CLANG_CXX_LIBRARY = "libc++";
+				CLANG_ENABLE_MODULES = YES;
+				CLANG_ENABLE_OBJC_ARC = YES;
+				CLANG_ENABLE_OBJC_WEAK = YES;
+				CLANG_WARN_BLOCK_CAPTURE_AUTORELEASING = YES;
+				CLANG_WARN_BOOL_CONVERSION = YES;
+				CLANG_WARN_COMMA = YES;
+				CLANG_WARN_CONSTANT_CONVERSION = YES;
+				CLANG_WARN_DEPRECATED_OBJC_IMPLEMENTATIONS = YES;
+				CLANG_WARN_DIRECT_OBJC_ISA_USAGE = YES_ERROR;
+				CLANG_WARN_DOCUMENTATION_COMMENTS = YES;
+				CLANG_WARN_EMPTY_BODY = YES;
+				CLANG_WARN_ENUM_CONVERSION = YES;
+				CLANG_WARN_INFINITE_RECURSION = YES;
+				CLANG_WARN_INT_CONVERSION = YES;
+				CLANG_WARN_NON_LITERAL_NULL_CONVERSION = YES;
+				CLANG_WARN_OBJC_IMPLICIT_RETAIN_SELF = YES;
+				CLANG_WARN_OBJC_LITERAL_CONVERSION = YES;
+				CLANG_WARN_OBJC_ROOT_CLASS = YES_ERROR;
+				CLANG_WARN_RANGE_LOOP_ANALYSIS = YES;
+				CLANG_WARN_STRICT_PROTOTYPES = YES;
+				CLANG_WARN_SUSPICIOUS_MOVE = YES;
+				CLANG_WARN_UNGUARDED_AVAILABILITY = YES_AGGRESSIVE;
+				CLANG_WARN_UNREACHABLE_CODE = YES;
+				CLANG_WARN__DUPLICATE_METHOD_MATCH = YES;
+				COPY_PHASE_STRIP = NO;
+				CURRENT_PROJECT_VERSION = 1;
+				DEBUG_INFORMATION_FORMAT = "dwarf-with-dsym";
+				ENABLE_NS_ASSERTIONS = NO;
+				ENABLE_STRICT_OBJC_MSGSEND = YES;
+				GCC_C_LANGUAGE_STANDARD = gnu11;
+				GCC_NO_COMMON_BLOCKS = YES;
+				GCC_WARN_64_TO_32_BIT_CONVERSION = YES;
+				GCC_WARN_ABOUT_RETURN_TYPE = YES_ERROR;
+				GCC_WARN_UNDECLARED_SELECTOR = YES;
+				GCC_WARN_UNINITIALIZED_AUTOS = YES_AGGRESSIVE;
+				GCC_WARN_UNUSED_FUNCTION = YES;
+				GCC_WARN_UNUSED_VARIABLE = YES;
+				IPHONEOS_DEPLOYMENT_TARGET = 12.0;
+				MTL_ENABLE_DEBUG_INFO = NO;
+				MTL_FAST_MATH = YES;
+				SDKROOT = iphoneos;
+				SWIFT_COMPILATION_MODE = wholemodule;
+				SWIFT_OPTIMIZATION_LEVEL = "-O";
+				VALIDATE_PRODUCT = YES;
+				VERSIONING_SYSTEM = "apple-generic";
+				VERSION_INFO_PREFIX = "";
+			};
+			name = Release;
+		};
+		090937F924EFE13A0025F222 /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				CODE_SIGN_STYLE = Automatic;
+				DEFINES_MODULE = YES;
+				DEVELOPMENT_TEAM = 2AHNM42WD8;
+				DYLIB_COMPATIBILITY_VERSION = 1;
+				DYLIB_CURRENT_VERSION = 1;
+				DYLIB_INSTALL_NAME_BASE = "@rpath";
+				INFOPLIST_FILE = RestService/Info.plist;
+				INSTALL_PATH = "$(LOCAL_LIBRARY_DIR)/Frameworks";
+				LD_RUNPATH_SEARCH_PATHS = (
+					"$(inherited)",
+					"@executable_path/Frameworks",
+					"@loader_path/Frameworks",
+				);
+				PRODUCT_BUNDLE_IDENTIFIER = pl.com.sumara.RestService;
+				PRODUCT_NAME = "$(TARGET_NAME:c99extidentifier)";
+				SKIP_INSTALL = YES;
+				SWIFT_VERSION = 5.0;
+				TARGETED_DEVICE_FAMILY = "1,2";
+			};
+			name = Debug;
+		};
+		090937FA24EFE13A0025F222 /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				CODE_SIGN_STYLE = Automatic;
+				DEFINES_MODULE = YES;
+				DEVELOPMENT_TEAM = 2AHNM42WD8;
+				DYLIB_COMPATIBILITY_VERSION = 1;
+				DYLIB_CURRENT_VERSION = 1;
+				DYLIB_INSTALL_NAME_BASE = "@rpath";
+				INFOPLIST_FILE = RestService/Info.plist;
+				INSTALL_PATH = "$(LOCAL_LIBRARY_DIR)/Frameworks";
+				LD_RUNPATH_SEARCH_PATHS = (
+					"$(inherited)",
+					"@executable_path/Frameworks",
+					"@loader_path/Frameworks",
+				);
+				PRODUCT_BUNDLE_IDENTIFIER = pl.com.sumara.RestService;
+				PRODUCT_NAME = "$(TARGET_NAME:c99extidentifier)";
+				SKIP_INSTALL = YES;
+				SWIFT_VERSION = 5.0;
+				TARGETED_DEVICE_FAMILY = "1,2";
+			};
+			name = Release;
+		};
+		090937FC24EFE13A0025F222 /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				CODE_SIGN_STYLE = Automatic;
+				DEVELOPMENT_TEAM = 2AHNM42WD8;
+				INFOPLIST_FILE = RestServiceTests/Info.plist;
+				LD_RUNPATH_SEARCH_PATHS = (
+					"$(inherited)",
+					"@executable_path/Frameworks",
+					"@loader_path/Frameworks",
+				);
+				PRODUCT_BUNDLE_IDENTIFIER = pl.com.sumara.RestServiceTests;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SWIFT_VERSION = 5.0;
+				TARGETED_DEVICE_FAMILY = "1,2";
+			};
+			name = Debug;
+		};
+		090937FD24EFE13A0025F222 /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				CODE_SIGN_STYLE = Automatic;
+				DEVELOPMENT_TEAM = 2AHNM42WD8;
+				INFOPLIST_FILE = RestServiceTests/Info.plist;
+				LD_RUNPATH_SEARCH_PATHS = (
+					"$(inherited)",
+					"@executable_path/Frameworks",
+					"@loader_path/Frameworks",
+				);
+				PRODUCT_BUNDLE_IDENTIFIER = pl.com.sumara.RestServiceTests;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SWIFT_VERSION = 5.0;
+				TARGETED_DEVICE_FAMILY = "1,2";
+			};
+			name = Release;
+		};
+		0909381524EFE1530025F222 /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				CODE_SIGN_STYLE = Automatic;
+				DEFINES_MODULE = YES;
+				DEVELOPMENT_TEAM = 2AHNM42WD8;
+				DYLIB_COMPATIBILITY_VERSION = 1;
+				DYLIB_CURRENT_VERSION = 1;
+				DYLIB_INSTALL_NAME_BASE = "@rpath";
+				INFOPLIST_FILE = RestModels/Info.plist;
+				INSTALL_PATH = "$(LOCAL_LIBRARY_DIR)/Frameworks";
+				LD_RUNPATH_SEARCH_PATHS = (
+					"$(inherited)",
+					"@executable_path/Frameworks",
+					"@loader_path/Frameworks",
+				);
+				PRODUCT_BUNDLE_IDENTIFIER = pl.com.sumara.RestModels;
+				PRODUCT_NAME = "$(TARGET_NAME:c99extidentifier)";
+				SKIP_INSTALL = YES;
+				SWIFT_VERSION = 5.0;
+				TARGETED_DEVICE_FAMILY = "1,2";
+			};
+			name = Debug;
+		};
+		0909381624EFE1530025F222 /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				CODE_SIGN_STYLE = Automatic;
+				DEFINES_MODULE = YES;
+				DEVELOPMENT_TEAM = 2AHNM42WD8;
+				DYLIB_COMPATIBILITY_VERSION = 1;
+				DYLIB_CURRENT_VERSION = 1;
+				DYLIB_INSTALL_NAME_BASE = "@rpath";
+				INFOPLIST_FILE = RestModels/Info.plist;
+				INSTALL_PATH = "$(LOCAL_LIBRARY_DIR)/Frameworks";
+				LD_RUNPATH_SEARCH_PATHS = (
+					"$(inherited)",
+					"@executable_path/Frameworks",
+					"@loader_path/Frameworks",
+				);
+				PRODUCT_BUNDLE_IDENTIFIER = pl.com.sumara.RestModels;
+				PRODUCT_NAME = "$(TARGET_NAME:c99extidentifier)";
+				SKIP_INSTALL = YES;
+				SWIFT_VERSION = 5.0;
+				TARGETED_DEVICE_FAMILY = "1,2";
+			};
+			name = Release;
+		};
+		0909381824EFE1530025F222 /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				CODE_SIGN_STYLE = Automatic;
+				DEVELOPMENT_TEAM = 2AHNM42WD8;
+				INFOPLIST_FILE = RestModelsTests/Info.plist;
+				IPHONEOS_DEPLOYMENT_TARGET = 13.6;
+				LD_RUNPATH_SEARCH_PATHS = (
+					"$(inherited)",
+					"@executable_path/Frameworks",
+					"@loader_path/Frameworks",
+				);
+				PRODUCT_BUNDLE_IDENTIFIER = pl.com.sumara.RestModelsTests;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SWIFT_VERSION = 5.0;
+				TARGETED_DEVICE_FAMILY = "1,2";
+			};
+			name = Debug;
+		};
+		0909381924EFE1530025F222 /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				CODE_SIGN_STYLE = Automatic;
+				DEVELOPMENT_TEAM = 2AHNM42WD8;
+				INFOPLIST_FILE = RestModelsTests/Info.plist;
+				IPHONEOS_DEPLOYMENT_TARGET = 13.6;
+				LD_RUNPATH_SEARCH_PATHS = (
+					"$(inherited)",
+					"@executable_path/Frameworks",
+					"@loader_path/Frameworks",
+				);
+				PRODUCT_BUNDLE_IDENTIFIER = pl.com.sumara.RestModelsTests;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SWIFT_VERSION = 5.0;
+				TARGETED_DEVICE_FAMILY = "1,2";
+			};
+			name = Release;
+		};
+/* End XCBuildConfiguration section */
+
+/* Begin XCConfigurationList section */
+		090937DE24EFE13A0025F222 /* Build configuration list for PBXProject "RestService" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				090937F624EFE13A0025F222 /* Debug */,
+				090937F724EFE13A0025F222 /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+		090937F824EFE13A0025F222 /* Build configuration list for PBXNativeTarget "RestService" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				090937F924EFE13A0025F222 /* Debug */,
+				090937FA24EFE13A0025F222 /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+		090937FB24EFE13A0025F222 /* Build configuration list for PBXNativeTarget "RestServiceTests" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				090937FC24EFE13A0025F222 /* Debug */,
+				090937FD24EFE13A0025F222 /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+		0909381424EFE1530025F222 /* Build configuration list for PBXNativeTarget "RestModels" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				0909381524EFE1530025F222 /* Debug */,
+				0909381624EFE1530025F222 /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+		0909381724EFE1530025F222 /* Build configuration list for PBXNativeTarget "RestModelsTests" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				0909381824EFE1530025F222 /* Debug */,
+				0909381924EFE1530025F222 /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+/* End XCConfigurationList section */
+	};
+	rootObject = 090937DB24EFE13A0025F222 /* Project object */;
+}

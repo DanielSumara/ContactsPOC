@@ -4,6 +4,24 @@
    <Group
       location = "container:Frameworks"
       name = "Framworks">
+      <FileRef
+         location = "group:Business/Business.xcodeproj">
+      </FileRef>
+      <FileRef
+         location = "group:ContactsKit/ContactsKit.xcodeproj">
+      </FileRef>
+      <FileRef
+         location = "group:DataRepository/DataRepository.xcodeproj">
+      </FileRef>
+      <FileRef
+         location = "group:DomainModels/DomainModels.xcodeproj">
+      </FileRef>
+      <FileRef
+         location = "group:Resources/Resources.xcodeproj">
+      </FileRef>
+      <FileRef
+         location = "group:RestService/RestService.xcodeproj">
+      </FileRef>
    </Group>
    <FileRef
       location = "group:Apps/Contacts/Contacts.xcodeproj">
