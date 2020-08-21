@@ -24,6 +24,17 @@
 		0909396524F007380025F222 /* ContactsListViewController+ContentView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 0909396424F007380025F222 /* ContactsListViewController+ContentView.swift */; };
 		0909396824F00C890025F222 /* NavigationControllerDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = 0909396724F00C890025F222 /* NavigationControllerDelegate.swift */; };
 		0909396A24F00E190025F222 /* NavigationControllerDelegate+Tests.swift in Sources */ = {isa = PBXBuildFile; fileRef = 0909396924F00E190025F222 /* NavigationControllerDelegate+Tests.swift */; };
+		0957E29724F02D7700E620DE /* ContactsListViewController+ListAdapter.swift in Sources */ = {isa = PBXBuildFile; fileRef = 0957E29624F02D7700E620DE /* ContactsListViewController+ListAdapter.swift */; };
+		0957E29D24F02EC700E620DE /* ViewSizeCalculator.swift in Sources */ = {isa = PBXBuildFile; fileRef = 0957E29C24F02EC700E620DE /* ViewSizeCalculator.swift */; };
+		0957E2A124F02F1D00E620DE /* DefaultViewSizeCalculator.swift in Sources */ = {isa = PBXBuildFile; fileRef = 0957E2A024F02F1D00E620DE /* DefaultViewSizeCalculator.swift */; };
+		0957E2A824F030CA00E620DE /* UITableView+Extensions.swift in Sources */ = {isa = PBXBuildFile; fileRef = 0957E2A724F030CA00E620DE /* UITableView+Extensions.swift */; };
+		0957E2AD24F0345600E620DE /* ContactProjection.swift in Sources */ = {isa = PBXBuildFile; fileRef = 0957E2AC24F0345600E620DE /* ContactProjection.swift */; };
+		0957E2AF24F0348600E620DE /* DomainModels.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 0957E2AE24F0348600E620DE /* DomainModels.framework */; };
+		0957E2BF24F0380600E620DE /* ContactsKit.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 0957E2BD24F0380600E620DE /* ContactsKit.framework */; };
+		0957E2C124F0380600E620DE /* ContactsModels.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 0957E2BE24F0380600E620DE /* ContactsModels.framework */; };
+		0957E2CF24F039BB00E620DE /* ContactsModels.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 0957E2CE24F039BB00E620DE /* ContactsModels.framework */; };
+		0957E30324F0421200E620DE /* ViewLayout.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 0957E30224F0421200E620DE /* ViewLayout.framework */; };
+		0957E31024F0449E00E620DE /* ContactCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = 0957E30F24F0449E00E620DE /* ContactCell.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
@@ -74,6 +85,17 @@
 		0909396424F007380025F222 /* ContactsListViewController+ContentView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = "ContactsListViewController+ContentView.swift"; sourceTree = "<group>"; };
 		0909396724F00C890025F222 /* NavigationControllerDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = NavigationControllerDelegate.swift; sourceTree = "<group>"; };
 		0909396924F00E190025F222 /* NavigationControllerDelegate+Tests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = "NavigationControllerDelegate+Tests.swift"; sourceTree = "<group>"; };
+		0957E29624F02D7700E620DE /* ContactsListViewController+ListAdapter.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = "ContactsListViewController+ListAdapter.swift"; sourceTree = "<group>"; };
+		0957E29C24F02EC700E620DE /* ViewSizeCalculator.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ViewSizeCalculator.swift; sourceTree = "<group>"; };
+		0957E2A024F02F1D00E620DE /* DefaultViewSizeCalculator.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = DefaultViewSizeCalculator.swift; sourceTree = "<group>"; };
+		0957E2A724F030CA00E620DE /* UITableView+Extensions.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = "UITableView+Extensions.swift"; sourceTree = "<group>"; };
+		0957E2AC24F0345600E620DE /* ContactProjection.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ContactProjection.swift; sourceTree = "<group>"; };
+		0957E2AE24F0348600E620DE /* DomainModels.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; path = DomainModels.framework; sourceTree = BUILT_PRODUCTS_DIR; };
+		0957E2BD24F0380600E620DE /* ContactsKit.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; path = ContactsKit.framework; sourceTree = BUILT_PRODUCTS_DIR; };
+		0957E2BE24F0380600E620DE /* ContactsModels.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; path = ContactsModels.framework; sourceTree = BUILT_PRODUCTS_DIR; };
+		0957E2CE24F039BB00E620DE /* ContactsModels.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; path = ContactsModels.framework; sourceTree = BUILT_PRODUCTS_DIR; };
+		0957E30224F0421200E620DE /* ViewLayout.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; path = ViewLayout.framework; sourceTree = BUILT_PRODUCTS_DIR; };
+		0957E30F24F0449E00E620DE /* ContactCell.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ContactCell.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -82,6 +104,7 @@
 			buildActionMask = 2147483647;
 			files = (
 				0909395824F005430025F222 /* Extensions.framework in Frameworks */,
+				0957E2CF24F039BB00E620DE /* ContactsModels.framework in Frameworks */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -97,6 +120,10 @@
 			isa = PBXFrameworksBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				0957E2C124F0380600E620DE /* ContactsModels.framework in Frameworks */,
+				0957E30324F0421200E620DE /* ViewLayout.framework in Frameworks */,
+				0957E2BF24F0380600E620DE /* ContactsKit.framework in Frameworks */,
+				0957E2AF24F0348600E620DE /* DomainModels.framework in Frameworks */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -138,6 +165,7 @@
 			isa = PBXGroup;
 			children = (
 				090938D824EFF0F40025F222 /* Contracts */,
+				0957E2A524F030B800E620DE /* Extensions */,
 				0909390824EFF3590025F222 /* Infrastructure */,
 				090938D724EFF0E30025F222 /* SupportingFiles */,
 			);
@@ -175,6 +203,7 @@
 			isa = PBXGroup;
 			children = (
 				090938FC24EFF2890025F222 /* Flow */,
+				0957E2AB24F0343B00E620DE /* Interface */,
 				090938FD24EFF2970025F222 /* Screens */,
 				090938FB24EFF2510025F222 /* SupportingFiles */,
 			);
@@ -219,6 +248,7 @@
 			isa = PBXGroup;
 			children = (
 				0909390924EFF3650025F222 /* Presenter */,
+				0957E29B24F02EB100E620DE /* ViewSizeCalculator */,
 			);
 			path = Infrastructure;
 			sourceTree = "<group>";
@@ -236,6 +266,11 @@
 		0909395624F005430025F222 /* Frameworks */ = {
 			isa = PBXGroup;
 			children = (
+				0957E30224F0421200E620DE /* ViewLayout.framework */,
+				0957E2CE24F039BB00E620DE /* ContactsModels.framework */,
+				0957E2BD24F0380600E620DE /* ContactsKit.framework */,
+				0957E2BE24F0380600E620DE /* ContactsModels.framework */,
+				0957E2AE24F0348600E620DE /* DomainModels.framework */,
 				0909395724F005430025F222 /* Extensions.framework */,
 			);
 			name = Frameworks;
@@ -279,6 +314,7 @@
 			children = (
 				0909396224F007160025F222 /* ContactsListViewController.swift */,
 				0909396424F007380025F222 /* ContactsListViewController+ContentView.swift */,
+				0957E29624F02D7700E620DE /* ContactsListViewController+ListAdapter.swift */,
 			);
 			path = View;
 			sourceTree = "<group>";
@@ -290,6 +326,56 @@
 				0909396924F00E190025F222 /* NavigationControllerDelegate+Tests.swift */,
 			);
 			path = Delegate;
+			sourceTree = "<group>";
+		};
+		0957E29B24F02EB100E620DE /* ViewSizeCalculator */ = {
+			isa = PBXGroup;
+			children = (
+				0957E2A024F02F1D00E620DE /* DefaultViewSizeCalculator.swift */,
+				0957E29C24F02EC700E620DE /* ViewSizeCalculator.swift */,
+			);
+			path = ViewSizeCalculator;
+			sourceTree = "<group>";
+		};
+		0957E2A524F030B800E620DE /* Extensions */ = {
+			isa = PBXGroup;
+			children = (
+				0957E2A624F030C000E620DE /* UIKit */,
+			);
+			path = Extensions;
+			sourceTree = "<group>";
+		};
+		0957E2A624F030C000E620DE /* UIKit */ = {
+			isa = PBXGroup;
+			children = (
+				0957E2A724F030CA00E620DE /* UITableView+Extensions.swift */,
+			);
+			path = UIKit;
+			sourceTree = "<group>";
+		};
+		0957E2AB24F0343B00E620DE /* Interface */ = {
+			isa = PBXGroup;
+			children = (
+				0957E2B224F034AB00E620DE /* Data */,
+				0957E2B324F034B100E620DE /* UI */,
+			);
+			path = Interface;
+			sourceTree = "<group>";
+		};
+		0957E2B224F034AB00E620DE /* Data */ = {
+			isa = PBXGroup;
+			children = (
+				0957E2AC24F0345600E620DE /* ContactProjection.swift */,
+			);
+			path = Data;
+			sourceTree = "<group>";
+		};
+		0957E2B324F034B100E620DE /* UI */ = {
+			isa = PBXGroup;
+			children = (
+				0957E30F24F0449E00E620DE /* ContactCell.swift */,
+			);
+			path = UI;
 			sourceTree = "<group>";
 		};
 /* End PBXGroup section */
@@ -470,11 +556,14 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				0957E2A824F030CA00E620DE /* UITableView+Extensions.swift in Sources */,
 				0909396824F00C890025F222 /* NavigationControllerDelegate.swift in Sources */,
 				0909390B24EFF3710025F222 /* Presenter.swift in Sources */,
 				090938DA24EFF1140025F222 /* ModuleFlow.swift in Sources */,
 				0909390D24F001B60025F222 /* DefaultPresenter.swift in Sources */,
 				090938DC24EFF1A90025F222 /* Screen.swift in Sources */,
+				0957E29D24F02EC700E620DE /* ViewSizeCalculator.swift in Sources */,
+				0957E2A124F02F1D00E620DE /* DefaultViewSizeCalculator.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -494,6 +583,9 @@
 				0909396324F007160025F222 /* ContactsListViewController.swift in Sources */,
 				0909396124F006D00025F222 /* ContactsListScreen.swift in Sources */,
 				0909396524F007380025F222 /* ContactsListViewController+ContentView.swift in Sources */,
+				0957E2AD24F0345600E620DE /* ContactProjection.swift in Sources */,
+				0957E29724F02D7700E620DE /* ContactsListViewController+ListAdapter.swift in Sources */,
+				0957E31024F0449E00E620DE /* ContactCell.swift in Sources */,
 				090938FF24EFF2B90025F222 /* ContactListFlow.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;

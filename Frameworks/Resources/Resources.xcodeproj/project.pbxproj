@@ -8,12 +8,20 @@
 
 /* Begin PBXBuildFile section */
 		0909387D24EFE1E80025F222 /* Resources.h in Headers */ = {isa = PBXBuildFile; fileRef = 0909386F24EFE1E80025F222 /* Resources.h */; settings = {ATTRIBUTES = (Public, ); }; };
+		0957E31D24F0552800E620DE /* Icons.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 0957E31C24F0552800E620DE /* Icons.xcassets */; };
+		0957E32124F055D300E620DE /* Icons.swift in Sources */ = {isa = PBXBuildFile; fileRef = 0957E32024F055D300E620DE /* Icons.swift */; };
+		0957E32C24F05C2400E620DE /* Colors.swift in Sources */ = {isa = PBXBuildFile; fileRef = 0957E32B24F05C2400E620DE /* Colors.swift */; };
+		0957E32E24F05C3400E620DE /* Colors.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 0957E32D24F05C3400E620DE /* Colors.xcassets */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
 		0909386C24EFE1E80025F222 /* Resources.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = Resources.framework; sourceTree = BUILT_PRODUCTS_DIR; };
 		0909386F24EFE1E80025F222 /* Resources.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = Resources.h; sourceTree = "<group>"; };
 		0909387024EFE1E80025F222 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		0957E31C24F0552800E620DE /* Icons.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Icons.xcassets; sourceTree = "<group>"; };
+		0957E32024F055D300E620DE /* Icons.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Icons.swift; sourceTree = "<group>"; };
+		0957E32B24F05C2400E620DE /* Colors.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Colors.swift; sourceTree = "<group>"; };
+		0957E32D24F05C3400E620DE /* Colors.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Colors.xcassets; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -46,10 +54,30 @@
 		0909386E24EFE1E80025F222 /* Resources */ = {
 			isa = PBXGroup;
 			children = (
+				0957E32D24F05C3400E620DE /* Colors.xcassets */,
+				0957E31C24F0552800E620DE /* Icons.xcassets */,
+				0957E31F24F055C200E620DE /* Generated */,
+				0957E31B24F054B900E620DE /* SupportingFiles */,
+			);
+			path = Resources;
+			sourceTree = "<group>";
+		};
+		0957E31B24F054B900E620DE /* SupportingFiles */ = {
+			isa = PBXGroup;
+			children = (
 				0909386F24EFE1E80025F222 /* Resources.h */,
 				0909387024EFE1E80025F222 /* Info.plist */,
 			);
-			path = Resources;
+			name = SupportingFiles;
+			sourceTree = "<group>";
+		};
+		0957E31F24F055C200E620DE /* Generated */ = {
+			isa = PBXGroup;
+			children = (
+				0957E32B24F05C2400E620DE /* Colors.swift */,
+				0957E32024F055D300E620DE /* Icons.swift */,
+			);
+			path = Generated;
 			sourceTree = "<group>";
 		};
 /* End PBXGroup section */
@@ -96,6 +124,7 @@
 				TargetAttributes = {
 					0909386B24EFE1E80025F222 = {
 						CreatedOnToolsVersion = 11.6;
+						LastSwiftMigration = 1160;
 					};
 				};
 			};
@@ -122,6 +151,8 @@
 			isa = PBXResourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				0957E31D24F0552800E620DE /* Icons.xcassets in Resources */,
+				0957E32E24F05C3400E620DE /* Colors.xcassets in Resources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -132,6 +163,8 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				0957E32124F055D300E620DE /* Icons.swift in Sources */,
+				0957E32C24F05C2400E620DE /* Colors.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -261,6 +294,7 @@
 		0909388124EFE1E80025F222 /* Debug */ = {
 			isa = XCBuildConfiguration;
 			buildSettings = {
+				CLANG_ENABLE_MODULES = YES;
 				CODE_SIGN_STYLE = Automatic;
 				DEFINES_MODULE = YES;
 				DEVELOPMENT_TEAM = 2AHNM42WD8;
@@ -277,6 +311,7 @@
 				PRODUCT_BUNDLE_IDENTIFIER = pl.com.sumara.Resources;
 				PRODUCT_NAME = "$(TARGET_NAME:c99extidentifier)";
 				SKIP_INSTALL = YES;
+				SWIFT_OPTIMIZATION_LEVEL = "-Onone";
 				SWIFT_VERSION = 5.0;
 				TARGETED_DEVICE_FAMILY = "1,2";
 			};
@@ -285,6 +320,7 @@
 		0909388224EFE1E80025F222 /* Release */ = {
 			isa = XCBuildConfiguration;
 			buildSettings = {
+				CLANG_ENABLE_MODULES = YES;
 				CODE_SIGN_STYLE = Automatic;
 				DEFINES_MODULE = YES;
 				DEVELOPMENT_TEAM = 2AHNM42WD8;

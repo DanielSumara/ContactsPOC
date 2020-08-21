@@ -11,15 +11,14 @@ import UIKit
 
 extension ContactsListViewController {
     
-    final class ContentView: UIScrollView {
+    final class ContentView: UITableView {
         
         // MARK: - Initializers
         
         init() {
-            super.init(frame: .zero)
+            super.init(frame: .zero, style: .plain)
             
             setupComponents()
-            setupLayout()
         }
         
         required init?(coder: NSCoder) { nil }
@@ -28,12 +27,8 @@ extension ContactsListViewController {
         
         private func setupComponents() {
             backgroundColor = .white
-            
-            alwaysBounceVertical = true
-        }
-        
-        private func setupLayout() {
-            
+            separatorStyle = .none
+            tableFooterView = UIView()
         }
         
     }

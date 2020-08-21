@@ -8,7 +8,7 @@
 
 import Foundation
 
-public enum Nationality: String {
+public enum Nationality: String, Hashable {
     
     case australia = "AU"
     case brazil = "BR"

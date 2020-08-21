@@ -8,7 +8,7 @@
 
 import Foundation
 
-public struct Location {
+public struct Location: Hashable {
     
     // MARK: - Properties
     

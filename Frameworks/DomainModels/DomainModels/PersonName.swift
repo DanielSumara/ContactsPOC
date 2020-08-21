@@ -8,7 +8,7 @@
 
 import Foundation
 
-public struct PersonName {
+public struct PersonName: Hashable {
     
     // MARK: - Properties
     

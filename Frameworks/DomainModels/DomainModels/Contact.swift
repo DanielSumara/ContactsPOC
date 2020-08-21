@@ -8,7 +8,7 @@
 
 import Foundation
 
-public struct Contact {
+public struct Contact: Hashable {
     
     // MARK: - Properties
     

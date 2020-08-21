@@ -1,16 +1,16 @@
 //
-//  Gender.swift
-//  DomainModels
+//  UIView+Layout.swift
+//  ViewLayout
 //
 //  Created by Daniel Sumara on 21/08/2020.
 //  Copyright © 2020 Daniel Sumara. All rights reserved.
 //
 
 import Foundation
+import UIKit
 
-public enum Gender: String, Hashable {
+extension UIView {
     
-    case female
-    case male
+    public var layout: ViewLayout { ViewLayout(of: self) }
     
 }

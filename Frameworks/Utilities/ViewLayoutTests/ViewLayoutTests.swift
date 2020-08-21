@@ -1,15 +1,15 @@
 //
-//  ContactsModelsTests.swift
-//  ContactsModelsTests
+//  ViewLayoutTests.swift
+//  ViewLayoutTests
 //
 //  Created by Daniel Sumara on 21/08/2020.
 //  Copyright © 2020 Daniel Sumara. All rights reserved.
 //
 
 import XCTest
-@testable import ContactsModels
+@testable import ViewLayout
 
-class ContactsModelsTests: XCTestCase {
+class ViewLayoutTests: XCTestCase {
 
     override func setUpWithError() throws {
         // Put setup code here. This method is called before the invocation of each test method in the class.

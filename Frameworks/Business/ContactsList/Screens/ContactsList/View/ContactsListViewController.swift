@@ -14,6 +14,7 @@ final class ContactsListViewController: UIViewController {
     // MARK: - Properties
     
     private let contentView = ContentView()
+    private let listAdapter = ListAdapter()
     
     // MARK: - Initializers
     
@@ -28,6 +29,12 @@ final class ContactsListViewController: UIViewController {
         
         title = "Contacts"
         navigationItem.largeTitleDisplayMode = .always
+        
+        listAdapter.prepare(for: contentView)
+        
+        contentView.dataSource = listAdapter
+        
+        listAdapter.set(items: [1, 2, 3, 4, 5])
     }
     
 }
