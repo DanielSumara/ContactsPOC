@@ -9,12 +9,22 @@
 import UIKit
 
 @UIApplicationMain
-class AppDelegate: UIResponder, UIApplicationDelegate {
+private final class AppDelegate: UIResponder, UIApplicationDelegate {
 
-
+    // MARK: - Properties
+    
+    private var mainWindow: UIWindow?
+    
+    // MARK: - API
 
     func application(_ application: UIApplication, didFinishLaunchingWithOptions launchOptions: [UIApplication.LaunchOptionsKey: Any]?) -> Bool {
-        // Override point for customization after application launch.
+        
+        if #available(iOS 13.0, *) { return true }
+        
+        mainWindow = UIWindow(frame: UIScreen.main.bounds)
+        mainWindow?.backgroundColor = .white
+        mainWindow?.makeKeyAndVisible()
+        
         return true
     }
 
