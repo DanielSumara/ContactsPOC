@@ -11,7 +11,7 @@ import Foundation
 import UIKit
 
 public final class ContactListFlow: ModuleFlow {
-
+    
     // MARK: - Properties
     
     private let presenter: Presenter
@@ -23,7 +23,7 @@ public final class ContactListFlow: ModuleFlow {
     }
     
     // MARK: - API
-
+    
     public func start() {
         let screen = ContactsListScreen()
         presenter.push(screen)
