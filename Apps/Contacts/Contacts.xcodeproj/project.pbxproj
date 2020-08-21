@@ -13,6 +13,8 @@
 		0909377524EFD9D80025F222 /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 0909377324EFD9D80025F222 /* LaunchScreen.storyboard */; };
 		0909378024EFD9D80025F222 /* ContactsTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = 0909377F24EFD9D80025F222 /* ContactsTests.swift */; };
 		0909378B24EFD9D80025F222 /* ContactsUITests.swift in Sources */ = {isa = PBXBuildFile; fileRef = 0909378A24EFD9D80025F222 /* ContactsUITests.swift */; };
+		090938D424EFEDE50025F222 /* ContactsFlow.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 090938D324EFEDE50025F222 /* ContactsFlow.framework */; };
+		090938D524EFEDE50025F222 /* ContactsFlow.framework in Embed Frameworks */ = {isa = PBXBuildFile; fileRef = 090938D324EFEDE50025F222 /* ContactsFlow.framework */; settings = {ATTRIBUTES = (CodeSignOnCopy, RemoveHeadersOnCopy, ); }; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
@@ -32,6 +34,20 @@
 		};
 /* End PBXContainerItemProxy section */
 
+/* Begin PBXCopyFilesBuildPhase section */
+		090938D624EFEDE60025F222 /* Embed Frameworks */ = {
+			isa = PBXCopyFilesBuildPhase;
+			buildActionMask = 2147483647;
+			dstPath = "";
+			dstSubfolderSpec = 10;
+			files = (
+				090938D524EFEDE50025F222 /* ContactsFlow.framework in Embed Frameworks */,
+			);
+			name = "Embed Frameworks";
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXCopyFilesBuildPhase section */
+
 /* Begin PBXFileReference section */
 		0909376524EFD9D70025F222 /* Contacts.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = Contacts.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		0909376824EFD9D70025F222 /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
@@ -45,6 +61,7 @@
 		0909378624EFD9D80025F222 /* ContactsUITests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = ContactsUITests.xctest; sourceTree = BUILT_PRODUCTS_DIR; };
 		0909378A24EFD9D80025F222 /* ContactsUITests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ContactsUITests.swift; sourceTree = "<group>"; };
 		0909378C24EFD9D80025F222 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		090938D324EFEDE50025F222 /* ContactsFlow.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; path = ContactsFlow.framework; sourceTree = BUILT_PRODUCTS_DIR; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -52,6 +69,7 @@
 			isa = PBXFrameworksBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				090938D424EFEDE50025F222 /* ContactsFlow.framework in Frameworks */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -79,6 +97,7 @@
 				0909377E24EFD9D80025F222 /* ContactsTests */,
 				0909378924EFD9D80025F222 /* ContactsUITests */,
 				0909376624EFD9D70025F222 /* Products */,
+				090938D224EFEDE50025F222 /* Frameworks */,
 			);
 			sourceTree = "<group>";
 		};
@@ -138,6 +157,14 @@
 			name = SupportingFiles;
 			sourceTree = "<group>";
 		};
+		090938D224EFEDE50025F222 /* Frameworks */ = {
+			isa = PBXGroup;
+			children = (
+				090938D324EFEDE50025F222 /* ContactsFlow.framework */,
+			);
+			name = Frameworks;
+			sourceTree = "<group>";
+		};
 /* End PBXGroup section */
 
 /* Begin PBXNativeTarget section */
@@ -148,6 +175,7 @@
 				0909376124EFD9D70025F222 /* Sources */,
 				0909376224EFD9D70025F222 /* Frameworks */,
 				0909376324EFD9D70025F222 /* Resources */,
+				090938D624EFEDE60025F222 /* Embed Frameworks */,
 			);
 			buildRules = (
 			);

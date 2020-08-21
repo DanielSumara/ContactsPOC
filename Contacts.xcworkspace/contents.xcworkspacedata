@@ -8,6 +8,9 @@
          location = "group:Business/Business.xcodeproj">
       </FileRef>
       <FileRef
+         location = "group:ContactsFlow/ContactsFlow.xcodeproj">
+      </FileRef>
+      <FileRef
          location = "group:ContactsKit/ContactsKit.xcodeproj">
       </FileRef>
       <FileRef
@@ -21,6 +24,9 @@
       </FileRef>
       <FileRef
          location = "group:RestService/RestService.xcodeproj">
+      </FileRef>
+      <FileRef
+         location = "group:Utilities/Utilities.xcodeproj">
       </FileRef>
    </Group>
    <FileRef

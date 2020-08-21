@@ -6,12 +6,15 @@
 //  Copyright © 2020 Daniel Sumara. All rights reserved.
 //
 
+import ContactsFlow
 import UIKit
 
 @available(iOS 13.0, *)
 class SceneDelegate: UIResponder, UIWindowSceneDelegate {
 
     // MARK: - Properties
+    
+    private let appCoordinator = AppCoordinator.instance
     
     private var mainWindow: UIWindow?
 
@@ -20,9 +23,13 @@ class SceneDelegate: UIResponder, UIWindowSceneDelegate {
     func scene(_ scene: UIScene, willConnectTo session: UISceneSession, options connectionOptions: UIScene.ConnectionOptions) {
         guard let windowScene = (scene as? UIWindowScene) else { return }
         
-        mainWindow = UIWindow(windowScene: windowScene)
-        mainWindow?.backgroundColor = .white
-        mainWindow?.makeKeyAndVisible()
+        let window = UIWindow(windowScene: windowScene)
+        window.backgroundColor = .white
+        window.makeKeyAndVisible()
+        
+        appCoordinator.start(in: window)
+        
+        mainWindow = window
     }
 
 }

@@ -4,15 +4,10 @@
 <dict>
 	<key>SchemeUserState</key>
 	<dict>
-		<key>ContactsKit.xcscheme_^#shared#^_</key>
+		<key>ContactsFlow.xcscheme_^#shared#^_</key>
 		<dict>
 			<key>orderHint</key>
-			<integer>7</integer>
-		</dict>
-		<key>ContactsModels.xcscheme_^#shared#^_</key>
-		<dict>
-			<key>orderHint</key>
-			<integer>9</integer>
+			<integer>8</integer>
 		</dict>
 	</dict>
 </dict>

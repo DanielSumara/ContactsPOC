@@ -6,6 +6,7 @@
 //  Copyright © 2020 Daniel Sumara. All rights reserved.
 //
 
+import ContactsFlow
 import UIKit
 
 @UIApplicationMain
@@ -13,17 +14,22 @@ private final class AppDelegate: UIResponder, UIApplicationDelegate {
 
     // MARK: - Properties
     
+    private let appCoordinator = AppCoordinator.instance
+    
     private var mainWindow: UIWindow?
     
     // MARK: - API
 
     func application(_ application: UIApplication, didFinishLaunchingWithOptions launchOptions: [UIApplication.LaunchOptionsKey: Any]?) -> Bool {
-        
         if #available(iOS 13.0, *) { return true }
         
-        mainWindow = UIWindow(frame: UIScreen.main.bounds)
-        mainWindow?.backgroundColor = .white
-        mainWindow?.makeKeyAndVisible()
+        let window = UIWindow(frame: UIScreen.main.bounds)
+        window.backgroundColor = .white
+        window.makeKeyAndVisible()
+        
+        appCoordinator.start(in: window)
+        
+        mainWindow = window
         
         return true
     }
