@@ -44,6 +44,8 @@ public final class DefaultContactsService: ContactsService {
         ongoingRequest = networkSession.invoke(request: request) { [decoder] data, response, error in
             if let error = error { return completion(.failure(.service(error))) }
             
+            // TODO: - Encapsulate validation (Create specialized component to validate response data)
+            
             guard let data = data else { return completion(.failure(.invalidResponse)) }
             guard let response = response as? HTTPURLResponse else { return completion(.failure(.invalidResponse)) }
             

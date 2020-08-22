@@ -22,6 +22,8 @@ public struct Contact: Hashable {
     public let picture: Picture
     public let nationality: Nationality
     
+    public var isFavorite: Bool = false
+    
     // MARK: - Initializers
     
     public init(name: PersonName, gender: Gender, location: Location, email: String, birthDate: Date, phone: String, cell: String, picture: Picture, nationality: Nationality) {

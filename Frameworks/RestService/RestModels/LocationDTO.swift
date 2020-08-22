@@ -9,9 +9,9 @@
 import Foundation
 
 public struct LocationDTO: Decodable {
-
+    
     // MARK: -  Properties
-
+    
     public let street: StreetDTO
     public let city: String
     public let state: String
@@ -34,7 +34,15 @@ public struct LocationDTO: Decodable {
             postCode = try container.decode(UInt.self, forKey: .postCode).description
         }
     }
-
+    
+    init(street: StreetDTO, city: String, state: String, country: String, postCode: String) {
+        self.street = street
+        self.city = city
+        self.state = state
+        self.country = country
+        self.postCode = postCode
+    }
+    
 }
 
 extension LocationDTO {

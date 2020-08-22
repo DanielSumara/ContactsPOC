@@ -36,6 +36,8 @@
 		0957E30324F0421200E620DE /* ViewLayout.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 0957E30224F0421200E620DE /* ViewLayout.framework */; };
 		0957E31024F0449E00E620DE /* ContactCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = 0957E30F24F0449E00E620DE /* ContactCell.swift */; };
 		0957E33024F062BC00E620DE /* LoadingCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = 0957E32F24F062BC00E620DE /* LoadingCell.swift */; };
+		0957E3C724F16A8900E620DE /* DataRepository.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 0957E3C624F16A8900E620DE /* DataRepository.framework */; };
+		0957E3C824F16A8900E620DE /* DataRepository.framework in Embed Frameworks */ = {isa = PBXBuildFile; fileRef = 0957E3C624F16A8900E620DE /* DataRepository.framework */; settings = {ATTRIBUTES = (CodeSignOnCopy, RemoveHeadersOnCopy, ); }; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
@@ -61,6 +63,20 @@
 			remoteInfo = Business;
 		};
 /* End PBXContainerItemProxy section */
+
+/* Begin PBXCopyFilesBuildPhase section */
+		0957E3C924F16A8900E620DE /* Embed Frameworks */ = {
+			isa = PBXCopyFilesBuildPhase;
+			buildActionMask = 2147483647;
+			dstPath = "";
+			dstSubfolderSpec = 10;
+			files = (
+				0957E3C824F16A8900E620DE /* DataRepository.framework in Embed Frameworks */,
+			);
+			name = "Embed Frameworks";
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXCopyFilesBuildPhase section */
 
 /* Begin PBXFileReference section */
 		0909389024EFE2410025F222 /* Business.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = Business.framework; sourceTree = BUILT_PRODUCTS_DIR; };
@@ -98,6 +114,7 @@
 		0957E30224F0421200E620DE /* ViewLayout.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; path = ViewLayout.framework; sourceTree = BUILT_PRODUCTS_DIR; };
 		0957E30F24F0449E00E620DE /* ContactCell.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ContactCell.swift; sourceTree = "<group>"; };
 		0957E32F24F062BC00E620DE /* LoadingCell.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = LoadingCell.swift; sourceTree = "<group>"; };
+		0957E3C624F16A8900E620DE /* DataRepository.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; path = DataRepository.framework; sourceTree = BUILT_PRODUCTS_DIR; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -123,6 +140,7 @@
 			buildActionMask = 2147483647;
 			files = (
 				0957E2C124F0380600E620DE /* ContactsModels.framework in Frameworks */,
+				0957E3C724F16A8900E620DE /* DataRepository.framework in Frameworks */,
 				0957E30324F0421200E620DE /* ViewLayout.framework in Frameworks */,
 				0957E2BF24F0380600E620DE /* ContactsKit.framework in Frameworks */,
 				0957E2AF24F0348600E620DE /* DomainModels.framework in Frameworks */,
@@ -268,6 +286,7 @@
 		0909395624F005430025F222 /* Frameworks */ = {
 			isa = PBXGroup;
 			children = (
+				0957E3C624F16A8900E620DE /* DataRepository.framework */,
 				0957E30224F0421200E620DE /* ViewLayout.framework */,
 				0957E2CE24F039BB00E620DE /* ContactsModels.framework */,
 				0957E2BD24F0380600E620DE /* ContactsKit.framework */,
@@ -447,6 +466,7 @@
 				090938DE24EFF22F0025F222 /* Sources */,
 				090938DF24EFF22F0025F222 /* Frameworks */,
 				090938E024EFF22F0025F222 /* Resources */,
+				0957E3C924F16A8900E620DE /* Embed Frameworks */,
 			);
 			buildRules = (
 			);

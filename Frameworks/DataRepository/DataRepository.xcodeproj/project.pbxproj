@@ -8,8 +8,30 @@
 
 /* Begin PBXBuildFile section */
 		0909382E24EFE1950025F222 /* DataRepository.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 0909382424EFE1950025F222 /* DataRepository.framework */; };
-		0909383324EFE1950025F222 /* DataRepositoryTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = 0909383224EFE1950025F222 /* DataRepositoryTests.swift */; };
 		0909383524EFE1950025F222 /* DataRepository.h in Headers */ = {isa = PBXBuildFile; fileRef = 0909382724EFE1950025F222 /* DataRepository.h */; settings = {ATTRIBUTES = (Public, ); }; };
+		0957E38F24F1380B00E620DE /* RestModels.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 0957E38D24F1380B00E620DE /* RestModels.framework */; };
+		0957E39024F1380B00E620DE /* RestModels.framework in Embed Frameworks */ = {isa = PBXBuildFile; fileRef = 0957E38D24F1380B00E620DE /* RestModels.framework */; settings = {ATTRIBUTES = (CodeSignOnCopy, RemoveHeadersOnCopy, ); }; };
+		0957E39124F1380B00E620DE /* RestService.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 0957E38E24F1380B00E620DE /* RestService.framework */; };
+		0957E39224F1380B00E620DE /* RestService.framework in Embed Frameworks */ = {isa = PBXBuildFile; fileRef = 0957E38E24F1380B00E620DE /* RestService.framework */; settings = {ATTRIBUTES = (CodeSignOnCopy, RemoveHeadersOnCopy, ); }; };
+		0957E39524F1381000E620DE /* DomainModels.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 0957E39424F1381000E620DE /* DomainModels.framework */; };
+		0957E39624F1381000E620DE /* DomainModels.framework in Embed Frameworks */ = {isa = PBXBuildFile; fileRef = 0957E39424F1381000E620DE /* DomainModels.framework */; settings = {ATTRIBUTES = (CodeSignOnCopy, RemoveHeadersOnCopy, ); }; };
+		0957E39C24F1386D00E620DE /* ContactsRepository.swift in Sources */ = {isa = PBXBuildFile; fileRef = 0957E39B24F1386D00E620DE /* ContactsRepository.swift */; };
+		0957E39F24F138A300E620DE /* ContactsRepositoryError.swift in Sources */ = {isa = PBXBuildFile; fileRef = 0957E39E24F138A300E620DE /* ContactsRepositoryError.swift */; };
+		0957E3A124F1390600E620DE /* DefaultContactsRepository.swift in Sources */ = {isa = PBXBuildFile; fileRef = 0957E3A024F1390600E620DE /* DefaultContactsRepository.swift */; };
+		0957E3A424F13C1900E620DE /* TransportToDomainMapper.swift in Sources */ = {isa = PBXBuildFile; fileRef = 0957E3A324F13C1900E620DE /* TransportToDomainMapper.swift */; };
+		0957E3A624F13C6600E620DE /* DefaultTransportToDomainMapper.swift in Sources */ = {isa = PBXBuildFile; fileRef = 0957E3A524F13C6600E620DE /* DefaultTransportToDomainMapper.swift */; };
+		0957E3AD24F1418D00E620DE /* Utilities.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 0957E3AC24F1418D00E620DE /* Utilities.framework */; };
+		0957E3AE24F1418E00E620DE /* Utilities.framework in Embed Frameworks */ = {isa = PBXBuildFile; fileRef = 0957E3AC24F1418D00E620DE /* Utilities.framework */; settings = {ATTRIBUTES = (CodeSignOnCopy, RemoveHeadersOnCopy, ); }; };
+		0957E3B024F1461C00E620DE /* DefaultContactsRepository+Tests.swift in Sources */ = {isa = PBXBuildFile; fileRef = 0957E3AF24F1461C00E620DE /* DefaultContactsRepository+Tests.swift */; };
+		0957E3B324F1467500E620DE /* Stubbable.swift in Sources */ = {isa = PBXBuildFile; fileRef = 0957E3B224F1467500E620DE /* Stubbable.swift */; };
+		0957E3B524F1469400E620DE /* StubbedContactsService.swift in Sources */ = {isa = PBXBuildFile; fileRef = 0957E3B424F1469400E620DE /* StubbedContactsService.swift */; };
+		0957E3B824F1498500E620DE /* ContactDTO+Mocks.swift in Sources */ = {isa = PBXBuildFile; fileRef = 0957E3B724F1498500E620DE /* ContactDTO+Mocks.swift */; };
+		0957E3BB24F15E5400E620DE /* FavoritesStore.swift in Sources */ = {isa = PBXBuildFile; fileRef = 0957E3BA24F15E5400E620DE /* FavoritesStore.swift */; };
+		0957E3BD24F15E9C00E620DE /* UserDefaultsFavoritesStore.swift in Sources */ = {isa = PBXBuildFile; fileRef = 0957E3BC24F15E9C00E620DE /* UserDefaultsFavoritesStore.swift */; };
+		0957E3BF24F15FBA00E620DE /* UserDefaultsFavoritesStore+Tests.swift in Sources */ = {isa = PBXBuildFile; fileRef = 0957E3BE24F15FBA00E620DE /* UserDefaultsFavoritesStore+Tests.swift */; };
+		0957E3C124F15FF800E620DE /* PersonNameDTO+Mocks.swift in Sources */ = {isa = PBXBuildFile; fileRef = 0957E3C024F15FF800E620DE /* PersonNameDTO+Mocks.swift */; };
+		0957E3C324F160D600E620DE /* PersonName+Mocks.swift in Sources */ = {isa = PBXBuildFile; fileRef = 0957E3C224F160D600E620DE /* PersonName+Mocks.swift */; };
+		0957E3C524F1688F00E620DE /* StubbedFavoritesStore.swift in Sources */ = {isa = PBXBuildFile; fileRef = 0957E3C424F1688F00E620DE /* StubbedFavoritesStore.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
@@ -22,13 +44,48 @@
 		};
 /* End PBXContainerItemProxy section */
 
+/* Begin PBXCopyFilesBuildPhase section */
+		0957E39324F1380B00E620DE /* Embed Frameworks */ = {
+			isa = PBXCopyFilesBuildPhase;
+			buildActionMask = 2147483647;
+			dstPath = "";
+			dstSubfolderSpec = 10;
+			files = (
+				0957E39224F1380B00E620DE /* RestService.framework in Embed Frameworks */,
+				0957E39624F1381000E620DE /* DomainModels.framework in Embed Frameworks */,
+				0957E39024F1380B00E620DE /* RestModels.framework in Embed Frameworks */,
+				0957E3AE24F1418E00E620DE /* Utilities.framework in Embed Frameworks */,
+			);
+			name = "Embed Frameworks";
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXCopyFilesBuildPhase section */
+
 /* Begin PBXFileReference section */
 		0909382424EFE1950025F222 /* DataRepository.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = DataRepository.framework; sourceTree = BUILT_PRODUCTS_DIR; };
 		0909382724EFE1950025F222 /* DataRepository.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = DataRepository.h; sourceTree = "<group>"; };
 		0909382824EFE1950025F222 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
 		0909382D24EFE1950025F222 /* DataRepositoryTests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = DataRepositoryTests.xctest; sourceTree = BUILT_PRODUCTS_DIR; };
-		0909383224EFE1950025F222 /* DataRepositoryTests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = DataRepositoryTests.swift; sourceTree = "<group>"; };
 		0909383424EFE1950025F222 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		0957E38D24F1380B00E620DE /* RestModels.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; path = RestModels.framework; sourceTree = BUILT_PRODUCTS_DIR; };
+		0957E38E24F1380B00E620DE /* RestService.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; path = RestService.framework; sourceTree = BUILT_PRODUCTS_DIR; };
+		0957E39424F1381000E620DE /* DomainModels.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; path = DomainModels.framework; sourceTree = BUILT_PRODUCTS_DIR; };
+		0957E39B24F1386D00E620DE /* ContactsRepository.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ContactsRepository.swift; sourceTree = "<group>"; };
+		0957E39E24F138A300E620DE /* ContactsRepositoryError.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ContactsRepositoryError.swift; sourceTree = "<group>"; };
+		0957E3A024F1390600E620DE /* DefaultContactsRepository.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = DefaultContactsRepository.swift; sourceTree = "<group>"; };
+		0957E3A324F13C1900E620DE /* TransportToDomainMapper.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = TransportToDomainMapper.swift; sourceTree = "<group>"; };
+		0957E3A524F13C6600E620DE /* DefaultTransportToDomainMapper.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = DefaultTransportToDomainMapper.swift; sourceTree = "<group>"; };
+		0957E3AC24F1418D00E620DE /* Utilities.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; path = Utilities.framework; sourceTree = BUILT_PRODUCTS_DIR; };
+		0957E3AF24F1461C00E620DE /* DefaultContactsRepository+Tests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = "DefaultContactsRepository+Tests.swift"; sourceTree = "<group>"; };
+		0957E3B224F1467500E620DE /* Stubbable.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Stubbable.swift; sourceTree = "<group>"; };
+		0957E3B424F1469400E620DE /* StubbedContactsService.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = StubbedContactsService.swift; sourceTree = "<group>"; };
+		0957E3B724F1498500E620DE /* ContactDTO+Mocks.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = "ContactDTO+Mocks.swift"; sourceTree = "<group>"; };
+		0957E3BA24F15E5400E620DE /* FavoritesStore.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = FavoritesStore.swift; sourceTree = "<group>"; };
+		0957E3BC24F15E9C00E620DE /* UserDefaultsFavoritesStore.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = UserDefaultsFavoritesStore.swift; sourceTree = "<group>"; };
+		0957E3BE24F15FBA00E620DE /* UserDefaultsFavoritesStore+Tests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = "UserDefaultsFavoritesStore+Tests.swift"; sourceTree = "<group>"; };
+		0957E3C024F15FF800E620DE /* PersonNameDTO+Mocks.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = "PersonNameDTO+Mocks.swift"; sourceTree = "<group>"; };
+		0957E3C224F160D600E620DE /* PersonName+Mocks.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = "PersonName+Mocks.swift"; sourceTree = "<group>"; };
+		0957E3C424F1688F00E620DE /* StubbedFavoritesStore.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = StubbedFavoritesStore.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -36,6 +93,10 @@
 			isa = PBXFrameworksBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				0957E39124F1380B00E620DE /* RestService.framework in Frameworks */,
+				0957E39524F1381000E620DE /* DomainModels.framework in Frameworks */,
+				0957E38F24F1380B00E620DE /* RestModels.framework in Frameworks */,
+				0957E3AD24F1418D00E620DE /* Utilities.framework in Frameworks */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -56,6 +117,7 @@
 				0909382624EFE1950025F222 /* DataRepository */,
 				0909383124EFE1950025F222 /* DataRepositoryTests */,
 				0909382524EFE1950025F222 /* Products */,
+				0957E38C24F1380B00E620DE /* Frameworks */,
 			);
 			sourceTree = "<group>";
 		};
@@ -71,8 +133,8 @@
 		0909382624EFE1950025F222 /* DataRepository */ = {
 			isa = PBXGroup;
 			children = (
-				0909382724EFE1950025F222 /* DataRepository.h */,
-				0909382824EFE1950025F222 /* Info.plist */,
+				0957E39924F1383A00E620DE /* Repositories */,
+				0957E39724F1381E00E620DE /* SupportingFilles */,
 			);
 			path = DataRepository;
 			sourceTree = "<group>";
@@ -80,10 +142,99 @@
 		0909383124EFE1950025F222 /* DataRepositoryTests */ = {
 			isa = PBXGroup;
 			children = (
-				0909383224EFE1950025F222 /* DataRepositoryTests.swift */,
 				0909383424EFE1950025F222 /* Info.plist */,
+				0957E3B624F1497200E620DE /* Mocks */,
+				0957E3B124F1466B00E620DE /* Stubbs */,
 			);
 			path = DataRepositoryTests;
+			sourceTree = "<group>";
+		};
+		0957E38C24F1380B00E620DE /* Frameworks */ = {
+			isa = PBXGroup;
+			children = (
+				0957E3AC24F1418D00E620DE /* Utilities.framework */,
+				0957E39424F1381000E620DE /* DomainModels.framework */,
+				0957E38D24F1380B00E620DE /* RestModels.framework */,
+				0957E38E24F1380B00E620DE /* RestService.framework */,
+			);
+			name = Frameworks;
+			sourceTree = "<group>";
+		};
+		0957E39724F1381E00E620DE /* SupportingFilles */ = {
+			isa = PBXGroup;
+			children = (
+				0909382724EFE1950025F222 /* DataRepository.h */,
+				0909382824EFE1950025F222 /* Info.plist */,
+			);
+			name = SupportingFilles;
+			sourceTree = "<group>";
+		};
+		0957E39924F1383A00E620DE /* Repositories */ = {
+			isa = PBXGroup;
+			children = (
+				0957E3B924F15E4600E620DE /* FavoritesStore */,
+				0957E39A24F1383D00E620DE /* ContactsRepository */,
+				0957E39D24F1389300E620DE /* Errors */,
+				0957E3A224F13C0800E620DE /* Infrastructure */,
+			);
+			path = Repositories;
+			sourceTree = "<group>";
+		};
+		0957E39A24F1383D00E620DE /* ContactsRepository */ = {
+			isa = PBXGroup;
+			children = (
+				0957E39B24F1386D00E620DE /* ContactsRepository.swift */,
+				0957E3A024F1390600E620DE /* DefaultContactsRepository.swift */,
+				0957E3AF24F1461C00E620DE /* DefaultContactsRepository+Tests.swift */,
+			);
+			path = ContactsRepository;
+			sourceTree = "<group>";
+		};
+		0957E39D24F1389300E620DE /* Errors */ = {
+			isa = PBXGroup;
+			children = (
+				0957E39E24F138A300E620DE /* ContactsRepositoryError.swift */,
+			);
+			path = Errors;
+			sourceTree = "<group>";
+		};
+		0957E3A224F13C0800E620DE /* Infrastructure */ = {
+			isa = PBXGroup;
+			children = (
+				0957E3A524F13C6600E620DE /* DefaultTransportToDomainMapper.swift */,
+				0957E3A324F13C1900E620DE /* TransportToDomainMapper.swift */,
+			);
+			path = Infrastructure;
+			sourceTree = "<group>";
+		};
+		0957E3B124F1466B00E620DE /* Stubbs */ = {
+			isa = PBXGroup;
+			children = (
+				0957E3B224F1467500E620DE /* Stubbable.swift */,
+				0957E3B424F1469400E620DE /* StubbedContactsService.swift */,
+				0957E3C424F1688F00E620DE /* StubbedFavoritesStore.swift */,
+			);
+			path = Stubbs;
+			sourceTree = "<group>";
+		};
+		0957E3B624F1497200E620DE /* Mocks */ = {
+			isa = PBXGroup;
+			children = (
+				0957E3B724F1498500E620DE /* ContactDTO+Mocks.swift */,
+				0957E3C224F160D600E620DE /* PersonName+Mocks.swift */,
+				0957E3C024F15FF800E620DE /* PersonNameDTO+Mocks.swift */,
+			);
+			path = Mocks;
+			sourceTree = "<group>";
+		};
+		0957E3B924F15E4600E620DE /* FavoritesStore */ = {
+			isa = PBXGroup;
+			children = (
+				0957E3BA24F15E5400E620DE /* FavoritesStore.swift */,
+				0957E3BC24F15E9C00E620DE /* UserDefaultsFavoritesStore.swift */,
+				0957E3BE24F15FBA00E620DE /* UserDefaultsFavoritesStore+Tests.swift */,
+			);
+			path = FavoritesStore;
 			sourceTree = "<group>";
 		};
 /* End PBXGroup section */
@@ -108,6 +259,7 @@
 				0909382024EFE1950025F222 /* Sources */,
 				0909382124EFE1950025F222 /* Frameworks */,
 				0909382224EFE1950025F222 /* Resources */,
+				0957E39324F1380B00E620DE /* Embed Frameworks */,
 			);
 			buildRules = (
 			);
@@ -148,9 +300,11 @@
 				TargetAttributes = {
 					0909382324EFE1950025F222 = {
 						CreatedOnToolsVersion = 11.6;
+						LastSwiftMigration = 1160;
 					};
 					0909382C24EFE1950025F222 = {
 						CreatedOnToolsVersion = 11.6;
+						LastSwiftMigration = 1160;
 					};
 				};
 			};
@@ -195,6 +349,13 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				0957E3A124F1390600E620DE /* DefaultContactsRepository.swift in Sources */,
+				0957E3A424F13C1900E620DE /* TransportToDomainMapper.swift in Sources */,
+				0957E39C24F1386D00E620DE /* ContactsRepository.swift in Sources */,
+				0957E3BB24F15E5400E620DE /* FavoritesStore.swift in Sources */,
+				0957E3A624F13C6600E620DE /* DefaultTransportToDomainMapper.swift in Sources */,
+				0957E3BD24F15E9C00E620DE /* UserDefaultsFavoritesStore.swift in Sources */,
+				0957E39F24F138A300E620DE /* ContactsRepositoryError.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -202,7 +363,14 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
-				0909383324EFE1950025F222 /* DataRepositoryTests.swift in Sources */,
+				0957E3B824F1498500E620DE /* ContactDTO+Mocks.swift in Sources */,
+				0957E3C124F15FF800E620DE /* PersonNameDTO+Mocks.swift in Sources */,
+				0957E3C324F160D600E620DE /* PersonName+Mocks.swift in Sources */,
+				0957E3B324F1467500E620DE /* Stubbable.swift in Sources */,
+				0957E3BF24F15FBA00E620DE /* UserDefaultsFavoritesStore+Tests.swift in Sources */,
+				0957E3B524F1469400E620DE /* StubbedContactsService.swift in Sources */,
+				0957E3B024F1461C00E620DE /* DefaultContactsRepository+Tests.swift in Sources */,
+				0957E3C524F1688F00E620DE /* StubbedFavoritesStore.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -340,6 +508,7 @@
 		0909383924EFE1950025F222 /* Debug */ = {
 			isa = XCBuildConfiguration;
 			buildSettings = {
+				CLANG_ENABLE_MODULES = YES;
 				CODE_SIGN_STYLE = Automatic;
 				DEFINES_MODULE = YES;
 				DEVELOPMENT_TEAM = 2AHNM42WD8;
@@ -356,6 +525,7 @@
 				PRODUCT_BUNDLE_IDENTIFIER = pl.com.sumara.DataRepository;
 				PRODUCT_NAME = "$(TARGET_NAME:c99extidentifier)";
 				SKIP_INSTALL = YES;
+				SWIFT_OPTIMIZATION_LEVEL = "-Onone";
 				SWIFT_VERSION = 5.0;
 				TARGETED_DEVICE_FAMILY = "1,2";
 			};
@@ -364,6 +534,7 @@
 		0909383A24EFE1950025F222 /* Release */ = {
 			isa = XCBuildConfiguration;
 			buildSettings = {
+				CLANG_ENABLE_MODULES = YES;
 				CODE_SIGN_STYLE = Automatic;
 				DEFINES_MODULE = YES;
 				DEVELOPMENT_TEAM = 2AHNM42WD8;
@@ -388,6 +559,8 @@
 		0909383C24EFE1950025F222 /* Debug */ = {
 			isa = XCBuildConfiguration;
 			buildSettings = {
+				ALWAYS_EMBED_SWIFT_STANDARD_LIBRARIES = YES;
+				CLANG_ENABLE_MODULES = YES;
 				CODE_SIGN_STYLE = Automatic;
 				DEVELOPMENT_TEAM = 2AHNM42WD8;
 				INFOPLIST_FILE = DataRepositoryTests/Info.plist;
@@ -398,6 +571,7 @@
 				);
 				PRODUCT_BUNDLE_IDENTIFIER = pl.com.sumara.DataRepositoryTests;
 				PRODUCT_NAME = "$(TARGET_NAME)";
+				SWIFT_OPTIMIZATION_LEVEL = "-Onone";
 				SWIFT_VERSION = 5.0;
 				TARGETED_DEVICE_FAMILY = "1,2";
 			};
@@ -406,6 +580,8 @@
 		0909383D24EFE1950025F222 /* Release */ = {
 			isa = XCBuildConfiguration;
 			buildSettings = {
+				ALWAYS_EMBED_SWIFT_STANDARD_LIBRARIES = YES;
+				CLANG_ENABLE_MODULES = YES;
 				CODE_SIGN_STYLE = Automatic;
 				DEVELOPMENT_TEAM = 2AHNM42WD8;
 				INFOPLIST_FILE = DataRepositoryTests/Info.plist;

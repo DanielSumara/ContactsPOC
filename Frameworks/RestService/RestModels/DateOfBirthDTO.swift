@@ -13,6 +13,6 @@ public struct DateOfBirthDTO: Decodable {
     // MARK: - Properties
     
     public let date: Date
-    public let age: Int
+    public let age: UInt
     
 }
