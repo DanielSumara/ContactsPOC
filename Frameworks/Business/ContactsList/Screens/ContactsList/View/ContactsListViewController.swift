@@ -59,10 +59,11 @@ final class ContactsListViewController: UIViewController {
     
     private func bindViewModelWithView() {
         viewModel.content.observe(on: self) { view, content in view.setupView(using: content) }
+        viewModel.narrowedToFavorites.observe(on: favoritesButton) { button, isSelected in button.isSelected = isSelected }
     }
     
     private func bindViewWithViewModel() {
-        favoritesButton.tapped = { [viewModel] in viewModel.toggleFavorites()}
+        favoritesButton.tapped = { [viewModel] in viewModel.toggleFavorites() }
     }
     
     override func viewDidAppear(_ animated: Bool) {

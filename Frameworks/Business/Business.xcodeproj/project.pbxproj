@@ -47,6 +47,7 @@
 		0957E3DD24F176DB00E620DE /* ListContent.swift in Sources */ = {isa = PBXBuildFile; fileRef = 0957E3DC24F176DB00E620DE /* ListContent.swift */; };
 		0957E3E424F179D100E620DE /* Extensions.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 0957E3E324F179D100E620DE /* Extensions.framework */; };
 		0957E3E524F179D100E620DE /* Extensions.framework in Embed Frameworks */ = {isa = PBXBuildFile; fileRef = 0957E3E324F179D100E620DE /* Extensions.framework */; settings = {ATTRIBUTES = (CodeSignOnCopy, RemoveHeadersOnCopy, ); }; };
+		0957E3EE24F1866000E620DE /* LackOfContacts.swift in Sources */ = {isa = PBXBuildFile; fileRef = 0957E3ED24F1866000E620DE /* LackOfContacts.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
@@ -133,6 +134,7 @@
 		0957E3D324F16B4400E620DE /* DefaultContactsListModel.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = DefaultContactsListModel.swift; sourceTree = "<group>"; };
 		0957E3DC24F176DB00E620DE /* ListContent.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ListContent.swift; sourceTree = "<group>"; };
 		0957E3E324F179D100E620DE /* Extensions.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; path = Extensions.framework; sourceTree = BUILT_PRODUCTS_DIR; };
+		0957E3ED24F1866000E620DE /* LackOfContacts.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = LackOfContacts.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -422,6 +424,7 @@
 			isa = PBXGroup;
 			children = (
 				0957E30F24F0449E00E620DE /* ContactCell.swift */,
+				0957E3ED24F1866000E620DE /* LackOfContacts.swift */,
 				0957E32F24F062BC00E620DE /* LoadingCell.swift */,
 			);
 			path = UI;
@@ -642,6 +645,7 @@
 				0957E3D224F16B3A00E620DE /* ContactsListModel.swift in Sources */,
 				0957E3D424F16B4400E620DE /* DefaultContactsListModel.swift in Sources */,
 				0957E3D024F16B2E00E620DE /* DefaultContactsListViewModel.swift in Sources */,
+				0957E3EE24F1866000E620DE /* LackOfContacts.swift in Sources */,
 				0909396124F006D00025F222 /* ContactsListScreen.swift in Sources */,
 				0957E33024F062BC00E620DE /* LoadingCell.swift in Sources */,
 				0957E3DD24F176DB00E620DE /* ListContent.swift in Sources */,

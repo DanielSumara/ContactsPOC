@@ -28,6 +28,7 @@ extension ContactsListViewController {
         func prepare(for tableView: UITableView) {
             tableView.register(ContactCell.self)
             tableView.register(LoadingCell.self)
+            tableView.register(LackOfContacts.self)
         }
         
     }
@@ -36,12 +37,25 @@ extension ContactsListViewController {
 
 extension ContactsListViewController.ListAdapter: UITableViewDataSource {
     
-    func tableView(_ tableView: UITableView, numberOfRowsInSection section: Int) -> Int { (items?.count).value(or: 1) }
+    func tableView(_ tableView: UITableView, numberOfRowsInSection section: Int) -> Int {
+        switch items {
+        case .none: return 1
+        case let .some(items):
+            switch items.count {
+            case 0: return 1
+            default: return items.count
+            }
+        }
+    }
     
     func tableView(_ tableView: UITableView, cellForRowAt indexPath: IndexPath) -> UITableViewCell {
         switch items {
         case .none: return tableView.dequeue(LoadingCell.self, at: indexPath, with: true)
-        case let .some(contacts): return tableView.dequeue(ContactCell.self, at: indexPath, with: contacts[indexPath.row])
+        case let .some(contacts):
+            switch contacts.count {
+            case 0: return tableView.dequeue(LackOfContacts.self, at: indexPath, with: true)
+            default: return tableView.dequeue(ContactCell.self, at: indexPath, with: contacts[indexPath.row])
+            }
         }
     }
     

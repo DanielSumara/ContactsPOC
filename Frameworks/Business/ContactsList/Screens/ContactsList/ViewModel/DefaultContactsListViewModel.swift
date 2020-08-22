@@ -25,6 +25,13 @@ final class DefaultContactsListViewModel: ContactsListViewModel {
     
     private let model: ContactsListModel
     
+    private var contacts: [Contact] = []
+    private var presentedContacts: [Contact] = [] {
+        didSet {
+            _content.notify(using: .contacts(presentedContacts.map(contactProjection(from:))))
+        }
+    }
+    
     // MARK: - Initializers
     
     init(model: ContactsListModel) {
@@ -37,17 +44,23 @@ final class DefaultContactsListViewModel: ContactsListViewModel {
     // MARK: - API
     
     func getContacts() {
+        // Info: - Delay to present loading state of list
         DispatchQueue.main.asyncAfter(deadline: .now() + 1) { [model] in
             model.observeContacts(on: self) { viewModel, result in
                 switch result {
                 case let .failure(error): break; #warning("Handle error")
-                case let .success(contacts): viewModel._content.notify(using: .contacts(contacts.map(viewModel.contactProjection(from:))))
+                case let .success(contacts):
+                    viewModel.contacts = contacts
+                    viewModel.presentedContacts = contacts
                 }
             }
         }
     }
     
-    func toggleFavorites() {}
+    func toggleFavorites() {
+        _narrowedToFavorites.notify(using: _narrowedToFavorites.value ? false : true)
+        presentedContacts = contacts.filter { contact in contact.isFavorite == _narrowedToFavorites.value }
+    }
     
     func select(_ contact: ContactProjection) {}
     
