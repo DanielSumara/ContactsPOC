@@ -49,7 +49,7 @@ final class ContactsListViewController: UIViewController {
     }
     
     private func bindViewModelWithView() {
-        listAdapter.set(items: [1])
+        listAdapter.set(items: [1, 2, 3, 4])
     }
     
     private func bindViewWithViewModel() {

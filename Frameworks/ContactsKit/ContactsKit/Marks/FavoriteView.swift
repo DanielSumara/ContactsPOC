@@ -26,6 +26,15 @@ public final class FavoriteView: UIImageView {
     
     public required init?(coder: NSCoder) { nil }
     
+    // MARK: - API
+    
+    public func bind(with isSelected: Bool) {
+        switch isSelected {
+        case true: image = Icons.starFilled
+        case false: image = Icons.star
+        }
+    }
+    
     // MARK: - Methods
     
     private func setupControls() {

@@ -58,7 +58,7 @@ final class ContactCell: UITableViewCell, Bindable {
         
         avatarView.layout
             .make(.top, equalTo: card, .top, constant: 8, priority: nil)
-            .make(.leading, equalTo: card, .leading, constant: 16, priority: nil)
+            .make(.leading, equalTo: card, .leading, constant: 8, priority: nil)
             .make(.bottom, lessThan: card, .bottom, constant: -8, priority: nil)
         
         nameLabel.layout
@@ -74,7 +74,7 @@ final class ContactCell: UITableViewCell, Bindable {
         
         favoriteView.layout
             .make(.top, equalTo: card, .top, constant: 12, priority: nil)
-            .make(.trailing, equalTo: card, .trailing, constant: -16, priority: nil)
+            .make(.trailing, equalTo: card, .trailing, constant: -8, priority: nil)
     }
     
 }
