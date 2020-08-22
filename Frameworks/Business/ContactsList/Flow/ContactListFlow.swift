@@ -7,6 +7,7 @@
 //
 
 import Business
+import DataRepository
 import Foundation
 import UIKit
 
@@ -14,18 +15,20 @@ public final class ContactListFlow: ModuleFlow {
     
     // MARK: - Properties
     
+    private let contactsRepository: ContactsRepository
     private let presenter: Presenter
     
     // MARK: - Initializers
     
-    public init(using presenter: Presenter) {
+    public init(using presenter: Presenter, contactsRepository: ContactsRepository) {
+        self.contactsRepository = contactsRepository
         self.presenter = presenter
     }
     
     // MARK: - API
     
     public func start() {
-        let screen = ContactsListScreen()
+        let screen = ContactsListScreen(contactsRepository: contactsRepository)
         presenter.push(screen)
     }
     

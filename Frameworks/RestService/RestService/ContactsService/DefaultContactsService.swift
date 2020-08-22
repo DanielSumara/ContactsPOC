@@ -35,7 +35,9 @@ public final class DefaultContactsService: ContactsService {
     
     // MARK: - API
     
-    public func getContacts(then completion: @escaping (Result<[ContactDTO], ContactsServiceError>) -> Void) {
+    public func getContacts(then: @escaping (Result<[ContactDTO], ContactsServiceError>) -> Void) {
+        let completion: (Result<[ContactDTO], ContactsServiceError>) -> Void = { result in DispatchQueue.main.async { then(result) } }
+        
         guard let url = ContactsListURL()?.url else { return completion(.failure(.invalidUrl)) }
         
         var request = URLRequest(url: url)

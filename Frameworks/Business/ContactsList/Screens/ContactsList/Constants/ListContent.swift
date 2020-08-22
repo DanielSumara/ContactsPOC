@@ -11,7 +11,6 @@ import Foundation
 enum ListContent {
     
     case loading
-    case lackOfContacts
     case contacts([ContactProjection])
     
 }

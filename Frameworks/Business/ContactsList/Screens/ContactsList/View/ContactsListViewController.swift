@@ -62,7 +62,13 @@ final class ContactsListViewController: UIViewController {
     }
     
     private func bindViewWithViewModel() {
-        favoritesButton.tapped = {}
+        favoritesButton.tapped = { [viewModel] in viewModel.toggleFavorites()}
+    }
+    
+    override func viewDidAppear(_ animated: Bool) {
+        super.viewDidAppear(animated)
+        
+        viewModel.getContacts()
     }
     
     // MARK: - Actions
@@ -70,12 +76,12 @@ final class ContactsListViewController: UIViewController {
     private func setupView(using content: ListContent) {
         switch content {
         case .loading: break
-        case .lackOfContacts: break
         case let .contacts(contacts):
             navigationItem.rightBarButtonItem = favoritesButton
             listAdapter.set(items: contacts)
-            contentView.reloadSections(IndexSet(integer: .zero), with: .automatic)
+            contentView.reload()
         }
+        
     }
     
 }

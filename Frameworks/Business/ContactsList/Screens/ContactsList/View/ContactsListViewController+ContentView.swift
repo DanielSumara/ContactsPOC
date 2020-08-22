@@ -23,12 +23,23 @@ extension ContactsListViewController {
         
         required init?(coder: NSCoder) { nil }
         
+        // MARK: - API
+        
+        func reload() {
+            switch window {
+            case .some: reloadSections(IndexSet(integer: .zero), with: .automatic)
+            case .none: reloadData()
+            }
+        }
+        
         // MARK: - Methods
         
         private func setupComponents() {
             backgroundColor = .white
             separatorStyle = .none
             tableFooterView = UIView()
+            
+            contentInset.bottom = 16
         }
         
     }

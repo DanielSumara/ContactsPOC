@@ -7,6 +7,7 @@
 //
 
 import Business
+import DataRepository
 import Foundation
 import UIKit
 
@@ -18,8 +19,9 @@ final class ContactsListScreen: Screen {
     
     // MARK: - Initializers
     
-    init() {
-        let viewModel = DefaultContactsListViewModel(model: 1)
+    init(contactsRepository: ContactsRepository) {
+        let model = DefaultContactsListModel(contactsRepository: contactsRepository)
+        let viewModel = DefaultContactsListViewModel(model: model)
         viewController = ContactsListViewController(viewModel: viewModel)
     }
     

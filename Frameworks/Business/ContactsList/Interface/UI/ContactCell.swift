@@ -34,9 +34,10 @@ final class ContactCell: UITableViewCell, Bindable {
     // MARK: - API
     
     func bind(with data: ContactProjection) {
-        avatarView.bind(with: .initials("DS"))
-        nameLabel.text = "Daniel Sumara"
-        nationalityLabel.text = "🇵🇱 Polska"
+        avatarView.bind(with: data.avatar)
+        nameLabel.text = data.name
+        nationalityLabel.text = data.nationality
+        favoriteView.bind(with: data.isFavorite)
     }
     
     // MARK: - Methods

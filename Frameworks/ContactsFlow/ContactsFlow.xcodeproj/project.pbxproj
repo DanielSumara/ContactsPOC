@@ -13,6 +13,10 @@
 		090938D124EFEBB50025F222 /* AppCoordinator.swift in Sources */ = {isa = PBXBuildFile; fileRef = 090938D024EFEBB50025F222 /* AppCoordinator.swift */; };
 		0909390324EFF2F90025F222 /* Business.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 0909390124EFF2F90025F222 /* Business.framework */; };
 		0909390524EFF2F90025F222 /* ContactsList.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 0909390224EFF2F90025F222 /* ContactsList.framework */; };
+		0957E3E724F17F8D00E620DE /* DataRepository.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 0957E3E624F17F8D00E620DE /* DataRepository.framework */; };
+		0957E3E824F17F8D00E620DE /* DataRepository.framework in Embed Frameworks */ = {isa = PBXBuildFile; fileRef = 0957E3E624F17F8D00E620DE /* DataRepository.framework */; settings = {ATTRIBUTES = (CodeSignOnCopy, RemoveHeadersOnCopy, ); }; };
+		0957E3EB24F17F9200E620DE /* RestService.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 0957E3EA24F17F9200E620DE /* RestService.framework */; };
+		0957E3EC24F17F9200E620DE /* RestService.framework in Embed Frameworks */ = {isa = PBXBuildFile; fileRef = 0957E3EA24F17F9200E620DE /* RestService.framework */; settings = {ATTRIBUTES = (CodeSignOnCopy, RemoveHeadersOnCopy, ); }; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
@@ -25,6 +29,21 @@
 		};
 /* End PBXContainerItemProxy section */
 
+/* Begin PBXCopyFilesBuildPhase section */
+		0957E3E924F17F8E00E620DE /* Embed Frameworks */ = {
+			isa = PBXCopyFilesBuildPhase;
+			buildActionMask = 2147483647;
+			dstPath = "";
+			dstSubfolderSpec = 10;
+			files = (
+				0957E3EC24F17F9200E620DE /* RestService.framework in Embed Frameworks */,
+				0957E3E824F17F8D00E620DE /* DataRepository.framework in Embed Frameworks */,
+			);
+			name = "Embed Frameworks";
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXCopyFilesBuildPhase section */
+
 /* Begin PBXFileReference section */
 		090938B424EFEB6E0025F222 /* ContactsFlow.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = ContactsFlow.framework; sourceTree = BUILT_PRODUCTS_DIR; };
 		090938B724EFEB6E0025F222 /* ContactsFlow.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = ContactsFlow.h; sourceTree = "<group>"; };
@@ -35,6 +54,8 @@
 		090938D024EFEBB50025F222 /* AppCoordinator.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppCoordinator.swift; sourceTree = "<group>"; };
 		0909390124EFF2F90025F222 /* Business.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; path = Business.framework; sourceTree = BUILT_PRODUCTS_DIR; };
 		0909390224EFF2F90025F222 /* ContactsList.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; path = ContactsList.framework; sourceTree = BUILT_PRODUCTS_DIR; };
+		0957E3E624F17F8D00E620DE /* DataRepository.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; path = DataRepository.framework; sourceTree = BUILT_PRODUCTS_DIR; };
+		0957E3EA24F17F9200E620DE /* RestService.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; path = RestService.framework; sourceTree = BUILT_PRODUCTS_DIR; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -42,8 +63,10 @@
 			isa = PBXFrameworksBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				0957E3EB24F17F9200E620DE /* RestService.framework in Frameworks */,
 				0909390324EFF2F90025F222 /* Business.framework in Frameworks */,
 				0909390524EFF2F90025F222 /* ContactsList.framework in Frameworks */,
+				0957E3E724F17F8D00E620DE /* DataRepository.framework in Frameworks */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -115,6 +138,8 @@
 		0909390024EFF2F90025F222 /* Frameworks */ = {
 			isa = PBXGroup;
 			children = (
+				0957E3EA24F17F9200E620DE /* RestService.framework */,
+				0957E3E624F17F8D00E620DE /* DataRepository.framework */,
 				0909390124EFF2F90025F222 /* Business.framework */,
 				0909390224EFF2F90025F222 /* ContactsList.framework */,
 			);
@@ -143,6 +168,7 @@
 				090938B024EFEB6E0025F222 /* Sources */,
 				090938B124EFEB6E0025F222 /* Frameworks */,
 				090938B224EFEB6E0025F222 /* Resources */,
+				0957E3E924F17F8E00E620DE /* Embed Frameworks */,
 			);
 			buildRules = (
 			);

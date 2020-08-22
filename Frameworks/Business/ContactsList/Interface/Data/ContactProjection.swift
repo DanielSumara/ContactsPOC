@@ -16,8 +16,9 @@ struct ContactProjection: Hashable {
     
     let id: Contact
     
-    let name: String
     let avatar: AvatarProjection
+    let name: String
+    let nationality: String
     let isFavorite: Bool
     
 }

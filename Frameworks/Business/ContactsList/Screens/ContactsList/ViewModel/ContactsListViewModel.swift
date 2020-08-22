@@ -18,6 +18,9 @@ protocol ContactsListViewModel: AnyObject {
     
     // MARK: - API
     
+    func getContacts()
     func toggleFavorites()
+    
+    func select(_ contact: ContactProjection)
     
 }

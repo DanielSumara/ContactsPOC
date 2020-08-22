@@ -8,7 +8,9 @@
 
 import Business
 import ContactsList
+import DataRepository
 import Foundation
+import RestService
 import UIKit
 
 public final class AppCoordinator {
@@ -18,7 +20,7 @@ public final class AppCoordinator {
     public static let instance = AppCoordinator()
     
     // MARK: - Properties
-        
+    
     private var mainFlow: ModuleFlow?
     private var window: UIWindow?
     
@@ -34,7 +36,10 @@ public final class AppCoordinator {
         let presenter = DefaultPresenter()
         window.rootViewController = presenter.viewController
         
-        mainFlow = ContactListFlow(using: presenter)
+        let contactsService = DefaultContactsService()
+        let contactsRepository = DefaultContactsRepository(restService: contactsService)
+        
+        mainFlow = ContactListFlow(using: presenter, contactsRepository: contactsRepository)
         mainFlow?.start()
     }
     
