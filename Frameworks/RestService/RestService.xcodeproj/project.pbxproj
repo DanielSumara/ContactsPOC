@@ -8,11 +8,32 @@
 
 /* Begin PBXBuildFile section */
 		090937EE24EFE13A0025F222 /* RestService.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 090937E424EFE13A0025F222 /* RestService.framework */; };
-		090937F324EFE13A0025F222 /* RestServiceTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = 090937F224EFE13A0025F222 /* RestServiceTests.swift */; };
 		090937F524EFE13A0025F222 /* RestService.h in Headers */ = {isa = PBXBuildFile; fileRef = 090937E724EFE13A0025F222 /* RestService.h */; settings = {ATTRIBUTES = (Public, ); }; };
-		0909380C24EFE1530025F222 /* RestModels.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 0909380324EFE1530025F222 /* RestModels.framework */; };
-		0909381124EFE1530025F222 /* RestModelsTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = 0909381024EFE1530025F222 /* RestModelsTests.swift */; };
 		0909381324EFE1530025F222 /* RestModels.h in Headers */ = {isa = PBXBuildFile; fileRef = 0909380524EFE1530025F222 /* RestModels.h */; settings = {ATTRIBUTES = (Public, ); }; };
+		0957E33F24F1113C00E620DE /* ContactDTO.swift in Sources */ = {isa = PBXBuildFile; fileRef = 0957E33E24F1113C00E620DE /* ContactDTO.swift */; };
+		0957E34124F1114A00E620DE /* PersonNameDTO.swift in Sources */ = {isa = PBXBuildFile; fileRef = 0957E34024F1114A00E620DE /* PersonNameDTO.swift */; };
+		0957E34324F1116400E620DE /* LocationDTO.swift in Sources */ = {isa = PBXBuildFile; fileRef = 0957E34224F1116400E620DE /* LocationDTO.swift */; };
+		0957E34524F1117000E620DE /* StreetDTO.swift in Sources */ = {isa = PBXBuildFile; fileRef = 0957E34424F1117000E620DE /* StreetDTO.swift */; };
+		0957E34724F1118800E620DE /* DateOfBirthDTO.swift in Sources */ = {isa = PBXBuildFile; fileRef = 0957E34624F1118800E620DE /* DateOfBirthDTO.swift */; };
+		0957E34924F1119900E620DE /* PictureDTO.swift in Sources */ = {isa = PBXBuildFile; fileRef = 0957E34824F1119900E620DE /* PictureDTO.swift */; };
+		0957E34F24F111D600E620DE /* GenderDTO.swift in Sources */ = {isa = PBXBuildFile; fileRef = 0957E34E24F111D600E620DE /* GenderDTO.swift */; };
+		0957E35124F111E000E620DE /* NationalityDTO.swift in Sources */ = {isa = PBXBuildFile; fileRef = 0957E35024F111E000E620DE /* NationalityDTO.swift */; };
+		0957E35524F1141100E620DE /* ContactsService.swift in Sources */ = {isa = PBXBuildFile; fileRef = 0957E35424F1141100E620DE /* ContactsService.swift */; };
+		0957E35724F1141900E620DE /* DefaultContactsService.swift in Sources */ = {isa = PBXBuildFile; fileRef = 0957E35624F1141900E620DE /* DefaultContactsService.swift */; };
+		0957E35C24F114C500E620DE /* ContactsServiceError.swift in Sources */ = {isa = PBXBuildFile; fileRef = 0957E35B24F114C500E620DE /* ContactsServiceError.swift */; };
+		0957E36024F115B800E620DE /* NetworkSession.swift in Sources */ = {isa = PBXBuildFile; fileRef = 0957E35F24F115B800E620DE /* NetworkSession.swift */; };
+		0957E36224F115C000E620DE /* DefaultNetworkSession.swift in Sources */ = {isa = PBXBuildFile; fileRef = 0957E36124F115C000E620DE /* DefaultNetworkSession.swift */; };
+		0957E36424F1160900E620DE /* NetworkSessionTask.swift in Sources */ = {isa = PBXBuildFile; fileRef = 0957E36324F1160900E620DE /* NetworkSessionTask.swift */; };
+		0957E36624F1168000E620DE /* DefaultNetworkSessionTask.swift in Sources */ = {isa = PBXBuildFile; fileRef = 0957E36524F1168000E620DE /* DefaultNetworkSessionTask.swift */; };
+		0957E36824F11B9300E620DE /* ServiceError.swift in Sources */ = {isa = PBXBuildFile; fileRef = 0957E36724F11B9300E620DE /* ServiceError.swift */; };
+		0957E37024F11E8B00E620DE /* StubbedNetworkSession.swift in Sources */ = {isa = PBXBuildFile; fileRef = 0957E36F24F11E8B00E620DE /* StubbedNetworkSession.swift */; };
+		0957E37224F11E9500E620DE /* Stubbable.swift in Sources */ = {isa = PBXBuildFile; fileRef = 0957E37124F11E9500E620DE /* Stubbable.swift */; };
+		0957E37424F11ED100E620DE /* DefaultContactsService+Tests.swift in Sources */ = {isa = PBXBuildFile; fileRef = 0957E37324F11ED100E620DE /* DefaultContactsService+Tests.swift */; };
+		0957E37624F129FE00E620DE /* StubbedNetworkSessionTask.swift in Sources */ = {isa = PBXBuildFile; fileRef = 0957E37524F129FE00E620DE /* StubbedNetworkSessionTask.swift */; };
+		0957E37924F12CFC00E620DE /* ContactsListURL.swift in Sources */ = {isa = PBXBuildFile; fileRef = 0957E37824F12CFC00E620DE /* ContactsListURL.swift */; };
+		0957E37B24F1302A00E620DE /* ContactsResultsDTO.swift in Sources */ = {isa = PBXBuildFile; fileRef = 0957E37A24F1302A00E620DE /* ContactsResultsDTO.swift */; };
+		0957E38624F1360A00E620DE /* ServiceDateDecoder.swift in Sources */ = {isa = PBXBuildFile; fileRef = 0957E38524F1360A00E620DE /* ServiceDateDecoder.swift */; };
+		0957E38924F1363300E620DE /* Utilities.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 0957E38824F1363300E620DE /* Utilities.framework */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
@@ -23,7 +44,7 @@
 			remoteGlobalIDString = 090937E324EFE13A0025F222;
 			remoteInfo = RestService;
 		};
-		0909380D24EFE1530025F222 /* PBXContainerItemProxy */ = {
+		0957E35824F1142E00E620DE /* PBXContainerItemProxy */ = {
 			isa = PBXContainerItemProxy;
 			containerPortal = 090937DB24EFE13A0025F222 /* Project object */;
 			proxyType = 1;
@@ -37,14 +58,34 @@
 		090937E724EFE13A0025F222 /* RestService.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = RestService.h; sourceTree = "<group>"; };
 		090937E824EFE13A0025F222 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
 		090937ED24EFE13A0025F222 /* RestServiceTests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = RestServiceTests.xctest; sourceTree = BUILT_PRODUCTS_DIR; };
-		090937F224EFE13A0025F222 /* RestServiceTests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = RestServiceTests.swift; sourceTree = "<group>"; };
 		090937F424EFE13A0025F222 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
 		0909380324EFE1530025F222 /* RestModels.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = RestModels.framework; sourceTree = BUILT_PRODUCTS_DIR; };
 		0909380524EFE1530025F222 /* RestModels.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = RestModels.h; sourceTree = "<group>"; };
 		0909380624EFE1530025F222 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
-		0909380B24EFE1530025F222 /* RestModelsTests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = RestModelsTests.xctest; sourceTree = BUILT_PRODUCTS_DIR; };
-		0909381024EFE1530025F222 /* RestModelsTests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = RestModelsTests.swift; sourceTree = "<group>"; };
-		0909381224EFE1530025F222 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		0957E33E24F1113C00E620DE /* ContactDTO.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ContactDTO.swift; sourceTree = "<group>"; };
+		0957E34024F1114A00E620DE /* PersonNameDTO.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = PersonNameDTO.swift; sourceTree = "<group>"; };
+		0957E34224F1116400E620DE /* LocationDTO.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = LocationDTO.swift; sourceTree = "<group>"; };
+		0957E34424F1117000E620DE /* StreetDTO.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = StreetDTO.swift; sourceTree = "<group>"; };
+		0957E34624F1118800E620DE /* DateOfBirthDTO.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = DateOfBirthDTO.swift; sourceTree = "<group>"; };
+		0957E34824F1119900E620DE /* PictureDTO.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = PictureDTO.swift; sourceTree = "<group>"; };
+		0957E34E24F111D600E620DE /* GenderDTO.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = GenderDTO.swift; sourceTree = "<group>"; };
+		0957E35024F111E000E620DE /* NationalityDTO.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = NationalityDTO.swift; sourceTree = "<group>"; };
+		0957E35424F1141100E620DE /* ContactsService.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ContactsService.swift; sourceTree = "<group>"; };
+		0957E35624F1141900E620DE /* DefaultContactsService.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = DefaultContactsService.swift; sourceTree = "<group>"; };
+		0957E35B24F114C500E620DE /* ContactsServiceError.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ContactsServiceError.swift; sourceTree = "<group>"; };
+		0957E35F24F115B800E620DE /* NetworkSession.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = NetworkSession.swift; sourceTree = "<group>"; };
+		0957E36124F115C000E620DE /* DefaultNetworkSession.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = DefaultNetworkSession.swift; sourceTree = "<group>"; };
+		0957E36324F1160900E620DE /* NetworkSessionTask.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = NetworkSessionTask.swift; sourceTree = "<group>"; };
+		0957E36524F1168000E620DE /* DefaultNetworkSessionTask.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = DefaultNetworkSessionTask.swift; sourceTree = "<group>"; };
+		0957E36724F11B9300E620DE /* ServiceError.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ServiceError.swift; sourceTree = "<group>"; };
+		0957E36F24F11E8B00E620DE /* StubbedNetworkSession.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = StubbedNetworkSession.swift; sourceTree = "<group>"; };
+		0957E37124F11E9500E620DE /* Stubbable.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Stubbable.swift; sourceTree = "<group>"; };
+		0957E37324F11ED100E620DE /* DefaultContactsService+Tests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = "DefaultContactsService+Tests.swift"; sourceTree = "<group>"; };
+		0957E37524F129FE00E620DE /* StubbedNetworkSessionTask.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = StubbedNetworkSessionTask.swift; sourceTree = "<group>"; };
+		0957E37824F12CFC00E620DE /* ContactsListURL.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ContactsListURL.swift; sourceTree = "<group>"; };
+		0957E37A24F1302A00E620DE /* ContactsResultsDTO.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ContactsResultsDTO.swift; sourceTree = "<group>"; };
+		0957E38524F1360A00E620DE /* ServiceDateDecoder.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ServiceDateDecoder.swift; sourceTree = "<group>"; };
+		0957E38824F1363300E620DE /* Utilities.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; path = Utilities.framework; sourceTree = BUILT_PRODUCTS_DIR; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -52,6 +93,7 @@
 			isa = PBXFrameworksBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				0957E38924F1363300E620DE /* Utilities.framework in Frameworks */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -70,14 +112,6 @@
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
-		0909380824EFE1530025F222 /* Frameworks */ = {
-			isa = PBXFrameworksBuildPhase;
-			buildActionMask = 2147483647;
-			files = (
-				0909380C24EFE1530025F222 /* RestModels.framework in Frameworks */,
-			);
-			runOnlyForDeploymentPostprocessing = 0;
-		};
 /* End PBXFrameworksBuildPhase section */
 
 /* Begin PBXGroup section */
@@ -87,8 +121,8 @@
 				090937E624EFE13A0025F222 /* RestService */,
 				090937F124EFE13A0025F222 /* RestServiceTests */,
 				0909380424EFE1530025F222 /* RestModels */,
-				0909380F24EFE1530025F222 /* RestModelsTests */,
 				090937E524EFE13A0025F222 /* Products */,
+				0957E38724F1363300E620DE /* Frameworks */,
 			);
 			sourceTree = "<group>";
 		};
@@ -98,7 +132,6 @@
 				090937E424EFE13A0025F222 /* RestService.framework */,
 				090937ED24EFE13A0025F222 /* RestServiceTests.xctest */,
 				0909380324EFE1530025F222 /* RestModels.framework */,
-				0909380B24EFE1530025F222 /* RestModelsTests.xctest */,
 			);
 			name = Products;
 			sourceTree = "<group>";
@@ -106,8 +139,11 @@
 		090937E624EFE13A0025F222 /* RestService */ = {
 			isa = PBXGroup;
 			children = (
-				090937E724EFE13A0025F222 /* RestService.h */,
-				090937E824EFE13A0025F222 /* Info.plist */,
+				0957E35324F113FC00E620DE /* ContactsService */,
+				0957E37724F12CE900E620DE /* Data */,
+				0957E35A24F114B500E620DE /* Errors */,
+				0957E35D24F115A000E620DE /* Infrastructure */,
+				0957E35224F113DF00E620DE /* SupportingFiles */,
 			);
 			path = RestService;
 			sourceTree = "<group>";
@@ -115,8 +151,8 @@
 		090937F124EFE13A0025F222 /* RestServiceTests */ = {
 			isa = PBXGroup;
 			children = (
-				090937F224EFE13A0025F222 /* RestServiceTests.swift */,
-				090937F424EFE13A0025F222 /* Info.plist */,
+				0957E36E24F11E7100E620DE /* Stubs */,
+				0957E36C24F11E6100E620DE /* SupportingFiles */,
 			);
 			path = RestServiceTests;
 			sourceTree = "<group>";
@@ -124,19 +160,125 @@
 		0909380424EFE1530025F222 /* RestModels */ = {
 			isa = PBXGroup;
 			children = (
-				0909380524EFE1530025F222 /* RestModels.h */,
-				0909380624EFE1530025F222 /* Info.plist */,
+				0957E33E24F1113C00E620DE /* ContactDTO.swift */,
+				0957E37A24F1302A00E620DE /* ContactsResultsDTO.swift */,
+				0957E34624F1118800E620DE /* DateOfBirthDTO.swift */,
+				0957E34224F1116400E620DE /* LocationDTO.swift */,
+				0957E34024F1114A00E620DE /* PersonNameDTO.swift */,
+				0957E34824F1119900E620DE /* PictureDTO.swift */,
+				0957E36724F11B9300E620DE /* ServiceError.swift */,
+				0957E34424F1117000E620DE /* StreetDTO.swift */,
+				0957E34D24F111CA00E620DE /* Constants */,
+				0957E33D24F1111D00E620DE /* SupportingFiles */,
 			);
 			path = RestModels;
 			sourceTree = "<group>";
 		};
-		0909380F24EFE1530025F222 /* RestModelsTests */ = {
+		0957E33D24F1111D00E620DE /* SupportingFiles */ = {
 			isa = PBXGroup;
 			children = (
-				0909381024EFE1530025F222 /* RestModelsTests.swift */,
-				0909381224EFE1530025F222 /* Info.plist */,
+				0909380524EFE1530025F222 /* RestModels.h */,
+				0909380624EFE1530025F222 /* Info.plist */,
 			);
-			path = RestModelsTests;
+			name = SupportingFiles;
+			sourceTree = "<group>";
+		};
+		0957E34D24F111CA00E620DE /* Constants */ = {
+			isa = PBXGroup;
+			children = (
+				0957E34E24F111D600E620DE /* GenderDTO.swift */,
+				0957E35024F111E000E620DE /* NationalityDTO.swift */,
+			);
+			path = Constants;
+			sourceTree = "<group>";
+		};
+		0957E35224F113DF00E620DE /* SupportingFiles */ = {
+			isa = PBXGroup;
+			children = (
+				090937E724EFE13A0025F222 /* RestService.h */,
+				090937E824EFE13A0025F222 /* Info.plist */,
+			);
+			name = SupportingFiles;
+			sourceTree = "<group>";
+		};
+		0957E35324F113FC00E620DE /* ContactsService */ = {
+			isa = PBXGroup;
+			children = (
+				0957E35424F1141100E620DE /* ContactsService.swift */,
+				0957E35624F1141900E620DE /* DefaultContactsService.swift */,
+				0957E37324F11ED100E620DE /* DefaultContactsService+Tests.swift */,
+			);
+			path = ContactsService;
+			sourceTree = "<group>";
+		};
+		0957E35A24F114B500E620DE /* Errors */ = {
+			isa = PBXGroup;
+			children = (
+				0957E35B24F114C500E620DE /* ContactsServiceError.swift */,
+			);
+			path = Errors;
+			sourceTree = "<group>";
+		};
+		0957E35D24F115A000E620DE /* Infrastructure */ = {
+			isa = PBXGroup;
+			children = (
+				0957E35E24F115AD00E620DE /* NetworkSession */,
+				0957E38424F135F600E620DE /* ServiceDateDecoder */,
+			);
+			path = Infrastructure;
+			sourceTree = "<group>";
+		};
+		0957E35E24F115AD00E620DE /* NetworkSession */ = {
+			isa = PBXGroup;
+			children = (
+				0957E36124F115C000E620DE /* DefaultNetworkSession.swift */,
+				0957E36524F1168000E620DE /* DefaultNetworkSessionTask.swift */,
+				0957E35F24F115B800E620DE /* NetworkSession.swift */,
+				0957E36324F1160900E620DE /* NetworkSessionTask.swift */,
+			);
+			path = NetworkSession;
+			sourceTree = "<group>";
+		};
+		0957E36C24F11E6100E620DE /* SupportingFiles */ = {
+			isa = PBXGroup;
+			children = (
+				090937F424EFE13A0025F222 /* Info.plist */,
+			);
+			name = SupportingFiles;
+			sourceTree = "<group>";
+		};
+		0957E36E24F11E7100E620DE /* Stubs */ = {
+			isa = PBXGroup;
+			children = (
+				0957E37124F11E9500E620DE /* Stubbable.swift */,
+				0957E36F24F11E8B00E620DE /* StubbedNetworkSession.swift */,
+				0957E37524F129FE00E620DE /* StubbedNetworkSessionTask.swift */,
+			);
+			path = Stubs;
+			sourceTree = "<group>";
+		};
+		0957E37724F12CE900E620DE /* Data */ = {
+			isa = PBXGroup;
+			children = (
+				0957E37824F12CFC00E620DE /* ContactsListURL.swift */,
+			);
+			path = Data;
+			sourceTree = "<group>";
+		};
+		0957E38424F135F600E620DE /* ServiceDateDecoder */ = {
+			isa = PBXGroup;
+			children = (
+				0957E38524F1360A00E620DE /* ServiceDateDecoder.swift */,
+			);
+			path = ServiceDateDecoder;
+			sourceTree = "<group>";
+		};
+		0957E38724F1363300E620DE /* Frameworks */ = {
+			isa = PBXGroup;
+			children = (
+				0957E38824F1363300E620DE /* Utilities.framework */,
+			);
+			name = Frameworks;
 			sourceTree = "<group>";
 		};
 /* End PBXGroup section */
@@ -173,6 +315,7 @@
 			buildRules = (
 			);
 			dependencies = (
+				0957E35924F1142E00E620DE /* PBXTargetDependency */,
 			);
 			name = RestService;
 			productName = RestService;
@@ -215,24 +358,6 @@
 			productReference = 0909380324EFE1530025F222 /* RestModels.framework */;
 			productType = "com.apple.product-type.framework";
 		};
-		0909380A24EFE1530025F222 /* RestModelsTests */ = {
-			isa = PBXNativeTarget;
-			buildConfigurationList = 0909381724EFE1530025F222 /* Build configuration list for PBXNativeTarget "RestModelsTests" */;
-			buildPhases = (
-				0909380724EFE1530025F222 /* Sources */,
-				0909380824EFE1530025F222 /* Frameworks */,
-				0909380924EFE1530025F222 /* Resources */,
-			);
-			buildRules = (
-			);
-			dependencies = (
-				0909380E24EFE1530025F222 /* PBXTargetDependency */,
-			);
-			name = RestModelsTests;
-			productName = RestModelsTests;
-			productReference = 0909380B24EFE1530025F222 /* RestModelsTests.xctest */;
-			productType = "com.apple.product-type.bundle.unit-test";
-		};
 /* End PBXNativeTarget section */
 
 /* Begin PBXProject section */
@@ -245,15 +370,14 @@
 				TargetAttributes = {
 					090937E324EFE13A0025F222 = {
 						CreatedOnToolsVersion = 11.6;
+						LastSwiftMigration = 1160;
 					};
 					090937EC24EFE13A0025F222 = {
 						CreatedOnToolsVersion = 11.6;
 					};
 					0909380224EFE1530025F222 = {
 						CreatedOnToolsVersion = 11.6;
-					};
-					0909380A24EFE1530025F222 = {
-						CreatedOnToolsVersion = 11.6;
+						LastSwiftMigration = 1160;
 					};
 				};
 			};
@@ -273,7 +397,6 @@
 				090937E324EFE13A0025F222 /* RestService */,
 				090937EC24EFE13A0025F222 /* RestServiceTests */,
 				0909380224EFE1530025F222 /* RestModels */,
-				0909380A24EFE1530025F222 /* RestModelsTests */,
 			);
 		};
 /* End PBXProject section */
@@ -300,13 +423,6 @@
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
-		0909380924EFE1530025F222 /* Resources */ = {
-			isa = PBXResourcesBuildPhase;
-			buildActionMask = 2147483647;
-			files = (
-			);
-			runOnlyForDeploymentPostprocessing = 0;
-		};
 /* End PBXResourcesBuildPhase section */
 
 /* Begin PBXSourcesBuildPhase section */
@@ -314,6 +430,15 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				0957E35724F1141900E620DE /* DefaultContactsService.swift in Sources */,
+				0957E36024F115B800E620DE /* NetworkSession.swift in Sources */,
+				0957E36424F1160900E620DE /* NetworkSessionTask.swift in Sources */,
+				0957E36624F1168000E620DE /* DefaultNetworkSessionTask.swift in Sources */,
+				0957E35524F1141100E620DE /* ContactsService.swift in Sources */,
+				0957E36224F115C000E620DE /* DefaultNetworkSession.swift in Sources */,
+				0957E37924F12CFC00E620DE /* ContactsListURL.swift in Sources */,
+				0957E38624F1360A00E620DE /* ServiceDateDecoder.swift in Sources */,
+				0957E35C24F114C500E620DE /* ContactsServiceError.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -321,7 +446,10 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
-				090937F324EFE13A0025F222 /* RestServiceTests.swift in Sources */,
+				0957E37624F129FE00E620DE /* StubbedNetworkSessionTask.swift in Sources */,
+				0957E37424F11ED100E620DE /* DefaultContactsService+Tests.swift in Sources */,
+				0957E37224F11E9500E620DE /* Stubbable.swift in Sources */,
+				0957E37024F11E8B00E620DE /* StubbedNetworkSession.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -329,14 +457,16 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
-			);
-			runOnlyForDeploymentPostprocessing = 0;
-		};
-		0909380724EFE1530025F222 /* Sources */ = {
-			isa = PBXSourcesBuildPhase;
-			buildActionMask = 2147483647;
-			files = (
-				0909381124EFE1530025F222 /* RestModelsTests.swift in Sources */,
+				0957E34724F1118800E620DE /* DateOfBirthDTO.swift in Sources */,
+				0957E34524F1117000E620DE /* StreetDTO.swift in Sources */,
+				0957E35124F111E000E620DE /* NationalityDTO.swift in Sources */,
+				0957E34F24F111D600E620DE /* GenderDTO.swift in Sources */,
+				0957E34924F1119900E620DE /* PictureDTO.swift in Sources */,
+				0957E34324F1116400E620DE /* LocationDTO.swift in Sources */,
+				0957E36824F11B9300E620DE /* ServiceError.swift in Sources */,
+				0957E37B24F1302A00E620DE /* ContactsResultsDTO.swift in Sources */,
+				0957E34124F1114A00E620DE /* PersonNameDTO.swift in Sources */,
+				0957E33F24F1113C00E620DE /* ContactDTO.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -348,10 +478,10 @@
 			target = 090937E324EFE13A0025F222 /* RestService */;
 			targetProxy = 090937EF24EFE13A0025F222 /* PBXContainerItemProxy */;
 		};
-		0909380E24EFE1530025F222 /* PBXTargetDependency */ = {
+		0957E35924F1142E00E620DE /* PBXTargetDependency */ = {
 			isa = PBXTargetDependency;
 			target = 0909380224EFE1530025F222 /* RestModels */;
-			targetProxy = 0909380D24EFE1530025F222 /* PBXContainerItemProxy */;
+			targetProxy = 0957E35824F1142E00E620DE /* PBXContainerItemProxy */;
 		};
 /* End PBXTargetDependency section */
 
@@ -479,6 +609,7 @@
 		090937F924EFE13A0025F222 /* Debug */ = {
 			isa = XCBuildConfiguration;
 			buildSettings = {
+				CLANG_ENABLE_MODULES = YES;
 				CODE_SIGN_STYLE = Automatic;
 				DEFINES_MODULE = YES;
 				DEVELOPMENT_TEAM = 2AHNM42WD8;
@@ -495,6 +626,7 @@
 				PRODUCT_BUNDLE_IDENTIFIER = pl.com.sumara.RestService;
 				PRODUCT_NAME = "$(TARGET_NAME:c99extidentifier)";
 				SKIP_INSTALL = YES;
+				SWIFT_OPTIMIZATION_LEVEL = "-Onone";
 				SWIFT_VERSION = 5.0;
 				TARGETED_DEVICE_FAMILY = "1,2";
 			};
@@ -503,6 +635,7 @@
 		090937FA24EFE13A0025F222 /* Release */ = {
 			isa = XCBuildConfiguration;
 			buildSettings = {
+				CLANG_ENABLE_MODULES = YES;
 				CODE_SIGN_STYLE = Automatic;
 				DEFINES_MODULE = YES;
 				DEVELOPMENT_TEAM = 2AHNM42WD8;
@@ -527,6 +660,7 @@
 		090937FC24EFE13A0025F222 /* Debug */ = {
 			isa = XCBuildConfiguration;
 			buildSettings = {
+				ALWAYS_EMBED_SWIFT_STANDARD_LIBRARIES = YES;
 				CODE_SIGN_STYLE = Automatic;
 				DEVELOPMENT_TEAM = 2AHNM42WD8;
 				INFOPLIST_FILE = RestServiceTests/Info.plist;
@@ -545,6 +679,7 @@
 		090937FD24EFE13A0025F222 /* Release */ = {
 			isa = XCBuildConfiguration;
 			buildSettings = {
+				ALWAYS_EMBED_SWIFT_STANDARD_LIBRARIES = YES;
 				CODE_SIGN_STYLE = Automatic;
 				DEVELOPMENT_TEAM = 2AHNM42WD8;
 				INFOPLIST_FILE = RestServiceTests/Info.plist;
@@ -563,6 +698,7 @@
 		0909381524EFE1530025F222 /* Debug */ = {
 			isa = XCBuildConfiguration;
 			buildSettings = {
+				CLANG_ENABLE_MODULES = YES;
 				CODE_SIGN_STYLE = Automatic;
 				DEFINES_MODULE = YES;
 				DEVELOPMENT_TEAM = 2AHNM42WD8;
@@ -579,6 +715,7 @@
 				PRODUCT_BUNDLE_IDENTIFIER = pl.com.sumara.RestModels;
 				PRODUCT_NAME = "$(TARGET_NAME:c99extidentifier)";
 				SKIP_INSTALL = YES;
+				SWIFT_OPTIMIZATION_LEVEL = "-Onone";
 				SWIFT_VERSION = 5.0;
 				TARGETED_DEVICE_FAMILY = "1,2";
 			};
@@ -587,6 +724,7 @@
 		0909381624EFE1530025F222 /* Release */ = {
 			isa = XCBuildConfiguration;
 			buildSettings = {
+				CLANG_ENABLE_MODULES = YES;
 				CODE_SIGN_STYLE = Automatic;
 				DEFINES_MODULE = YES;
 				DEVELOPMENT_TEAM = 2AHNM42WD8;
@@ -603,44 +741,6 @@
 				PRODUCT_BUNDLE_IDENTIFIER = pl.com.sumara.RestModels;
 				PRODUCT_NAME = "$(TARGET_NAME:c99extidentifier)";
 				SKIP_INSTALL = YES;
-				SWIFT_VERSION = 5.0;
-				TARGETED_DEVICE_FAMILY = "1,2";
-			};
-			name = Release;
-		};
-		0909381824EFE1530025F222 /* Debug */ = {
-			isa = XCBuildConfiguration;
-			buildSettings = {
-				CODE_SIGN_STYLE = Automatic;
-				DEVELOPMENT_TEAM = 2AHNM42WD8;
-				INFOPLIST_FILE = RestModelsTests/Info.plist;
-				IPHONEOS_DEPLOYMENT_TARGET = 13.6;
-				LD_RUNPATH_SEARCH_PATHS = (
-					"$(inherited)",
-					"@executable_path/Frameworks",
-					"@loader_path/Frameworks",
-				);
-				PRODUCT_BUNDLE_IDENTIFIER = pl.com.sumara.RestModelsTests;
-				PRODUCT_NAME = "$(TARGET_NAME)";
-				SWIFT_VERSION = 5.0;
-				TARGETED_DEVICE_FAMILY = "1,2";
-			};
-			name = Debug;
-		};
-		0909381924EFE1530025F222 /* Release */ = {
-			isa = XCBuildConfiguration;
-			buildSettings = {
-				CODE_SIGN_STYLE = Automatic;
-				DEVELOPMENT_TEAM = 2AHNM42WD8;
-				INFOPLIST_FILE = RestModelsTests/Info.plist;
-				IPHONEOS_DEPLOYMENT_TARGET = 13.6;
-				LD_RUNPATH_SEARCH_PATHS = (
-					"$(inherited)",
-					"@executable_path/Frameworks",
-					"@loader_path/Frameworks",
-				);
-				PRODUCT_BUNDLE_IDENTIFIER = pl.com.sumara.RestModelsTests;
-				PRODUCT_NAME = "$(TARGET_NAME)";
 				SWIFT_VERSION = 5.0;
 				TARGETED_DEVICE_FAMILY = "1,2";
 			};
@@ -681,15 +781,6 @@
 			buildConfigurations = (
 				0909381524EFE1530025F222 /* Debug */,
 				0909381624EFE1530025F222 /* Release */,
-			);
-			defaultConfigurationIsVisible = 0;
-			defaultConfigurationName = Release;
-		};
-		0909381724EFE1530025F222 /* Build configuration list for PBXNativeTarget "RestModelsTests" */ = {
-			isa = XCConfigurationList;
-			buildConfigurations = (
-				0909381824EFE1530025F222 /* Debug */,
-				0909381924EFE1530025F222 /* Release */,
 			);
 			defaultConfigurationIsVisible = 0;
 			defaultConfigurationName = Release;

@@ -20,6 +20,9 @@
 		0957E2FD24F041A300E620DE /* LayoutAnchor.swift in Sources */ = {isa = PBXBuildFile; fileRef = 0957E2FC24F041A300E620DE /* LayoutAnchor.swift */; };
 		0957E30124F041E500E620DE /* UIView+Layout.swift in Sources */ = {isa = PBXBuildFile; fileRef = 0957E30024F041E500E620DE /* UIView+Layout.swift */; };
 		0957E33924F10E8800E620DE /* Action.swift in Sources */ = {isa = PBXBuildFile; fileRef = 0957E33824F10E8800E620DE /* Action.swift */; };
+		0957E37F24F134B800E620DE /* StringToDateConverter.swift in Sources */ = {isa = PBXBuildFile; fileRef = 0957E37E24F134B800E620DE /* StringToDateConverter.swift */; };
+		0957E38124F134C500E620DE /* DefaultStringToDateConverter.swift in Sources */ = {isa = PBXBuildFile; fileRef = 0957E38024F134C500E620DE /* DefaultStringToDateConverter.swift */; };
+		0957E38324F1352600E620DE /* DefaultStringToDateConverter+Tests.swift in Sources */ = {isa = PBXBuildFile; fileRef = 0957E38224F1352600E620DE /* DefaultStringToDateConverter+Tests.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
@@ -69,6 +72,9 @@
 		0957E2FC24F041A300E620DE /* LayoutAnchor.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = LayoutAnchor.swift; sourceTree = "<group>"; };
 		0957E30024F041E500E620DE /* UIView+Layout.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = "UIView+Layout.swift"; sourceTree = "<group>"; };
 		0957E33824F10E8800E620DE /* Action.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Action.swift; sourceTree = "<group>"; };
+		0957E37E24F134B800E620DE /* StringToDateConverter.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = StringToDateConverter.swift; sourceTree = "<group>"; };
+		0957E38024F134C500E620DE /* DefaultStringToDateConverter.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = DefaultStringToDateConverter.swift; sourceTree = "<group>"; };
+		0957E38224F1352600E620DE /* DefaultStringToDateConverter+Tests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = "DefaultStringToDateConverter+Tests.swift"; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -149,6 +155,7 @@
 		0909391A24F003760025F222 /* Utilities */ = {
 			isa = PBXGroup;
 			children = (
+				0957E37C24F134A400E620DE /* Converters */,
 				0957E33724F10E8000E620DE /* TypeAliases */,
 				0957E29824F02E4400E620DE /* SupportingFiles */,
 			);
@@ -266,6 +273,24 @@
 				0957E33824F10E8800E620DE /* Action.swift */,
 			);
 			path = TypeAliases;
+			sourceTree = "<group>";
+		};
+		0957E37C24F134A400E620DE /* Converters */ = {
+			isa = PBXGroup;
+			children = (
+				0957E37D24F134A900E620DE /* StringToDateConverter */,
+			);
+			path = Converters;
+			sourceTree = "<group>";
+		};
+		0957E37D24F134A900E620DE /* StringToDateConverter */ = {
+			isa = PBXGroup;
+			children = (
+				0957E37E24F134B800E620DE /* StringToDateConverter.swift */,
+				0957E38024F134C500E620DE /* DefaultStringToDateConverter.swift */,
+				0957E38224F1352600E620DE /* DefaultStringToDateConverter+Tests.swift */,
+			);
+			path = StringToDateConverter;
 			sourceTree = "<group>";
 		};
 /* End PBXGroup section */
@@ -512,6 +537,8 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				0957E38124F134C500E620DE /* DefaultStringToDateConverter.swift in Sources */,
+				0957E37F24F134B800E620DE /* StringToDateConverter.swift in Sources */,
 				0957E33924F10E8800E620DE /* Action.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
@@ -520,6 +547,7 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				0957E38324F1352600E620DE /* DefaultStringToDateConverter+Tests.swift in Sources */,
 				0909392724F003770025F222 /* UtilitiesTests.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
