@@ -23,9 +23,11 @@
 		0957E31824F0484E00E620DE /* UIStackView+Extensions.swift in Sources */ = {isa = PBXBuildFile; fileRef = 0957E31724F0484E00E620DE /* UIStackView+Extensions.swift */; };
 		0957E31A24F053B200E620DE /* CalloutLabel.swift in Sources */ = {isa = PBXBuildFile; fileRef = 0957E31924F053B200E620DE /* CalloutLabel.swift */; };
 		0957E32324F0565E00E620DE /* Resources.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 0957E32224F0565E00E620DE /* Resources.framework */; };
-		0957E32424F0565E00E620DE /* Resources.framework in Embed Frameworks */ = {isa = PBXBuildFile; fileRef = 0957E32224F0565E00E620DE /* Resources.framework */; settings = {ATTRIBUTES = (CodeSignOnCopy, RemoveHeadersOnCopy, ); }; };
 		0957E32824F0596F00E620DE /* CardView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 0957E32724F0596F00E620DE /* CardView.swift */; };
 		0957E32A24F05A6C00E620DE /* CAShapeLayer+Extensions.swift in Sources */ = {isa = PBXBuildFile; fileRef = 0957E32924F05A6C00E620DE /* CAShapeLayer+Extensions.swift */; };
+		0957E33224F109C100E620DE /* FootnoteLabel.swift in Sources */ = {isa = PBXBuildFile; fileRef = 0957E33124F109C100E620DE /* FootnoteLabel.swift */; };
+		0957E33524F10BF600E620DE /* SelectableImageBarButton.swift in Sources */ = {isa = PBXBuildFile; fileRef = 0957E33424F10BF600E620DE /* SelectableImageBarButton.swift */; };
+		0957E33B24F10EA300E620DE /* Utilities.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 0957E33A24F10EA300E620DE /* Utilities.framework */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
@@ -44,20 +46,6 @@
 			remoteInfo = ContactsModels;
 		};
 /* End PBXContainerItemProxy section */
-
-/* Begin PBXCopyFilesBuildPhase section */
-		0957E32524F0565E00E620DE /* Embed Frameworks */ = {
-			isa = PBXCopyFilesBuildPhase;
-			buildActionMask = 2147483647;
-			dstPath = "";
-			dstSubfolderSpec = 10;
-			files = (
-				0957E32424F0565E00E620DE /* Resources.framework in Embed Frameworks */,
-			);
-			name = "Embed Frameworks";
-			runOnlyForDeploymentPostprocessing = 0;
-		};
-/* End PBXCopyFilesBuildPhase section */
 
 /* Begin PBXFileReference section */
 		090937A424EFE0490025F222 /* ContactsKit.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = ContactsKit.framework; sourceTree = BUILT_PRODUCTS_DIR; };
@@ -83,6 +71,9 @@
 		0957E32224F0565E00E620DE /* Resources.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; path = Resources.framework; sourceTree = BUILT_PRODUCTS_DIR; };
 		0957E32724F0596F00E620DE /* CardView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = CardView.swift; sourceTree = "<group>"; };
 		0957E32924F05A6C00E620DE /* CAShapeLayer+Extensions.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = "CAShapeLayer+Extensions.swift"; sourceTree = "<group>"; };
+		0957E33124F109C100E620DE /* FootnoteLabel.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = FootnoteLabel.swift; sourceTree = "<group>"; };
+		0957E33424F10BF600E620DE /* SelectableImageBarButton.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SelectableImageBarButton.swift; sourceTree = "<group>"; };
+		0957E33A24F10EA300E620DE /* Utilities.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; path = Utilities.framework; sourceTree = BUILT_PRODUCTS_DIR; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -91,6 +82,7 @@
 			buildActionMask = 2147483647;
 			files = (
 				0957E32324F0565E00E620DE /* Resources.framework in Frameworks */,
+				0957E33B24F10EA300E620DE /* Utilities.framework in Frameworks */,
 				0957E30824F0422E00E620DE /* ViewLayout.framework in Frameworks */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
@@ -137,6 +129,7 @@
 		090937A624EFE0490025F222 /* ContactsKit */ = {
 			isa = PBXGroup;
 			children = (
+				0957E33324F10BCA00E620DE /* BarButtons */,
 				0957E32624F0595700E620DE /* Cards */,
 				0957E2C624F0387E00E620DE /* AvatarView */,
 				0957E31624F0483A00E620DE /* Extensions */,
@@ -213,6 +206,7 @@
 		0957E30624F0422E00E620DE /* Frameworks */ = {
 			isa = PBXGroup;
 			children = (
+				0957E33A24F10EA300E620DE /* Utilities.framework */,
 				0957E32224F0565E00E620DE /* Resources.framework */,
 				0957E30724F0422E00E620DE /* ViewLayout.framework */,
 			);
@@ -222,9 +216,10 @@
 		0957E30B24F042DE00E620DE /* Labels */ = {
 			isa = PBXGroup;
 			children = (
+				0957E31924F053B200E620DE /* CalloutLabel.swift */,
+				0957E33124F109C100E620DE /* FootnoteLabel.swift */,
 				0957E30D24F042EA00E620DE /* InitialLabel.swift */,
 				0957E31124F044FA00E620DE /* TitleLabel.swift */,
-				0957E31924F053B200E620DE /* CalloutLabel.swift */,
 			);
 			path = Labels;
 			sourceTree = "<group>";
@@ -252,6 +247,14 @@
 				0957E32724F0596F00E620DE /* CardView.swift */,
 			);
 			path = Cards;
+			sourceTree = "<group>";
+		};
+		0957E33324F10BCA00E620DE /* BarButtons */ = {
+			isa = PBXGroup;
+			children = (
+				0957E33424F10BF600E620DE /* SelectableImageBarButton.swift */,
+			);
+			path = BarButtons;
 			sourceTree = "<group>";
 		};
 /* End PBXGroup section */
@@ -284,7 +287,6 @@
 				090937A024EFE0490025F222 /* Sources */,
 				090937A124EFE0490025F222 /* Frameworks */,
 				090937A224EFE0490025F222 /* Resources */,
-				0957E32524F0565E00E620DE /* Embed Frameworks */,
 			);
 			buildRules = (
 			);
@@ -404,8 +406,10 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				0957E33524F10BF600E620DE /* SelectableImageBarButton.swift in Sources */,
 				0957E32A24F05A6C00E620DE /* CAShapeLayer+Extensions.swift in Sources */,
 				0957E30E24F042EA00E620DE /* InitialLabel.swift in Sources */,
+				0957E33224F109C100E620DE /* FootnoteLabel.swift in Sources */,
 				0957E2C824F0388D00E620DE /* AvatarView.swift in Sources */,
 				0957E2D524F03C4C00E620DE /* AvatarView+Kind.swift in Sources */,
 				0957E31824F0484E00E620DE /* UIStackView+Extensions.swift in Sources */,

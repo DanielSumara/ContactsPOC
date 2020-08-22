@@ -35,6 +35,7 @@
 		0957E2CF24F039BB00E620DE /* ContactsModels.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 0957E2CE24F039BB00E620DE /* ContactsModels.framework */; };
 		0957E30324F0421200E620DE /* ViewLayout.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 0957E30224F0421200E620DE /* ViewLayout.framework */; };
 		0957E31024F0449E00E620DE /* ContactCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = 0957E30F24F0449E00E620DE /* ContactCell.swift */; };
+		0957E33024F062BC00E620DE /* LoadingCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = 0957E32F24F062BC00E620DE /* LoadingCell.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
@@ -96,6 +97,7 @@
 		0957E2CE24F039BB00E620DE /* ContactsModels.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; path = ContactsModels.framework; sourceTree = BUILT_PRODUCTS_DIR; };
 		0957E30224F0421200E620DE /* ViewLayout.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; path = ViewLayout.framework; sourceTree = BUILT_PRODUCTS_DIR; };
 		0957E30F24F0449E00E620DE /* ContactCell.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ContactCell.swift; sourceTree = "<group>"; };
+		0957E32F24F062BC00E620DE /* LoadingCell.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = LoadingCell.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -374,6 +376,7 @@
 			isa = PBXGroup;
 			children = (
 				0957E30F24F0449E00E620DE /* ContactCell.swift */,
+				0957E32F24F062BC00E620DE /* LoadingCell.swift */,
 			);
 			path = UI;
 			sourceTree = "<group>";
@@ -582,6 +585,7 @@
 			files = (
 				0909396324F007160025F222 /* ContactsListViewController.swift in Sources */,
 				0909396124F006D00025F222 /* ContactsListScreen.swift in Sources */,
+				0957E33024F062BC00E620DE /* LoadingCell.swift in Sources */,
 				0909396524F007380025F222 /* ContactsListViewController+ContentView.swift in Sources */,
 				0957E2AD24F0345600E620DE /* ContactProjection.swift in Sources */,
 				0957E29724F02D7700E620DE /* ContactsListViewController+ListAdapter.swift in Sources */,

@@ -13,6 +13,7 @@ public enum Colors {
     
     public static let lightGray: UIColor = UIColor(named: "LightGray", in: Bundle(for: ClassForBundle.self), compatibleWith: nil)!
     public static let midGray: UIColor = UIColor(named: "MidGray", in: Bundle(for: ClassForBundle.self), compatibleWith: nil)!
+    public static let darkGray: UIColor = UIColor(named: "DarkGray", in: Bundle(for: ClassForBundle.self), compatibleWith: nil)!
     
 }
 

@@ -11,16 +11,15 @@
 		0909392724F003770025F222 /* UtilitiesTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = 0909392624F003770025F222 /* UtilitiesTests.swift */; };
 		0909392924F003770025F222 /* Utilities.h in Headers */ = {isa = PBXBuildFile; fileRef = 0909391B24F003760025F222 /* Utilities.h */; settings = {ATTRIBUTES = (Public, ); }; };
 		0909394024F0038C0025F222 /* Extensions.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 0909393724F0038C0025F222 /* Extensions.framework */; };
-		0909394524F0038C0025F222 /* ExtensionsTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = 0909394424F0038C0025F222 /* ExtensionsTests.swift */; };
 		0909394724F0038C0025F222 /* Extensions.h in Headers */ = {isa = PBXBuildFile; fileRef = 0909393924F0038C0025F222 /* Extensions.h */; settings = {ATTRIBUTES = (Public, ); }; };
 		0909395324F004040025F222 /* Array+Extensions.swift in Sources */ = {isa = PBXBuildFile; fileRef = 0909395224F004040025F222 /* Array+Extensions.swift */; };
 		0909395524F0042C0025F222 /* Array+Extensions+Tests.swift in Sources */ = {isa = PBXBuildFile; fileRef = 0909395424F0042C0025F222 /* Array+Extensions+Tests.swift */; };
 		0957E2EB24F040E900E620DE /* ViewLayout.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 0957E2E224F040E900E620DE /* ViewLayout.framework */; };
-		0957E2F024F040E900E620DE /* ViewLayoutTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = 0957E2EF24F040E900E620DE /* ViewLayoutTests.swift */; };
 		0957E2F224F040E900E620DE /* ViewLayout.h in Headers */ = {isa = PBXBuildFile; fileRef = 0957E2E424F040E900E620DE /* ViewLayout.h */; settings = {ATTRIBUTES = (Public, ); }; };
 		0957E2FB24F0412A00E620DE /* ViewLayout.swift in Sources */ = {isa = PBXBuildFile; fileRef = 0957E2FA24F0412A00E620DE /* ViewLayout.swift */; };
 		0957E2FD24F041A300E620DE /* LayoutAnchor.swift in Sources */ = {isa = PBXBuildFile; fileRef = 0957E2FC24F041A300E620DE /* LayoutAnchor.swift */; };
 		0957E30124F041E500E620DE /* UIView+Layout.swift in Sources */ = {isa = PBXBuildFile; fileRef = 0957E30024F041E500E620DE /* UIView+Layout.swift */; };
+		0957E33924F10E8800E620DE /* Action.swift in Sources */ = {isa = PBXBuildFile; fileRef = 0957E33824F10E8800E620DE /* Action.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
@@ -58,7 +57,6 @@
 		0909393924F0038C0025F222 /* Extensions.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = Extensions.h; sourceTree = "<group>"; };
 		0909393A24F0038C0025F222 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
 		0909393F24F0038C0025F222 /* ExtensionsTests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = ExtensionsTests.xctest; sourceTree = BUILT_PRODUCTS_DIR; };
-		0909394424F0038C0025F222 /* ExtensionsTests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ExtensionsTests.swift; sourceTree = "<group>"; };
 		0909394624F0038C0025F222 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
 		0909395224F004040025F222 /* Array+Extensions.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = "Array+Extensions.swift"; sourceTree = "<group>"; };
 		0909395424F0042C0025F222 /* Array+Extensions+Tests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = "Array+Extensions+Tests.swift"; sourceTree = "<group>"; };
@@ -66,11 +64,11 @@
 		0957E2E424F040E900E620DE /* ViewLayout.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = ViewLayout.h; sourceTree = "<group>"; };
 		0957E2E524F040E900E620DE /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
 		0957E2EA24F040E900E620DE /* ViewLayoutTests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = ViewLayoutTests.xctest; sourceTree = BUILT_PRODUCTS_DIR; };
-		0957E2EF24F040E900E620DE /* ViewLayoutTests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ViewLayoutTests.swift; sourceTree = "<group>"; };
 		0957E2F124F040E900E620DE /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
 		0957E2FA24F0412A00E620DE /* ViewLayout.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ViewLayout.swift; sourceTree = "<group>"; };
 		0957E2FC24F041A300E620DE /* LayoutAnchor.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = LayoutAnchor.swift; sourceTree = "<group>"; };
 		0957E30024F041E500E620DE /* UIView+Layout.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = "UIView+Layout.swift"; sourceTree = "<group>"; };
+		0957E33824F10E8800E620DE /* Action.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Action.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -151,6 +149,7 @@
 		0909391A24F003760025F222 /* Utilities */ = {
 			isa = PBXGroup;
 			children = (
+				0957E33724F10E8000E620DE /* TypeAliases */,
 				0957E29824F02E4400E620DE /* SupportingFiles */,
 			);
 			path = Utilities;
@@ -177,7 +176,6 @@
 		0909394324F0038C0025F222 /* ExtensionsTests */ = {
 			isa = PBXGroup;
 			children = (
-				0909394424F0038C0025F222 /* ExtensionsTests.swift */,
 				0909394624F0038C0025F222 /* Info.plist */,
 			);
 			path = ExtensionsTests;
@@ -232,7 +230,6 @@
 		0957E2EE24F040E900E620DE /* ViewLayoutTests */ = {
 			isa = PBXGroup;
 			children = (
-				0957E2EF24F040E900E620DE /* ViewLayoutTests.swift */,
 				0957E2F124F040E900E620DE /* Info.plist */,
 			);
 			path = ViewLayoutTests;
@@ -261,6 +258,14 @@
 				0957E30024F041E500E620DE /* UIView+Layout.swift */,
 			);
 			path = Extensions;
+			sourceTree = "<group>";
+		};
+		0957E33724F10E8000E620DE /* TypeAliases */ = {
+			isa = PBXGroup;
+			children = (
+				0957E33824F10E8800E620DE /* Action.swift */,
+			);
+			path = TypeAliases;
 			sourceTree = "<group>";
 		};
 /* End PBXGroup section */
@@ -413,6 +418,7 @@
 				TargetAttributes = {
 					0909391724F003760025F222 = {
 						CreatedOnToolsVersion = 11.6;
+						LastSwiftMigration = 1160;
 					};
 					0909392024F003770025F222 = {
 						CreatedOnToolsVersion = 11.6;
@@ -506,6 +512,7 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				0957E33924F10E8800E620DE /* Action.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -529,7 +536,6 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
-				0909394524F0038C0025F222 /* ExtensionsTests.swift in Sources */,
 				0909395524F0042C0025F222 /* Array+Extensions+Tests.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
@@ -548,7 +554,6 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
-				0957E2F024F040E900E620DE /* ViewLayoutTests.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -696,6 +701,7 @@
 		0909392D24F003770025F222 /* Debug */ = {
 			isa = XCBuildConfiguration;
 			buildSettings = {
+				CLANG_ENABLE_MODULES = YES;
 				CODE_SIGN_STYLE = Automatic;
 				DEFINES_MODULE = YES;
 				DEVELOPMENT_TEAM = 2AHNM42WD8;
@@ -712,6 +718,7 @@
 				PRODUCT_BUNDLE_IDENTIFIER = pl.com.sumara.Utilities;
 				PRODUCT_NAME = "$(TARGET_NAME:c99extidentifier)";
 				SKIP_INSTALL = YES;
+				SWIFT_OPTIMIZATION_LEVEL = "-Onone";
 				SWIFT_VERSION = 5.0;
 				TARGETED_DEVICE_FAMILY = "1,2";
 			};
@@ -720,6 +727,7 @@
 		0909392E24F003770025F222 /* Release */ = {
 			isa = XCBuildConfiguration;
 			buildSettings = {
+				CLANG_ENABLE_MODULES = YES;
 				CODE_SIGN_STYLE = Automatic;
 				DEFINES_MODULE = YES;
 				DEVELOPMENT_TEAM = 2AHNM42WD8;
@@ -744,6 +752,7 @@
 		0909393024F003770025F222 /* Debug */ = {
 			isa = XCBuildConfiguration;
 			buildSettings = {
+				ALWAYS_EMBED_SWIFT_STANDARD_LIBRARIES = YES;
 				CODE_SIGN_STYLE = Automatic;
 				DEVELOPMENT_TEAM = 2AHNM42WD8;
 				INFOPLIST_FILE = UtilitiesTests/Info.plist;
@@ -762,6 +771,7 @@
 		0909393124F003770025F222 /* Release */ = {
 			isa = XCBuildConfiguration;
 			buildSettings = {
+				ALWAYS_EMBED_SWIFT_STANDARD_LIBRARIES = YES;
 				CODE_SIGN_STYLE = Automatic;
 				DEVELOPMENT_TEAM = 2AHNM42WD8;
 				INFOPLIST_FILE = UtilitiesTests/Info.plist;

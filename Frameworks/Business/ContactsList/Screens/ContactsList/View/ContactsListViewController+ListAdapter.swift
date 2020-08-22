@@ -26,6 +26,7 @@ extension ContactsListViewController {
         
         func prepare(for tableView: UITableView) {
             tableView.register(ContactCell.self)
+            tableView.register(LoadingCell.self)
         }
         
     }
@@ -37,7 +38,7 @@ extension ContactsListViewController.ListAdapter: UITableViewDataSource {
     func tableView(_ tableView: UITableView, numberOfRowsInSection section: Int) -> Int { items.count }
     
     func tableView(_ tableView: UITableView, cellForRowAt indexPath: IndexPath) -> UITableViewCell {
-        tableView.dequeue(ContactCell.self, at: indexPath, with: items[indexPath.row])
+        tableView.dequeue(LoadingCell.self, at: indexPath, with: items[indexPath.row])
     }
     
 }

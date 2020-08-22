@@ -50,7 +50,7 @@ public struct ViewLayout {
     }
     
     @discardableResult
-    public func connect(_ anchor: LayoutAnchor.XAxis, to sibling: UIView, _ siblingAnchor: LayoutAnchor.XAxis, constant: CGFloat, priority: UILayoutPriority?) -> Self {
+    public func make(_ anchor: LayoutAnchor.XAxis, equalTo sibling: UIView, _ siblingAnchor: LayoutAnchor.XAxis, constant: CGFloat, priority: UILayoutPriority?) -> Self {
         switch (anchor, siblingAnchor) {
         case (.leading, .leading): activate(view.leadingAnchor.constraint(equalTo: sibling.leadingAnchor, constant: constant), with: priority)
         case (.trailing, .trailing): activate(view.trailingAnchor.constraint(equalTo: sibling.trailingAnchor, constant: constant), with: priority)
@@ -62,7 +62,7 @@ public struct ViewLayout {
     }
     
     @discardableResult
-    public func connect(_ anchor: LayoutAnchor.YAxis, to sibling: UIView, _ siblingAnchor: LayoutAnchor.YAxis, constant: CGFloat, priority: UILayoutPriority?) -> Self {
+    public func make(_ anchor: LayoutAnchor.YAxis, equalTo sibling: UIView, _ siblingAnchor: LayoutAnchor.YAxis, constant: CGFloat, priority: UILayoutPriority?) -> Self {
         switch (anchor, siblingAnchor) {
         case (.top, .top): activate(view.topAnchor.constraint(equalTo: sibling.topAnchor, constant: constant), with: priority)
         case (.bottom, .bottom): activate(view.bottomAnchor.constraint(equalTo: sibling.bottomAnchor, constant: constant), with: priority)
@@ -94,6 +94,16 @@ public struct ViewLayout {
         case (.bottom, .top): activate(view.bottomAnchor.constraint(lessThanOrEqualTo: sibling.topAnchor, constant: constant), with: priority)
         }
             
+        return self
+    }
+    
+    @discardableResult
+    public func center(_ axis: LayoutAnchor.Axis, with sibling: UIView, constant: CGFloat, priority: UILayoutPriority?) -> Self {
+        switch axis {
+        case .xAxis: activate(view.centerXAnchor.constraint(equalTo: sibling.centerXAnchor, constant: constant), with: priority)
+        case .yAxis: activate(view.centerYAnchor.constraint(equalTo: sibling.centerYAnchor, constant: constant), with: priority)
+        }
+        
         return self
     }
     
