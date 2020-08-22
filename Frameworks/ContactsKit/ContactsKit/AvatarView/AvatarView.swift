@@ -21,7 +21,7 @@ public final class AvatarView: UIView, Bindable {
     // MARK: - Properties
     
     private let initialsLabel = InitialLabel()
-    private let loadingIndicator = UIActivityIndicatorView(style: .whiteLarge)
+    private let loadingIndicator = UIActivityIndicatorView(style: .gray)
     private let imageView = UIImageView()
     
     private let kind: Kind
@@ -54,6 +54,8 @@ public final class AvatarView: UIView, Bindable {
         setContentCompressionResistancePriority(.required, for: .horizontal)
         setContentCompressionResistancePriority(.required, for: .vertical)
         
+        imageView.layer.cornerRadius = intrinsicContentSize.height / 2
+        imageView.clipsToBounds = true
         layer.cornerRadius = intrinsicContentSize.height / 2
         
         backgroundColor = Colors.midGray
@@ -63,8 +65,10 @@ public final class AvatarView: UIView, Bindable {
     private func setupLayout() {
         layout.add(subviews: initialsLabel, loadingIndicator, imageView)
         initialsLabel.layout.embed(in: self)
-        loadingIndicator.layout.embed(in: self)
         imageView.layout.embed(in: self)
+        loadingIndicator.layout
+            .make(.top, equalTo: initialsLabel, .top, constant: 0, priority: nil)
+            .make(.trailing, equalTo: initialsLabel, .trailing, constant: 0, priority: nil)
     }
     
     private func setupAppearance(for data: AvatarProjection) {
@@ -74,7 +78,7 @@ public final class AvatarView: UIView, Bindable {
             loadingIndicator.isHidden = true
             imageView.isHidden = true
         case .loading:
-            initialsLabel.isHidden = true
+            initialsLabel.isHidden = false
             loadingIndicator.isHidden = false
             imageView.isHidden = true
         case .loaded:
@@ -87,7 +91,9 @@ public final class AvatarView: UIView, Bindable {
     private func setupControls(for data: AvatarProjection) {
         switch data {
         case let .initials(initials): initialsLabel.text = initials
-        case .loading: loadingIndicator.startAnimating()
+        case let .loading(initials):
+            initialsLabel.text = initials
+            loadingIndicator.startAnimating()
         case let .loaded(image): imageView.image = image
         }
     }

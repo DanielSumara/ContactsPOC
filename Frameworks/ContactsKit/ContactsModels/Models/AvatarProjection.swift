@@ -12,7 +12,7 @@ import UIKit
 public enum AvatarProjection: Hashable {
     
     case initials(String)
-    case loading
+    case loading(String)
     case loaded(UIImage)
     
 }

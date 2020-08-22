@@ -23,4 +23,6 @@ protocol ContactsListViewModel: AnyObject {
     
     func select(_ contact: ContactProjection)
     
+    func fetchAvatarsFor(contacts: [ContactProjection])
+    
 }

@@ -55,6 +55,7 @@ final class ContactsListViewController: UIViewController {
         listAdapter.prepare(for: contentView)
         
         contentView.dataSource = listAdapter
+        contentView.delegate = listAdapter
     }
     
     private func bindViewModelWithView() {
@@ -64,6 +65,9 @@ final class ContactsListViewController: UIViewController {
     
     private func bindViewWithViewModel() {
         favoritesButton.tapped = { [viewModel] in viewModel.toggleFavorites() }
+        
+        listAdapter.contactSelected.observe(on: self) { (view, selectedContact) in view.viewModel.select(selectedContact) }
+        listAdapter.listDidScroll.observe(on: self) { view, _ in view.updateVisibleContacts() }
     }
     
     override func viewDidAppear(_ animated: Bool) {
@@ -81,8 +85,13 @@ final class ContactsListViewController: UIViewController {
             navigationItem.rightBarButtonItem = favoritesButton
             listAdapter.set(items: contacts)
             contentView.reload()
+            updateVisibleContacts()
         }
-        
+    }
+    
+    private func updateVisibleContacts() {
+        guard let indexes = contentView.indexPathsForVisibleRows else { return }
+        viewModel.fetchAvatarsFor(contacts: listAdapter.projections(for: indexes))
     }
     
 }

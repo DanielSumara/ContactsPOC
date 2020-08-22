@@ -21,7 +21,7 @@ final class ContactsListScreen: Screen {
     
     init(contactsRepository: ContactsRepository) {
         let model = DefaultContactsListModel(contactsRepository: contactsRepository)
-        let viewModel = DefaultContactsListViewModel(model: model)
+        let viewModel = DefaultContactsListViewModel(model: model, imageRepository: DefaultImagesRepository())
         viewController = ContactsListViewController(viewModel: viewModel)
     }
     

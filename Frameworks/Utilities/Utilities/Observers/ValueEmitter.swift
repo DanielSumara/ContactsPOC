@@ -14,8 +14,6 @@ public final class ValueEmitter<DataType> {
     
     public private(set) var value: DataType
     
-    private let lock = NSLock()
-    
     private var observationClosures = [ObjectIdentifier: (DataType) -> Void]()
     
     // MARK: - Initializers
@@ -27,9 +25,6 @@ public final class ValueEmitter<DataType> {
     // MARK: - API
     
     public func notify(using subject: DataType) {
-        lock.lock()
-        defer { lock.unlock() }
-        
         value = subject
         
         for (_, closure) in observationClosures {
@@ -42,9 +37,6 @@ public final class ValueEmitter<DataType> {
     }
     
     public func observe<ObserverType: AnyObject>(on observer: ObserverType, closure: @escaping (ObserverType, DataType) -> Void) {
-        lock.lock()
-        defer { lock.unlock() }
-        
         let identifier = ObjectIdentifier(observer)
         
         observationClosures[identifier] = { [weak self, weak observer] subject in
@@ -60,9 +52,6 @@ public final class ValueEmitter<DataType> {
     }
     
     public func remove<ObserverType: AnyObject>(_ observer: ObserverType) {
-        lock.lock()
-        defer { lock.unlock() }
-        
         let identifier = ObjectIdentifier(observer)
         observationClosures[identifier] = nil
     }

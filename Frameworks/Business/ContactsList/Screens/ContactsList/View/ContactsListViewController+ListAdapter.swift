@@ -10,14 +10,37 @@ import ContactsModels
 import Extensions
 import Foundation
 import UIKit
+import Utilities
 
 extension ContactsListViewController {
     
     final class ListAdapter: NSObject {
         
+        // MARK: - Observables
+        
+        let contactSelected: Observable<ContactProjection>
+        let listDidScroll: Observable<Void>
+        
         // MARK: - Properties
         
+        private let _contactSelected = EventEmitter<ContactProjection>()
+        private let _listDidScroll = EventEmitter<Void>()
+        
+        private var isScrolling: Bool = false {
+            didSet {
+                guard isScrolling != oldValue else { return }
+                guard isScrolling == false else { return }
+                _listDidScroll.notify(using: ())
+            }
+        }
         private var items: [ContactProjection]?
+        
+        // MARK: - Initializers
+        
+        override init() {
+            contactSelected = _contactSelected.asObservable()
+            listDidScroll = _listDidScroll.asObservable()
+        }
         
         // MARK: - API
         
@@ -29,6 +52,18 @@ extension ContactsListViewController {
             tableView.register(ContactCell.self)
             tableView.register(LoadingCell.self)
             tableView.register(LackOfContacts.self)
+        }
+        
+        func projections(for paths: [IndexPath]) -> [ContactProjection] {
+            guard let items = items else { return [] }
+            var results: [ContactProjection] = []
+            results.reserveCapacity(paths.count)
+            
+            for indexPath in paths {
+                results.append(items[indexPath.row])
+            }
+            
+            return results
         }
         
     }
@@ -56,6 +91,28 @@ extension ContactsListViewController.ListAdapter: UITableViewDataSource {
             case 0: return tableView.dequeue(LackOfContacts.self, at: indexPath, with: true)
             default: return tableView.dequeue(ContactCell.self, at: indexPath, with: contacts[indexPath.row])
             }
+        }
+    }
+    
+}
+
+extension ContactsListViewController.ListAdapter: UITableViewDelegate {
+    
+    func tableView(_ tableView: UITableView, didSelectRowAt indexPath: IndexPath) {
+        (items?[indexPath.row]).flatMap(_contactSelected.notify(using:))
+    }
+
+    func scrollViewDidScroll(_ scrollView: UIScrollView) {
+        isScrolling = true
+    }
+    
+    func scrollViewDidEndDecelerating(_ scrollView: UIScrollView) {
+        isScrolling = false
+    }
+    
+    func scrollViewDidEndDragging(_ scrollView: UIScrollView, willDecelerate decelerate: Bool) {
+        if decelerate == false {
+            isScrolling = false
         }
     }
     

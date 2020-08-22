@@ -48,6 +48,10 @@
 		0957E3E424F179D100E620DE /* Extensions.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 0957E3E324F179D100E620DE /* Extensions.framework */; };
 		0957E3E524F179D100E620DE /* Extensions.framework in Embed Frameworks */ = {isa = PBXBuildFile; fileRef = 0957E3E324F179D100E620DE /* Extensions.framework */; settings = {ATTRIBUTES = (CodeSignOnCopy, RemoveHeadersOnCopy, ); }; };
 		0957E3EE24F1866000E620DE /* LackOfContacts.swift in Sources */ = {isa = PBXBuildFile; fileRef = 0957E3ED24F1866000E620DE /* LackOfContacts.swift */; };
+		0957E3F124F199CC00E620DE /* ImagesRepository.swift in Sources */ = {isa = PBXBuildFile; fileRef = 0957E3F024F199CC00E620DE /* ImagesRepository.swift */; };
+		0957E3F324F199DA00E620DE /* DefaultImagesRepository.swift in Sources */ = {isa = PBXBuildFile; fileRef = 0957E3F224F199DA00E620DE /* DefaultImagesRepository.swift */; };
+		0957E3F624F19A4200E620DE /* ImageStatus.swift in Sources */ = {isa = PBXBuildFile; fileRef = 0957E3F524F19A4200E620DE /* ImageStatus.swift */; };
+		0957E3F824F19DF200E620DE /* ImageRepositoryError.swift in Sources */ = {isa = PBXBuildFile; fileRef = 0957E3F724F19DF200E620DE /* ImageRepositoryError.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
@@ -135,6 +139,10 @@
 		0957E3DC24F176DB00E620DE /* ListContent.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ListContent.swift; sourceTree = "<group>"; };
 		0957E3E324F179D100E620DE /* Extensions.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; path = Extensions.framework; sourceTree = BUILT_PRODUCTS_DIR; };
 		0957E3ED24F1866000E620DE /* LackOfContacts.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = LackOfContacts.swift; sourceTree = "<group>"; };
+		0957E3F024F199CC00E620DE /* ImagesRepository.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ImagesRepository.swift; sourceTree = "<group>"; };
+		0957E3F224F199DA00E620DE /* DefaultImagesRepository.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = DefaultImagesRepository.swift; sourceTree = "<group>"; };
+		0957E3F524F19A4200E620DE /* ImageStatus.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ImageStatus.swift; sourceTree = "<group>"; };
+		0957E3F724F19DF200E620DE /* ImageRepositoryError.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ImageRepositoryError.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -289,6 +297,7 @@
 		0909390824EFF3590025F222 /* Infrastructure */ = {
 			isa = PBXGroup;
 			children = (
+				0957E3EF24F199B800E620DE /* ImagesRepository */,
 				0909390924EFF3650025F222 /* Presenter */,
 				0957E29B24F02EB100E620DE /* ViewSizeCalculator */,
 			);
@@ -434,6 +443,25 @@
 			isa = PBXGroup;
 			children = (
 				0957E3DC24F176DB00E620DE /* ListContent.swift */,
+			);
+			path = Constants;
+			sourceTree = "<group>";
+		};
+		0957E3EF24F199B800E620DE /* ImagesRepository */ = {
+			isa = PBXGroup;
+			children = (
+				0957E3F224F199DA00E620DE /* DefaultImagesRepository.swift */,
+				0957E3F024F199CC00E620DE /* ImagesRepository.swift */,
+				0957E3F424F19A1500E620DE /* Constants */,
+			);
+			path = ImagesRepository;
+			sourceTree = "<group>";
+		};
+		0957E3F424F19A1500E620DE /* Constants */ = {
+			isa = PBXGroup;
+			children = (
+				0957E3F724F19DF200E620DE /* ImageRepositoryError.swift */,
+				0957E3F524F19A4200E620DE /* ImageStatus.swift */,
 			);
 			path = Constants;
 			sourceTree = "<group>";
@@ -617,11 +645,15 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				0957E3F624F19A4200E620DE /* ImageStatus.swift in Sources */,
 				0957E2A824F030CA00E620DE /* UITableView+Extensions.swift in Sources */,
 				0909396824F00C890025F222 /* NavigationControllerDelegate.swift in Sources */,
 				0909390B24EFF3710025F222 /* Presenter.swift in Sources */,
 				090938DA24EFF1140025F222 /* ModuleFlow.swift in Sources */,
 				0909390D24F001B60025F222 /* DefaultPresenter.swift in Sources */,
+				0957E3F824F19DF200E620DE /* ImageRepositoryError.swift in Sources */,
+				0957E3F324F199DA00E620DE /* DefaultImagesRepository.swift in Sources */,
+				0957E3F124F199CC00E620DE /* ImagesRepository.swift in Sources */,
 				090938DC24EFF1A90025F222 /* Screen.swift in Sources */,
 				0957E29D24F02EC700E620DE /* ViewSizeCalculator.swift in Sources */,
 				0957E2A124F02F1D00E620DE /* DefaultViewSizeCalculator.swift in Sources */,

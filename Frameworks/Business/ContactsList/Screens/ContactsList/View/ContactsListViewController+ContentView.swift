@@ -27,7 +27,7 @@ extension ContactsListViewController {
         
         func reload() {
             switch window {
-            case .some: reloadSections(IndexSet(integer: .zero), with: .automatic)
+            case .some: reloadData()
             case .none: reloadData()
             }
         }

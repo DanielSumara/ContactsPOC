@@ -6,6 +6,8 @@
 //  Copyright © 2020 Daniel Sumara. All rights reserved.
 //
 
+import Business
+import ContactsModels
 import DataRepository
 import DomainModels
 import Foundation
@@ -23,18 +25,16 @@ final class DefaultContactsListViewModel: ContactsListViewModel {
     private let _narrowedToFavorites = ValueEmitter(value: false)
     private let _content = ValueEmitter(value: ListContent.loading)
     
+    private let imageRepository: ImagesRepository
     private let model: ContactsListModel
     
     private var contacts: [Contact] = []
-    private var presentedContacts: [Contact] = [] {
-        didSet {
-            _content.notify(using: .contacts(presentedContacts.map(contactProjection(from:))))
-        }
-    }
+    private var presentedContacts: [ContactProjection] = [] { didSet { _content.notify(using: .contacts(presentedContacts)) } }
     
     // MARK: - Initializers
     
-    init(model: ContactsListModel) {
+    init(model: ContactsListModel, imageRepository: ImagesRepository) {
+        self.imageRepository = imageRepository
         self.model = model
         
         narrowedToFavorites = _narrowedToFavorites.asObservable()
@@ -51,7 +51,7 @@ final class DefaultContactsListViewModel: ContactsListViewModel {
                 case let .failure(error): break; #warning("Handle error")
                 case let .success(contacts):
                     viewModel.contacts = contacts
-                    viewModel.presentedContacts = contacts
+                    viewModel.presentedContacts = contacts.map(viewModel.contactProjection(from:))
                 }
             }
         }
@@ -59,23 +59,55 @@ final class DefaultContactsListViewModel: ContactsListViewModel {
     
     func toggleFavorites() {
         _narrowedToFavorites.notify(using: _narrowedToFavorites.value ? false : true)
-        presentedContacts = contacts.filter { contact in contact.isFavorite == _narrowedToFavorites.value }
+        reload()
     }
     
-    func select(_ contact: ContactProjection) {}
+    func select(_ contact: ContactProjection) {
+        print(contact)
+    }
+    
+    func fetchAvatarsFor(contacts: [ContactProjection]) {
+        for contact in contacts {
+            guard case .uncached = imageRepository.status(for: contact.id.picture.thumbnail) else { continue }
+            imageRepository.fetchImage(from: contact.id.picture.thumbnail) { [weak self] status in
+                switch status {
+                case .loaded: self?.reload()
+                case .loading: self?.reload()
+                case .invalid: break // INFO: - Handle by showing error indicator on AvatarView
+                case .uncached: break
+                }
+            }
+        }
+    }
     
     // MARK: - Methods
+    
+    private func reload() {
+        presentedContacts = contacts
+            .filter { contact in contact.isFavorite == _narrowedToFavorites.value }
+            .map(contactProjection(from:))
+    }
     
     private func contactProjection(from contact: Contact) -> ContactProjection {
         ContactProjection(
             id: contact,
-            avatar: .initials(contact.name.first.first.flatMap(String.init).value(or: "") + contact.name.last.first.flatMap(String.init).value(or: "")),
+            avatar: avatarProjection(for: contact),
             name: contact.name.first + " " + contact.name.last,
             nationality: flag(from: contact.nationality.rawValue) + " " + name(from: contact.nationality.rawValue),
             isFavorite: contact.isFavorite
         )
     }
     
+    private func avatarProjection(for contact: Contact) -> AvatarProjection {
+        switch imageRepository.status(for: contact.picture.thumbnail) {
+        case .uncached: return .initials(contact.name.initials)
+        case .invalid: return .initials(contact.name.initials) // TODO: - Handle by showing error indicator on AvatarView
+        case .loading: return .loading(contact.name.initials)
+        case let .loaded(image): return .loaded(image)
+        }
+    }
+    
+    // INFO: - This method should be moved to mapper object or similar utility class
     private func flag(from nationalityCode: String) -> String {
         let base = 127397
         var usv = String.UnicodeScalarView()
@@ -87,6 +119,7 @@ final class DefaultContactsListViewModel: ContactsListViewModel {
         return String(usv)
     }
     
+    // INFO: - This method should be moved to mapper object or similar utility class
     private func name(from nationalityCode: String) -> String {
         Locale.current.localizedString(forRegionCode: nationalityCode).value(or: "")
     }

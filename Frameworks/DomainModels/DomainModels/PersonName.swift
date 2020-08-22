@@ -25,3 +25,9 @@ public struct PersonName: Hashable {
     }
     
 }
+
+extension PersonName {
+    
+    public var initials: String { String([first.first, last.first].compactMap { $0 }) }
+    
+}
