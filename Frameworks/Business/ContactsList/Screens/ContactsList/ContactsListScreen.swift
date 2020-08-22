@@ -15,13 +15,17 @@ final class ContactsListScreen: Screen {
     
     // MARK: - Properties
     
+    let events: ContactsListScreenEvents
     let viewController: UIViewController
     
     // MARK: - Initializers
     
     init(contactsRepository: ContactsRepository) {
+        let events = DefaultContactsListEvents()
         let model = DefaultContactsListModel(contactsRepository: contactsRepository)
-        let viewModel = DefaultContactsListViewModel(model: model, imageRepository: DefaultImagesRepository())
+        let viewModel = DefaultContactsListViewModel(model: model, imageRepository: DefaultImagesRepository(), events: events)
+        
+        self.events = events
         viewController = ContactsListViewController(viewModel: viewModel)
     }
     

@@ -14,4 +14,6 @@ public protocol Presenter: AnyObject {
     func push(_ screen: Screen)
     func present(_ screen: Screen)
     
+    func present(_ viewController: UIViewController) 
+    
 }

@@ -55,7 +55,8 @@ extension ContactsListViewController {
         }
         
         func projections(for paths: [IndexPath]) -> [ContactProjection] {
-            guard let items = items else { return [] }
+            guard let items = items, items.isNotEmpty else { return [] }
+            
             var results: [ContactProjection] = []
             results.reserveCapacity(paths.count)
             

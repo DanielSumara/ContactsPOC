@@ -49,6 +49,10 @@ public final class DefaultPresenter: Presenter {
         navigationController.present(screen.viewController, animated: true)
     }
     
+    public func present(_ viewController: UIViewController) {
+        navigationController.present(viewController, animated: true)
+    }
+    
     // MARK: - Methods
     
     private func releaseScreens(after viewController: UIViewController) {

@@ -25,6 +25,7 @@ final class DefaultContactsListViewModel: ContactsListViewModel {
     private let _narrowedToFavorites = ValueEmitter(value: false)
     private let _content = ValueEmitter(value: ListContent.loading)
     
+    private let events: ContactsListEvents
     private let imageRepository: ImagesRepository
     private let model: ContactsListModel
     
@@ -33,7 +34,8 @@ final class DefaultContactsListViewModel: ContactsListViewModel {
     
     // MARK: - Initializers
     
-    init(model: ContactsListModel, imageRepository: ImagesRepository) {
+    init(model: ContactsListModel, imageRepository: ImagesRepository, events: ContactsListEvents) {
+        self.events = events
         self.imageRepository = imageRepository
         self.model = model
         
@@ -48,7 +50,7 @@ final class DefaultContactsListViewModel: ContactsListViewModel {
         DispatchQueue.main.asyncAfter(deadline: .now() + 1) { [model] in
             model.observeContacts(on: self) { viewModel, result in
                 switch result {
-                case let .failure(error): break; #warning("Handle error")
+                case let .failure(error): viewModel.events.report(error)
                 case let .success(contacts):
                     viewModel.contacts = contacts
                     viewModel.presentedContacts = contacts.map(viewModel.contactProjection(from:))
@@ -63,7 +65,7 @@ final class DefaultContactsListViewModel: ContactsListViewModel {
     }
     
     func select(_ contact: ContactProjection) {
-        print(contact)
+        events.presentDetails(of: contact.id)
     }
     
     func fetchAvatarsFor(contacts: [ContactProjection]) {

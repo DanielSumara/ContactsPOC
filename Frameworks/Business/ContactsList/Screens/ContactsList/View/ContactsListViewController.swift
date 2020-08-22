@@ -26,7 +26,7 @@ final class ContactsListViewController: UIViewController {
     // MARK: - Initializers
     
     init(viewModel: ContactsListViewModel) {
-        self.viewModel = viewModel
+        self.viewModel = viewModel        
         super.init(nibName: nil, bundle: nil)
     }
     
