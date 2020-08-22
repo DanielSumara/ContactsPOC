@@ -7,6 +7,7 @@
 //
 
 import ContactsModels
+import Extensions
 import Foundation
 import UIKit
 
@@ -16,11 +17,11 @@ extension ContactsListViewController {
         
         // MARK: - Properties
         
-        private var items: [Int] = []
+        private var items: [ContactProjection]?
         
         // MARK: - API
         
-        func set(items: [Int]) {
+        func set(items: [ContactProjection]) {
             self.items = items
         }
         
@@ -35,10 +36,13 @@ extension ContactsListViewController {
 
 extension ContactsListViewController.ListAdapter: UITableViewDataSource {
     
-    func tableView(_ tableView: UITableView, numberOfRowsInSection section: Int) -> Int { items.count }
+    func tableView(_ tableView: UITableView, numberOfRowsInSection section: Int) -> Int { (items?.count).value(or: 1) }
     
     func tableView(_ tableView: UITableView, cellForRowAt indexPath: IndexPath) -> UITableViewCell {
-        tableView.dequeue(ContactCell.self, at: indexPath, with: items[indexPath.row])
+        switch items {
+        case .none: return tableView.dequeue(LoadingCell.self, at: indexPath, with: true)
+        case let .some(contacts): return tableView.dequeue(ContactCell.self, at: indexPath, with: contacts[indexPath.row])
+        }
     }
     
 }

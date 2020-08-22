@@ -20,7 +20,7 @@ public final class DefaultContactsRepository: ContactsRepository {
     private let favoritesStore: FavoritesStore
     private let mapper: TransportToDomainMapper
     
-    private let emitter = Emitter<Result<[Contact], ContactsRepositoryError>>()
+    private let emitter = EventEmitter<Result<[Contact], ContactsRepositoryError>>()
     
     private var state = State.cold
     private var fetchedContacts: [Contact] = [] { didSet { emitter.notify(using: .success(fetchedContacts)) } }

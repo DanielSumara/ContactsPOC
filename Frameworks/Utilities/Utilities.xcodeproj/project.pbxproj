@@ -24,7 +24,10 @@
 		0957E38124F134C500E620DE /* DefaultStringToDateConverter.swift in Sources */ = {isa = PBXBuildFile; fileRef = 0957E38024F134C500E620DE /* DefaultStringToDateConverter.swift */; };
 		0957E38324F1352600E620DE /* DefaultStringToDateConverter+Tests.swift in Sources */ = {isa = PBXBuildFile; fileRef = 0957E38224F1352600E620DE /* DefaultStringToDateConverter+Tests.swift */; };
 		0957E3A924F13FC700E620DE /* Observable.swift in Sources */ = {isa = PBXBuildFile; fileRef = 0957E3A824F13FC700E620DE /* Observable.swift */; };
-		0957E3AB24F13FDD00E620DE /* Emitter.swift in Sources */ = {isa = PBXBuildFile; fileRef = 0957E3AA24F13FDD00E620DE /* Emitter.swift */; };
+		0957E3AB24F13FDD00E620DE /* EventEmitter.swift in Sources */ = {isa = PBXBuildFile; fileRef = 0957E3AA24F13FDD00E620DE /* EventEmitter.swift */; };
+		0957E3D824F16C7000E620DE /* ValueEmitter.swift in Sources */ = {isa = PBXBuildFile; fileRef = 0957E3D724F16C7000E620DE /* ValueEmitter.swift */; };
+		0957E3E024F1791200E620DE /* Optional+Extensions.swift in Sources */ = {isa = PBXBuildFile; fileRef = 0957E3DF24F1791200E620DE /* Optional+Extensions.swift */; };
+		0957E3E224F1793E00E620DE /* Optional+Extensions+Tests.swift in Sources */ = {isa = PBXBuildFile; fileRef = 0957E3E124F1793E00E620DE /* Optional+Extensions+Tests.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
@@ -78,7 +81,10 @@
 		0957E38024F134C500E620DE /* DefaultStringToDateConverter.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = DefaultStringToDateConverter.swift; sourceTree = "<group>"; };
 		0957E38224F1352600E620DE /* DefaultStringToDateConverter+Tests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = "DefaultStringToDateConverter+Tests.swift"; sourceTree = "<group>"; };
 		0957E3A824F13FC700E620DE /* Observable.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Observable.swift; sourceTree = "<group>"; };
-		0957E3AA24F13FDD00E620DE /* Emitter.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Emitter.swift; sourceTree = "<group>"; };
+		0957E3AA24F13FDD00E620DE /* EventEmitter.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = EventEmitter.swift; sourceTree = "<group>"; };
+		0957E3D724F16C7000E620DE /* ValueEmitter.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ValueEmitter.swift; sourceTree = "<group>"; };
+		0957E3DF24F1791200E620DE /* Optional+Extensions.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = "Optional+Extensions.swift"; sourceTree = "<group>"; };
+		0957E3E124F1793E00E620DE /* Optional+Extensions+Tests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = "Optional+Extensions+Tests.swift"; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -179,6 +185,7 @@
 		0909393824F0038C0025F222 /* Extensions */ = {
 			isa = PBXGroup;
 			children = (
+				0957E3DE24F1790600E620DE /* Optionals */,
 				0909394F24F003A70025F222 /* Collections */,
 				0909394E24F0039C0025F222 /* SupportingFiles */,
 			);
@@ -301,10 +308,20 @@
 		0957E3A724F13F7D00E620DE /* Observers */ = {
 			isa = PBXGroup;
 			children = (
-				0957E3AA24F13FDD00E620DE /* Emitter.swift */,
+				0957E3AA24F13FDD00E620DE /* EventEmitter.swift */,
 				0957E3A824F13FC700E620DE /* Observable.swift */,
+				0957E3D724F16C7000E620DE /* ValueEmitter.swift */,
 			);
 			path = Observers;
+			sourceTree = "<group>";
+		};
+		0957E3DE24F1790600E620DE /* Optionals */ = {
+			isa = PBXGroup;
+			children = (
+				0957E3DF24F1791200E620DE /* Optional+Extensions.swift */,
+				0957E3E124F1793E00E620DE /* Optional+Extensions+Tests.swift */,
+			);
+			path = Optionals;
 			sourceTree = "<group>";
 		};
 /* End PBXGroup section */
@@ -554,7 +571,8 @@
 				0957E3A924F13FC700E620DE /* Observable.swift in Sources */,
 				0957E38124F134C500E620DE /* DefaultStringToDateConverter.swift in Sources */,
 				0957E37F24F134B800E620DE /* StringToDateConverter.swift in Sources */,
-				0957E3AB24F13FDD00E620DE /* Emitter.swift in Sources */,
+				0957E3AB24F13FDD00E620DE /* EventEmitter.swift in Sources */,
+				0957E3D824F16C7000E620DE /* ValueEmitter.swift in Sources */,
 				0957E33924F10E8800E620DE /* Action.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
@@ -573,6 +591,7 @@
 			buildActionMask = 2147483647;
 			files = (
 				0909395324F004040025F222 /* Array+Extensions.swift in Sources */,
+				0957E3E024F1791200E620DE /* Optional+Extensions.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -581,6 +600,7 @@
 			buildActionMask = 2147483647;
 			files = (
 				0909395524F0042C0025F222 /* Array+Extensions+Tests.swift in Sources */,
+				0957E3E224F1793E00E620DE /* Optional+Extensions+Tests.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};

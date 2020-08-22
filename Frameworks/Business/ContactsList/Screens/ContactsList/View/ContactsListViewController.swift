@@ -7,6 +7,7 @@
 //
 
 import ContactsKit
+import Extensions
 import Foundation
 import Resources
 import UIKit
@@ -20,7 +21,16 @@ final class ContactsListViewController: UIViewController {
     
     private let favoritesButton = SelectableImageBarButton(image: Icons.star, selectedImage: Icons.starFilled)
     
+    private let viewModel: ContactsListViewModel
+    
     // MARK: - Initializers
+    
+    init(viewModel: ContactsListViewModel) {
+        self.viewModel = viewModel
+        super.init(nibName: nil, bundle: nil)
+    }
+    
+    required init?(coder: NSCoder) { nil }
     
     // MARK: - Lifecycle
     
@@ -41,7 +51,6 @@ final class ContactsListViewController: UIViewController {
     private func setupComponents() {
         title = "Contacts"
         navigationItem.largeTitleDisplayMode = .always
-        navigationItem.rightBarButtonItem = favoritesButton
         
         listAdapter.prepare(for: contentView)
         
@@ -49,11 +58,24 @@ final class ContactsListViewController: UIViewController {
     }
     
     private func bindViewModelWithView() {
-        listAdapter.set(items: [1, 2, 3, 4])
+        viewModel.content.observe(on: self) { view, content in view.setupView(using: content) }
     }
     
     private func bindViewWithViewModel() {
-        favoritesButton.tapped = { }
+        favoritesButton.tapped = {}
+    }
+    
+    // MARK: - Actions
+    
+    private func setupView(using content: ListContent) {
+        switch content {
+        case .loading: break
+        case .lackOfContacts: break
+        case let .contacts(contacts):
+            navigationItem.rightBarButtonItem = favoritesButton
+            listAdapter.set(items: contacts)
+            contentView.reloadSections(IndexSet(integer: .zero), with: .automatic)
+        }
     }
     
 }

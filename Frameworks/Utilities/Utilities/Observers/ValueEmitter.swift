@@ -1,5 +1,5 @@
 //
-//  Emitter.swift
+//  ValueEmitter.swift
 //  Utilities
 //
 //  Created by Daniel Sumara on 22/08/2020.
@@ -8,9 +8,11 @@
 
 import Foundation
 
-public final class Emitter<DataType> {
+public final class ValueEmitter<DataType> {
     
     // MARK: - Properties
+    
+    public private(set) var value: DataType
     
     private let lock = NSLock()
     
@@ -18,13 +20,18 @@ public final class Emitter<DataType> {
     
     // MARK: - Initializers
     
-    public init() {}
+    public init(value: DataType) {
+        self.value = value
+    }
     
     // MARK: - API
     
     public func notify(using subject: DataType) {
         lock.lock()
         defer { lock.unlock() }
+        
+        value = subject
+        
         for (_, closure) in observationClosures {
             closure(subject)
         }
@@ -48,6 +55,8 @@ public final class Emitter<DataType> {
             
             closure(observer, subject)
         }
+        
+        closure(observer, value)
     }
     
     public func remove<ObserverType: AnyObject>(_ observer: ObserverType) {

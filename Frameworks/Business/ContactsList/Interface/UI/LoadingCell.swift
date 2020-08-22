@@ -32,7 +32,7 @@ final class LoadingCell: UITableViewCell, Bindable {
     
     // MARK: - API
     
-    func bind(with data: Int) {
+    func bind(with data: Bool) {
         activityIndicator.startAnimating()
     }
     

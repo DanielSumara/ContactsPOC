@@ -19,11 +19,8 @@ final class ContactsListScreen: Screen {
     // MARK: - Initializers
     
     init() {
-        viewController = ContactsListViewController()
-    }
-    
-    deinit {
-        debugPrint("ContactsListScreen deinited")
+        let viewModel = DefaultContactsListViewModel(model: 1)
+        viewController = ContactsListViewController(viewModel: viewModel)
     }
     
 }

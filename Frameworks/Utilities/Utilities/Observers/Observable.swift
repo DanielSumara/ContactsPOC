@@ -12,22 +12,55 @@ public final class Observable<DataType> {
     
     // MARK: - Properties
     
-    private let emitter: Emitter<DataType>
+    private let parent: ParentBox
     
     // MARK: - Initializers
     
-    init(emitter: Emitter<DataType>) {
-        self.emitter = emitter
+    init(emitter: EventEmitter<DataType>) {
+        parent = .event(emitter)
+    }
+    
+    init(emitter: ValueEmitter<DataType>) {
+        parent = .value(emitter)
     }
     
     // MARK: - API
     
     public func observe<ObserverType: AnyObject>(on observer: ObserverType, closure: @escaping (ObserverType, DataType) -> Void) {
-        emitter.observe(on: observer, closure: closure)
+        parent.observe(on: observer, closure: closure)
     }
     
     public func remove<ObserverType: AnyObject>(_ observer: ObserverType) {
-        emitter.remove(observer)
+        parent.remove(observer)
+    }
+    
+}
+
+extension Observable {
+    
+    private enum ParentBox {
+        
+        // MARK: - Cases
+        
+        case event(EventEmitter<DataType>)
+        case value(ValueEmitter<DataType>)
+        
+        // MARK: - API
+        
+        public func observe<ObserverType: AnyObject>(on observer: ObserverType, closure: @escaping (ObserverType, DataType) -> Void) {
+            switch self {
+            case let .event(emitter): emitter.observe(on: observer, closure: closure)
+            case let .value(emitter): emitter.observe(on: observer, closure: closure)
+            }
+        }
+        
+        public func remove<ObserverType: AnyObject>(_ observer: ObserverType) {
+            switch self {
+            case let .event(emitter): emitter.remove(observer)
+            case let .value(emitter): emitter.remove(observer)
+            }
+        }
+        
     }
     
 }
