@@ -8,7 +8,6 @@
 
 /* Begin PBXBuildFile section */
 		090938BE24EFEB6E0025F222 /* ContactsFlow.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 090938B424EFEB6E0025F222 /* ContactsFlow.framework */; };
-		090938C324EFEB6E0025F222 /* ContactsFlowTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = 090938C224EFEB6E0025F222 /* ContactsFlowTests.swift */; };
 		090938C524EFEB6E0025F222 /* ContactsFlow.h in Headers */ = {isa = PBXBuildFile; fileRef = 090938B724EFEB6E0025F222 /* ContactsFlow.h */; settings = {ATTRIBUTES = (Public, ); }; };
 		090938D124EFEBB50025F222 /* AppCoordinator.swift in Sources */ = {isa = PBXBuildFile; fileRef = 090938D024EFEBB50025F222 /* AppCoordinator.swift */; };
 		0909390324EFF2F90025F222 /* Business.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 0909390124EFF2F90025F222 /* Business.framework */; };
@@ -49,7 +48,6 @@
 		090938B724EFEB6E0025F222 /* ContactsFlow.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = ContactsFlow.h; sourceTree = "<group>"; };
 		090938B824EFEB6E0025F222 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
 		090938BD24EFEB6E0025F222 /* ContactsFlowTests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = ContactsFlowTests.xctest; sourceTree = BUILT_PRODUCTS_DIR; };
-		090938C224EFEB6E0025F222 /* ContactsFlowTests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ContactsFlowTests.swift; sourceTree = "<group>"; };
 		090938C424EFEB6E0025F222 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
 		090938D024EFEBB50025F222 /* AppCoordinator.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppCoordinator.swift; sourceTree = "<group>"; };
 		0909390124EFF2F90025F222 /* Business.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; path = Business.framework; sourceTree = BUILT_PRODUCTS_DIR; };
@@ -112,7 +110,6 @@
 		090938C124EFEB6E0025F222 /* ContactsFlowTests */ = {
 			isa = PBXGroup;
 			children = (
-				090938C224EFEB6E0025F222 /* ContactsFlowTests.swift */,
 				090938C424EFEB6E0025F222 /* Info.plist */,
 			);
 			path = ContactsFlowTests;
@@ -265,7 +262,6 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
-				090938C324EFEB6E0025F222 /* ContactsFlowTests.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};

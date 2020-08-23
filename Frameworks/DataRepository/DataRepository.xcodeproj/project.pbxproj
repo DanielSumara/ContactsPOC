@@ -134,7 +134,7 @@
 			isa = PBXGroup;
 			children = (
 				0957E39924F1383A00E620DE /* Repositories */,
-				0957E39724F1381E00E620DE /* SupportingFilles */,
+				0957E39724F1381E00E620DE /* SupportingFiles */,
 			);
 			path = DataRepository;
 			sourceTree = "<group>";
@@ -160,13 +160,13 @@
 			name = Frameworks;
 			sourceTree = "<group>";
 		};
-		0957E39724F1381E00E620DE /* SupportingFilles */ = {
+		0957E39724F1381E00E620DE /* SupportingFiles */ = {
 			isa = PBXGroup;
 			children = (
 				0909382724EFE1950025F222 /* DataRepository.h */,
 				0909382824EFE1950025F222 /* Info.plist */,
 			);
-			name = SupportingFilles;
+			name = SupportingFiles;
 			sourceTree = "<group>";
 		};
 		0957E39924F1383A00E620DE /* Repositories */ = {

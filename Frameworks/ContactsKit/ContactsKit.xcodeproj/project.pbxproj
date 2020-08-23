@@ -8,7 +8,6 @@
 
 /* Begin PBXBuildFile section */
 		090937AE24EFE0490025F222 /* ContactsKit.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 090937A424EFE0490025F222 /* ContactsKit.framework */; };
-		090937B324EFE0490025F222 /* ContactsKitTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = 090937B224EFE0490025F222 /* ContactsKitTests.swift */; };
 		090937B524EFE0490025F222 /* ContactsKit.h in Headers */ = {isa = PBXBuildFile; fileRef = 090937A724EFE0490025F222 /* ContactsKit.h */; settings = {ATTRIBUTES = (Public, ); }; };
 		090937D324EFE0EC0025F222 /* ContactsModels.h in Headers */ = {isa = PBXBuildFile; fileRef = 090937C524EFE0EC0025F222 /* ContactsModels.h */; settings = {ATTRIBUTES = (Public, ); }; };
 		0957E2B924F0377100E620DE /* NationalityProjection.swift in Sources */ = {isa = PBXBuildFile; fileRef = 0957E2B824F0377100E620DE /* NationalityProjection.swift */; };
@@ -52,7 +51,6 @@
 		090937A724EFE0490025F222 /* ContactsKit.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = ContactsKit.h; sourceTree = "<group>"; };
 		090937A824EFE0490025F222 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
 		090937AD24EFE0490025F222 /* ContactsKitTests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = ContactsKitTests.xctest; sourceTree = BUILT_PRODUCTS_DIR; };
-		090937B224EFE0490025F222 /* ContactsKitTests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ContactsKitTests.swift; sourceTree = "<group>"; };
 		090937B424EFE0490025F222 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
 		090937C324EFE0EC0025F222 /* ContactsModels.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = ContactsModels.framework; sourceTree = BUILT_PRODUCTS_DIR; };
 		090937C524EFE0EC0025F222 /* ContactsModels.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = ContactsModels.h; sourceTree = "<group>"; };
@@ -135,7 +133,7 @@
 				0957E31624F0483A00E620DE /* Extensions */,
 				0957E30B24F042DE00E620DE /* Labels */,
 				0957E31324F0452700E620DE /* Marks */,
-				0957E2C424F0386A00E620DE /* SupportingFilles */,
+				0957E2C424F0386A00E620DE /* SupportingFiles */,
 			);
 			path = ContactsKit;
 			sourceTree = "<group>";
@@ -143,7 +141,6 @@
 		090937B124EFE0490025F222 /* ContactsKitTests */ = {
 			isa = PBXGroup;
 			children = (
-				090937B224EFE0490025F222 /* ContactsKitTests.swift */,
 				090937B424EFE0490025F222 /* Info.plist */,
 			);
 			path = ContactsKitTests;
@@ -154,27 +151,27 @@
 			children = (
 				0957E2CA24F0396C00E620DE /* Contracts */,
 				0957E2CB24F0397100E620DE /* Models */,
-				0957E2BA24F0378200E620DE /* SupportingFilles */,
+				0957E2BA24F0378200E620DE /* SupportingFiles */,
 			);
 			path = ContactsModels;
 			sourceTree = "<group>";
 		};
-		0957E2BA24F0378200E620DE /* SupportingFilles */ = {
+		0957E2BA24F0378200E620DE /* SupportingFiles */ = {
 			isa = PBXGroup;
 			children = (
 				090937C524EFE0EC0025F222 /* ContactsModels.h */,
 				090937C624EFE0EC0025F222 /* Info.plist */,
 			);
-			name = SupportingFilles;
+			name = SupportingFiles;
 			sourceTree = "<group>";
 		};
-		0957E2C424F0386A00E620DE /* SupportingFilles */ = {
+		0957E2C424F0386A00E620DE /* SupportingFiles */ = {
 			isa = PBXGroup;
 			children = (
 				090937A724EFE0490025F222 /* ContactsKit.h */,
 				090937A824EFE0490025F222 /* Info.plist */,
 			);
-			name = SupportingFilles;
+			name = SupportingFiles;
 			sourceTree = "<group>";
 		};
 		0957E2C624F0387E00E620DE /* AvatarView */ = {
@@ -424,7 +421,6 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
-				090937B324EFE0490025F222 /* ContactsKitTests.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};

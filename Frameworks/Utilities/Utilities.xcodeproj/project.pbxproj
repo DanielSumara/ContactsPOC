@@ -8,7 +8,6 @@
 
 /* Begin PBXBuildFile section */
 		0909392224F003770025F222 /* Utilities.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 0909391824F003760025F222 /* Utilities.framework */; };
-		0909392724F003770025F222 /* UtilitiesTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = 0909392624F003770025F222 /* UtilitiesTests.swift */; };
 		0909392924F003770025F222 /* Utilities.h in Headers */ = {isa = PBXBuildFile; fileRef = 0909391B24F003760025F222 /* Utilities.h */; settings = {ATTRIBUTES = (Public, ); }; };
 		0909394024F0038C0025F222 /* Extensions.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 0909393724F0038C0025F222 /* Extensions.framework */; };
 		0909394724F0038C0025F222 /* Extensions.h in Headers */ = {isa = PBXBuildFile; fileRef = 0909393924F0038C0025F222 /* Extensions.h */; settings = {ATTRIBUTES = (Public, ); }; };
@@ -66,7 +65,6 @@
 		0909391B24F003760025F222 /* Utilities.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = Utilities.h; sourceTree = "<group>"; };
 		0909391C24F003760025F222 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
 		0909392124F003770025F222 /* UtilitiesTests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = UtilitiesTests.xctest; sourceTree = BUILT_PRODUCTS_DIR; };
-		0909392624F003770025F222 /* UtilitiesTests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = UtilitiesTests.swift; sourceTree = "<group>"; };
 		0909392824F003770025F222 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
 		0909393724F0038C0025F222 /* Extensions.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = Extensions.framework; sourceTree = BUILT_PRODUCTS_DIR; };
 		0909393924F0038C0025F222 /* Extensions.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = Extensions.h; sourceTree = "<group>"; };
@@ -191,7 +189,6 @@
 		0909392524F003770025F222 /* UtilitiesTests */ = {
 			isa = PBXGroup;
 			children = (
-				0909392624F003770025F222 /* UtilitiesTests.swift */,
 				0909392824F003770025F222 /* Info.plist */,
 			);
 			path = UtilitiesTests;
@@ -257,7 +254,7 @@
 				0957E2FA24F0412A00E620DE /* ViewLayout.swift */,
 				0957E2FE24F041BD00E620DE /* Constants */,
 				0957E2FF24F041C500E620DE /* Extensions */,
-				0957E2F924F040F400E620DE /* SupportingFilles */,
+				0957E2F924F040F400E620DE /* SupportingFiles */,
 			);
 			path = ViewLayout;
 			sourceTree = "<group>";
@@ -270,13 +267,13 @@
 			path = ViewLayoutTests;
 			sourceTree = "<group>";
 		};
-		0957E2F924F040F400E620DE /* SupportingFilles */ = {
+		0957E2F924F040F400E620DE /* SupportingFiles */ = {
 			isa = PBXGroup;
 			children = (
 				0957E2E424F040E900E620DE /* ViewLayout.h */,
 				0957E2E524F040E900E620DE /* Info.plist */,
 			);
-			name = SupportingFilles;
+			name = SupportingFiles;
 			sourceTree = "<group>";
 		};
 		0957E2FE24F041BD00E620DE /* Constants */ = {
@@ -621,7 +618,6 @@
 			buildActionMask = 2147483647;
 			files = (
 				0957E38324F1352600E620DE /* DefaultStringToDateConverter+Tests.swift in Sources */,
-				0909392724F003770025F222 /* UtilitiesTests.swift in Sources */,
 				098C0A0024F244B500F0338B /* InvocationRetainer+Tests.swift in Sources */,
 				098C0A0224F2469600F0338B /* InvocationGroup+Tests.swift in Sources */,
 				098C0A0524F2487300F0338B /* InvocationGroup+Tests+IntegerContext.swift in Sources */,

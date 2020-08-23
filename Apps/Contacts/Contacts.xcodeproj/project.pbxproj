@@ -11,7 +11,6 @@
 		0909376B24EFD9D70025F222 /* SceneDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = 0909376A24EFD9D70025F222 /* SceneDelegate.swift */; };
 		0909377224EFD9D80025F222 /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 0909377124EFD9D80025F222 /* Assets.xcassets */; };
 		0909377524EFD9D80025F222 /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 0909377324EFD9D80025F222 /* LaunchScreen.storyboard */; };
-		0909378024EFD9D80025F222 /* ContactsTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = 0909377F24EFD9D80025F222 /* ContactsTests.swift */; };
 		0909378B24EFD9D80025F222 /* ContactsUITests.swift in Sources */ = {isa = PBXBuildFile; fileRef = 0909378A24EFD9D80025F222 /* ContactsUITests.swift */; };
 		090938D424EFEDE50025F222 /* ContactsFlow.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 090938D324EFEDE50025F222 /* ContactsFlow.framework */; };
 		090938D524EFEDE50025F222 /* ContactsFlow.framework in Embed Frameworks */ = {isa = PBXBuildFile; fileRef = 090938D324EFEDE50025F222 /* ContactsFlow.framework */; settings = {ATTRIBUTES = (CodeSignOnCopy, RemoveHeadersOnCopy, ); }; };
@@ -93,7 +92,6 @@
 		0909377424EFD9D80025F222 /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/LaunchScreen.storyboard; sourceTree = "<group>"; };
 		0909377624EFD9D80025F222 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
 		0909377B24EFD9D80025F222 /* ContactsTests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = ContactsTests.xctest; sourceTree = BUILT_PRODUCTS_DIR; };
-		0909377F24EFD9D80025F222 /* ContactsTests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ContactsTests.swift; sourceTree = "<group>"; };
 		0909378124EFD9D80025F222 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
 		0909378624EFD9D80025F222 /* ContactsUITests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = ContactsUITests.xctest; sourceTree = BUILT_PRODUCTS_DIR; };
 		0909378A24EFD9D80025F222 /* ContactsUITests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ContactsUITests.swift; sourceTree = "<group>"; };
@@ -187,7 +185,6 @@
 		0909377E24EFD9D80025F222 /* ContactsTests */ = {
 			isa = PBXGroup;
 			children = (
-				0909377F24EFD9D80025F222 /* ContactsTests.swift */,
 				0909378124EFD9D80025F222 /* Info.plist */,
 			);
 			path = ContactsTests;
@@ -379,7 +376,6 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
-				0909378024EFD9D80025F222 /* ContactsTests.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
