@@ -7,6 +7,7 @@
 //
 
 import Business
+import ContactDetails
 import DataRepository
 import DomainModels
 import Foundation
@@ -18,6 +19,13 @@ public final class ContactListFlow: ModuleFlow {
     
     private let contactsRepository: ContactsRepository
     private let presenter: Presenter
+    
+    private var childFlow: ModuleFlow? {
+        didSet {
+            oldValue?.stop()
+            childFlow?.start()
+        }
+    }
     
     // MARK: - Initializers
     
@@ -34,6 +42,8 @@ public final class ContactListFlow: ModuleFlow {
         screen.events.errorOccurred.observe(on: self) { flow, error in flow.show(error) }
         
         presenter.push(screen)
+        
+        presenter.observeAppearance(of: screen, on: self) { flow in flow.childFlow = nil }
     }
     
     public func stop() {}
@@ -41,7 +51,7 @@ public final class ContactListFlow: ModuleFlow {
     // MARK: - Methods
     
     private func showDetails(of contact: Contact) {
-        
+        childFlow = ContactDetailsFlow(presenter: presenter, contact: contact)
     }
     
     private func show(_ error: Error) {

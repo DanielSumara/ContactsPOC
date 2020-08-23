@@ -53,6 +53,8 @@
 		098C0A2B24F2567500F0338B /* Utilities.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 0957E3CA24F16B1400E620DE /* Utilities.framework */; };
 		098C0A4124F2773A00F0338B /* ContactDetails.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 098C0A3824F2773A00F0338B /* ContactDetails.framework */; };
 		098C0A4824F2773A00F0338B /* ContactDetails.h in Headers */ = {isa = PBXBuildFile; fileRef = 098C0A3A24F2773A00F0338B /* ContactDetails.h */; settings = {ATTRIBUTES = (Public, ); }; };
+		098C0A5524F2790400F0338B /* ContactDetailsScreen.swift in Sources */ = {isa = PBXBuildFile; fileRef = 098C0A5424F2790400F0338B /* ContactDetailsScreen.swift */; };
+		098C0A5C24F279B100F0338B /* ContactDetailsFlow.swift in Sources */ = {isa = PBXBuildFile; fileRef = 098C0A5B24F279B100F0338B /* ContactDetailsFlow.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
@@ -78,6 +80,20 @@
 			remoteInfo = Business;
 		};
 		098C0A4224F2773A00F0338B /* PBXContainerItemProxy */ = {
+			isa = PBXContainerItemProxy;
+			containerPortal = 0909388724EFE2410025F222 /* Project object */;
+			proxyType = 1;
+			remoteGlobalIDString = 098C0A3724F2773A00F0338B;
+			remoteInfo = ContactDetails;
+		};
+		098C0A5924F2792200F0338B /* PBXContainerItemProxy */ = {
+			isa = PBXContainerItemProxy;
+			containerPortal = 0909388724EFE2410025F222 /* Project object */;
+			proxyType = 1;
+			remoteGlobalIDString = 0909388F24EFE2410025F222;
+			remoteInfo = Business;
+		};
+		098C0A5D24F27A0B00F0338B /* PBXContainerItemProxy */ = {
 			isa = PBXContainerItemProxy;
 			containerPortal = 0909388724EFE2410025F222 /* Project object */;
 			proxyType = 1;
@@ -141,6 +157,8 @@
 		098C0A3B24F2773A00F0338B /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
 		098C0A4024F2773A00F0338B /* ContactDetailsTests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = ContactDetailsTests.xctest; sourceTree = BUILT_PRODUCTS_DIR; };
 		098C0A4724F2773A00F0338B /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		098C0A5424F2790400F0338B /* ContactDetailsScreen.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ContactDetailsScreen.swift; sourceTree = "<group>"; };
+		098C0A5B24F279B100F0338B /* ContactDetailsFlow.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ContactDetailsFlow.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -488,6 +506,9 @@
 		098C0A3924F2773A00F0338B /* ContactDetails */ = {
 			isa = PBXGroup;
 			children = (
+				098C0A5124F278E500F0338B /* Flow */,
+				098C0A5224F278E900F0338B /* Interface */,
+				098C0A5324F278ED00F0338B /* Screens */,
 				098C0A4F24F277C800F0338B /* SupportingFiles */,
 			);
 			path = ContactDetails;
@@ -508,6 +529,29 @@
 				098C0A3B24F2773A00F0338B /* Info.plist */,
 			);
 			name = SupportingFiles;
+			sourceTree = "<group>";
+		};
+		098C0A5124F278E500F0338B /* Flow */ = {
+			isa = PBXGroup;
+			children = (
+				098C0A5B24F279B100F0338B /* ContactDetailsFlow.swift */,
+			);
+			path = Flow;
+			sourceTree = "<group>";
+		};
+		098C0A5224F278E900F0338B /* Interface */ = {
+			isa = PBXGroup;
+			children = (
+			);
+			path = Interface;
+			sourceTree = "<group>";
+		};
+		098C0A5324F278ED00F0338B /* Screens */ = {
+			isa = PBXGroup;
+			children = (
+				098C0A5424F2790400F0338B /* ContactDetailsScreen.swift */,
+			);
+			path = Screens;
 			sourceTree = "<group>";
 		};
 /* End PBXGroup section */
@@ -588,6 +632,7 @@
 			buildRules = (
 			);
 			dependencies = (
+				098C0A5E24F27A0B00F0338B /* PBXTargetDependency */,
 				090938FA24EFF24B0025F222 /* PBXTargetDependency */,
 			);
 			name = ContactsList;
@@ -625,6 +670,7 @@
 			buildRules = (
 			);
 			dependencies = (
+				098C0A5A24F2792200F0338B /* PBXTargetDependency */,
 			);
 			name = ContactDetails;
 			productName = ContactDetails;
@@ -675,6 +721,7 @@
 					};
 					098C0A3724F2773A00F0338B = {
 						CreatedOnToolsVersion = 11.6;
+						LastSwiftMigration = 1160;
 					};
 					098C0A3F24F2773A00F0338B = {
 						CreatedOnToolsVersion = 11.6;
@@ -812,6 +859,8 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				098C0A5524F2790400F0338B /* ContactDetailsScreen.swift in Sources */,
+				098C0A5C24F279B100F0338B /* ContactDetailsFlow.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -844,6 +893,16 @@
 			isa = PBXTargetDependency;
 			target = 098C0A3724F2773A00F0338B /* ContactDetails */;
 			targetProxy = 098C0A4224F2773A00F0338B /* PBXContainerItemProxy */;
+		};
+		098C0A5A24F2792200F0338B /* PBXTargetDependency */ = {
+			isa = PBXTargetDependency;
+			target = 0909388F24EFE2410025F222 /* Business */;
+			targetProxy = 098C0A5924F2792200F0338B /* PBXContainerItemProxy */;
+		};
+		098C0A5E24F27A0B00F0338B /* PBXTargetDependency */ = {
+			isa = PBXTargetDependency;
+			target = 098C0A3724F2773A00F0338B /* ContactDetails */;
+			targetProxy = 098C0A5D24F27A0B00F0338B /* PBXContainerItemProxy */;
 		};
 /* End PBXTargetDependency section */
 
@@ -1151,6 +1210,7 @@
 		098C0A4A24F2773A00F0338B /* Debug */ = {
 			isa = XCBuildConfiguration;
 			buildSettings = {
+				CLANG_ENABLE_MODULES = YES;
 				CODE_SIGN_STYLE = Automatic;
 				DEFINES_MODULE = YES;
 				DEVELOPMENT_TEAM = 2AHNM42WD8;
@@ -1167,6 +1227,7 @@
 				PRODUCT_BUNDLE_IDENTIFIER = pl.com.sumara.ContactDetails;
 				PRODUCT_NAME = "$(TARGET_NAME:c99extidentifier)";
 				SKIP_INSTALL = YES;
+				SWIFT_OPTIMIZATION_LEVEL = "-Onone";
 				SWIFT_VERSION = 5.0;
 				TARGETED_DEVICE_FAMILY = "1,2";
 			};
@@ -1175,6 +1236,7 @@
 		098C0A4B24F2773A00F0338B /* Release */ = {
 			isa = XCBuildConfiguration;
 			buildSettings = {
+				CLANG_ENABLE_MODULES = YES;
 				CODE_SIGN_STYLE = Automatic;
 				DEFINES_MODULE = YES;
 				DEVELOPMENT_TEAM = 2AHNM42WD8;
@@ -1199,6 +1261,7 @@
 		098C0A4D24F2773A00F0338B /* Debug */ = {
 			isa = XCBuildConfiguration;
 			buildSettings = {
+				ALWAYS_EMBED_SWIFT_STANDARD_LIBRARIES = YES;
 				CODE_SIGN_STYLE = Automatic;
 				DEVELOPMENT_TEAM = 2AHNM42WD8;
 				INFOPLIST_FILE = ContactDetailsTests/Info.plist;
@@ -1218,6 +1281,7 @@
 		098C0A4E24F2773A00F0338B /* Release */ = {
 			isa = XCBuildConfiguration;
 			buildSettings = {
+				ALWAYS_EMBED_SWIFT_STANDARD_LIBRARIES = YES;
 				CODE_SIGN_STYLE = Automatic;
 				DEVELOPMENT_TEAM = 2AHNM42WD8;
 				INFOPLIST_FILE = ContactDetailsTests/Info.plist;

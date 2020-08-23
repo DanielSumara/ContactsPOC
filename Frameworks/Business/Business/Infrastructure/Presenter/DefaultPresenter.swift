@@ -8,6 +8,7 @@
 
 import Extensions
 import UIKit
+import Utilities
 
 public final class DefaultPresenter: Presenter {
     
@@ -19,6 +20,8 @@ public final class DefaultPresenter: Presenter {
     
     private let navigationController = UINavigationController()
     private let navigationDelegate = NavigationControllerDelegate()
+    
+    private let screenAppearEmitter = EventEmitter<Screen>()
     
     private var screensOnStack: [Screen] = []
     private var screensModally: [Screen] = []
@@ -41,7 +44,7 @@ public final class DefaultPresenter: Presenter {
     
     public func push(_ screen: Screen) {
         screensOnStack.append(screen)
-        navigationController.pushViewController(screen.viewController, animated: navigationController.viewControllers.isNotEmpty )
+        navigationController.pushViewController(screen.viewController, animated: navigationController.viewControllers.isNotEmpty)
     }
     
     public func present(_ screen: Screen) {
@@ -53,12 +56,23 @@ public final class DefaultPresenter: Presenter {
         navigationController.present(viewController, animated: true)
     }
     
+    public func observeAppearance<ObserverType: AnyObject>(of screen: Screen, on observer: ObserverType, action: @escaping (ObserverType) -> Void) {
+        screenAppearEmitter.observe(on: observer) { observer, appearedScreen in
+            if appearedScreen === screen {
+                action(observer)
+            }
+        }
+    }
+    
     // MARK: - Methods
     
     private func releaseScreens(after viewController: UIViewController) {
         guard let index = screensOnStack.lastIndex(where: { screen in screen.viewController === viewController }) else {
             return assertionFailure("\(viewController) is not part of Presenter stack")
         }
+        
+        screenAppearEmitter.notify(using: screensOnStack[index])
+        
         screensOnStack.removeSubrange(index.advanced(by: 1)...)
     }
     

@@ -14,6 +14,8 @@ public protocol Presenter: AnyObject {
     func push(_ screen: Screen)
     func present(_ screen: Screen)
     
-    func present(_ viewController: UIViewController) 
+    func present(_ viewController: UIViewController)
+    
+    func observeAppearance<ObserverType: AnyObject>(of screen: Screen, on observer: ObserverType, action: @escaping (ObserverType) -> Void)
     
 }

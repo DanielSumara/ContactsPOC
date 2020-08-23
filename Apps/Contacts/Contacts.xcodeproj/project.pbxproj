@@ -39,6 +39,8 @@
 		098C0A2824F2529000F0338B /* Utilities.framework in Embed Frameworks */ = {isa = PBXBuildFile; fileRef = 098C0A1024F2529000F0338B /* Utilities.framework */; settings = {ATTRIBUTES = (CodeSignOnCopy, RemoveHeadersOnCopy, ); }; };
 		098C0A2924F2529000F0338B /* ViewLayout.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 098C0A1124F2529000F0338B /* ViewLayout.framework */; };
 		098C0A2A24F2529000F0338B /* ViewLayout.framework in Embed Frameworks */ = {isa = PBXBuildFile; fileRef = 098C0A1124F2529000F0338B /* ViewLayout.framework */; settings = {ATTRIBUTES = (CodeSignOnCopy, RemoveHeadersOnCopy, ); }; };
+		098C0A5724F2791000F0338B /* ContactDetails.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 098C0A5624F2791000F0338B /* ContactDetails.framework */; };
+		098C0A5824F2791000F0338B /* ContactDetails.framework in Embed Frameworks */ = {isa = PBXBuildFile; fileRef = 098C0A5624F2791000F0338B /* ContactDetails.framework */; settings = {ATTRIBUTES = (CodeSignOnCopy, RemoveHeadersOnCopy, ); }; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
@@ -69,6 +71,7 @@
 				098C0A2424F2529000F0338B /* RestService.framework in Embed Frameworks */,
 				098C0A1E24F2529000F0338B /* DomainModels.framework in Embed Frameworks */,
 				098C0A1824F2529000F0338B /* ContactsKit.framework in Embed Frameworks */,
+				098C0A5824F2791000F0338B /* ContactDetails.framework in Embed Frameworks */,
 				098C0A2024F2529000F0338B /* Resources.framework in Embed Frameworks */,
 				098C0A1324F2529000F0338B /* Business.framework in Embed Frameworks */,
 				098C0A2224F2529000F0338B /* RestModels.framework in Embed Frameworks */,
@@ -109,6 +112,7 @@
 		098C0A0F24F2529000F0338B /* Extensions.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; path = Extensions.framework; sourceTree = BUILT_PRODUCTS_DIR; };
 		098C0A1024F2529000F0338B /* Utilities.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; path = Utilities.framework; sourceTree = BUILT_PRODUCTS_DIR; };
 		098C0A1124F2529000F0338B /* ViewLayout.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; path = ViewLayout.framework; sourceTree = BUILT_PRODUCTS_DIR; };
+		098C0A5624F2791000F0338B /* ContactDetails.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; path = ContactDetails.framework; sourceTree = BUILT_PRODUCTS_DIR; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -124,6 +128,7 @@
 				098C0A1624F2529000F0338B /* ContactsFlow.framework in Frameworks */,
 				098C0A1924F2529000F0338B /* ContactsModels.framework in Frameworks */,
 				098C0A2324F2529000F0338B /* RestService.framework in Frameworks */,
+				098C0A5724F2791000F0338B /* ContactDetails.framework in Frameworks */,
 				098C0A1F24F2529000F0338B /* Resources.framework in Frameworks */,
 				098C0A2924F2529000F0338B /* ViewLayout.framework in Frameworks */,
 				098C0A2524F2529000F0338B /* Extensions.framework in Frameworks */,
@@ -219,6 +224,7 @@
 		090938D224EFEDE50025F222 /* Frameworks */ = {
 			isa = PBXGroup;
 			children = (
+				098C0A5624F2791000F0338B /* ContactDetails.framework */,
 				098C0A0624F2529000F0338B /* Business.framework */,
 				098C0A0724F2529000F0338B /* ContactsList.framework */,
 				098C0A0824F2529000F0338B /* ContactsKit.framework */,
