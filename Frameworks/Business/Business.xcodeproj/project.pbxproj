@@ -16,7 +16,6 @@
 		090938FF24EFF2B90025F222 /* ContactListFlow.swift in Sources */ = {isa = PBXBuildFile; fileRef = 090938FE24EFF2B90025F222 /* ContactListFlow.swift */; };
 		0909390B24EFF3710025F222 /* Presenter.swift in Sources */ = {isa = PBXBuildFile; fileRef = 0909390A24EFF3710025F222 /* Presenter.swift */; };
 		0909390D24F001B60025F222 /* DefaultPresenter.swift in Sources */ = {isa = PBXBuildFile; fileRef = 0909390C24F001B60025F222 /* DefaultPresenter.swift */; };
-		0909395824F005430025F222 /* Extensions.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 0909395724F005430025F222 /* Extensions.framework */; };
 		0909396124F006D00025F222 /* ContactsListScreen.swift in Sources */ = {isa = PBXBuildFile; fileRef = 0909396024F006D00025F222 /* ContactsListScreen.swift */; };
 		0909396324F007160025F222 /* ContactsListViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 0909396224F007160025F222 /* ContactsListViewController.swift */; };
 		0909396524F007380025F222 /* ContactsListViewController+ContentView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 0909396424F007380025F222 /* ContactsListViewController+ContentView.swift */; };
@@ -30,7 +29,6 @@
 		0957E2AF24F0348600E620DE /* DomainModels.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 0957E2AE24F0348600E620DE /* DomainModels.framework */; };
 		0957E2BF24F0380600E620DE /* ContactsKit.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 0957E2BD24F0380600E620DE /* ContactsKit.framework */; };
 		0957E2C124F0380600E620DE /* ContactsModels.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 0957E2BE24F0380600E620DE /* ContactsModels.framework */; };
-		0957E2CF24F039BB00E620DE /* ContactsModels.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 0957E2CE24F039BB00E620DE /* ContactsModels.framework */; };
 		0957E30324F0421200E620DE /* ViewLayout.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 0957E30224F0421200E620DE /* ViewLayout.framework */; };
 		0957E31024F0449E00E620DE /* ContactCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = 0957E30F24F0449E00E620DE /* ContactCell.swift */; };
 		0957E33024F062BC00E620DE /* LoadingCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = 0957E32F24F062BC00E620DE /* LoadingCell.swift */; };
@@ -55,6 +53,24 @@
 		098C0A4824F2773A00F0338B /* ContactDetails.h in Headers */ = {isa = PBXBuildFile; fileRef = 098C0A3A24F2773A00F0338B /* ContactDetails.h */; settings = {ATTRIBUTES = (Public, ); }; };
 		098C0A5524F2790400F0338B /* ContactDetailsScreen.swift in Sources */ = {isa = PBXBuildFile; fileRef = 098C0A5424F2790400F0338B /* ContactDetailsScreen.swift */; };
 		098C0A5C24F279B100F0338B /* ContactDetailsFlow.swift in Sources */ = {isa = PBXBuildFile; fileRef = 098C0A5B24F279B100F0338B /* ContactDetailsFlow.swift */; };
+		098C0A6124F27F0500F0338B /* ContactDetailsViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 098C0A6024F27F0500F0338B /* ContactDetailsViewController.swift */; };
+		098C0A6324F27F0F00F0338B /* ContactDetailsViewController+ContentView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 098C0A6224F27F0F00F0338B /* ContactDetailsViewController+ContentView.swift */; };
+		098C0A6C24F28BB500F0338B /* ContactsKit.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 0957E2BD24F0380600E620DE /* ContactsKit.framework */; };
+		098C0A6E24F28BB500F0338B /* ContactsModels.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 0957E2BE24F0380600E620DE /* ContactsModels.framework */; };
+		098C0A7024F28BB500F0338B /* DataRepository.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 0957E3C624F16A8900E620DE /* DataRepository.framework */; };
+		098C0A7224F28BB500F0338B /* DomainModels.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 0957E2AE24F0348600E620DE /* DomainModels.framework */; };
+		098C0A7424F28BB500F0338B /* Resources.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 098C0A6B24F28BB500F0338B /* Resources.framework */; };
+		098C0A7824F28BB500F0338B /* Utilities.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 0957E3CA24F16B1400E620DE /* Utilities.framework */; };
+		098C0A7A24F28BB600F0338B /* ViewLayout.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 0957E30224F0421200E620DE /* ViewLayout.framework */; };
+		098C0A7D24F28C1000F0338B /* ContactsKit.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 0957E2BD24F0380600E620DE /* ContactsKit.framework */; };
+		098C0A7E24F28C1400F0338B /* DataRepository.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 0957E3C624F16A8900E620DE /* DataRepository.framework */; };
+		098C0A7F24F28C2000F0338B /* DomainModels.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 0957E2AE24F0348600E620DE /* DomainModels.framework */; };
+		098C0A8024F28C2000F0338B /* Resources.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 098C0A6B24F28BB500F0338B /* Resources.framework */; };
+		098C0A8124F28C2000F0338B /* ViewLayout.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 0957E30224F0421200E620DE /* ViewLayout.framework */; };
+		098C0A8224F28C2000F0338B /* ContactsModels.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 0957E2BE24F0380600E620DE /* ContactsModels.framework */; };
+		098C0A8324F28C2100F0338B /* Resources.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 098C0A6B24F28BB500F0338B /* Resources.framework */; };
+		098C0A8424F28C4900F0338B /* Extensions.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 0957E3E324F179D100E620DE /* Extensions.framework */; };
+		098C0A8524F28C4A00F0338B /* Extensions.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 0957E3E324F179D100E620DE /* Extensions.framework */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
@@ -118,7 +134,6 @@
 		090938FE24EFF2B90025F222 /* ContactListFlow.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ContactListFlow.swift; sourceTree = "<group>"; };
 		0909390A24EFF3710025F222 /* Presenter.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Presenter.swift; sourceTree = "<group>"; };
 		0909390C24F001B60025F222 /* DefaultPresenter.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = DefaultPresenter.swift; sourceTree = "<group>"; };
-		0909395724F005430025F222 /* Extensions.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; path = Extensions.framework; sourceTree = BUILT_PRODUCTS_DIR; };
 		0909396024F006D00025F222 /* ContactsListScreen.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ContactsListScreen.swift; sourceTree = "<group>"; };
 		0909396224F007160025F222 /* ContactsListViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ContactsListViewController.swift; sourceTree = "<group>"; };
 		0909396424F007380025F222 /* ContactsListViewController+ContentView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = "ContactsListViewController+ContentView.swift"; sourceTree = "<group>"; };
@@ -132,7 +147,6 @@
 		0957E2AE24F0348600E620DE /* DomainModels.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; path = DomainModels.framework; sourceTree = BUILT_PRODUCTS_DIR; };
 		0957E2BD24F0380600E620DE /* ContactsKit.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; path = ContactsKit.framework; sourceTree = BUILT_PRODUCTS_DIR; };
 		0957E2BE24F0380600E620DE /* ContactsModels.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; path = ContactsModels.framework; sourceTree = BUILT_PRODUCTS_DIR; };
-		0957E2CE24F039BB00E620DE /* ContactsModels.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; path = ContactsModels.framework; sourceTree = BUILT_PRODUCTS_DIR; };
 		0957E30224F0421200E620DE /* ViewLayout.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; path = ViewLayout.framework; sourceTree = BUILT_PRODUCTS_DIR; };
 		0957E30F24F0449E00E620DE /* ContactCell.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ContactCell.swift; sourceTree = "<group>"; };
 		0957E32F24F062BC00E620DE /* LoadingCell.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = LoadingCell.swift; sourceTree = "<group>"; };
@@ -159,6 +173,9 @@
 		098C0A4724F2773A00F0338B /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
 		098C0A5424F2790400F0338B /* ContactDetailsScreen.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ContactDetailsScreen.swift; sourceTree = "<group>"; };
 		098C0A5B24F279B100F0338B /* ContactDetailsFlow.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ContactDetailsFlow.swift; sourceTree = "<group>"; };
+		098C0A6024F27F0500F0338B /* ContactDetailsViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ContactDetailsViewController.swift; sourceTree = "<group>"; };
+		098C0A6224F27F0F00F0338B /* ContactDetailsViewController+ContentView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = "ContactDetailsViewController+ContentView.swift"; sourceTree = "<group>"; };
+		098C0A6B24F28BB500F0338B /* Resources.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; path = Resources.framework; sourceTree = BUILT_PRODUCTS_DIR; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -166,9 +183,14 @@
 			isa = PBXFrameworksBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
-				0909395824F005430025F222 /* Extensions.framework in Frameworks */,
+				098C0A8424F28C4900F0338B /* Extensions.framework in Frameworks */,
+				098C0A7D24F28C1000F0338B /* ContactsKit.framework in Frameworks */,
+				098C0A8124F28C2000F0338B /* ViewLayout.framework in Frameworks */,
+				098C0A8024F28C2000F0338B /* Resources.framework in Frameworks */,
+				098C0A7F24F28C2000F0338B /* DomainModels.framework in Frameworks */,
+				098C0A7E24F28C1400F0338B /* DataRepository.framework in Frameworks */,
 				098C0A2B24F2567500F0338B /* Utilities.framework in Frameworks */,
-				0957E2CF24F039BB00E620DE /* ContactsModels.framework in Frameworks */,
+				098C0A8224F28C2000F0338B /* ContactsModels.framework in Frameworks */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -186,6 +208,7 @@
 			files = (
 				0957E2C124F0380600E620DE /* ContactsModels.framework in Frameworks */,
 				0957E3E424F179D100E620DE /* Extensions.framework in Frameworks */,
+				098C0A8324F28C2100F0338B /* Resources.framework in Frameworks */,
 				0957E3CB24F16B1400E620DE /* Utilities.framework in Frameworks */,
 				0957E3C724F16A8900E620DE /* DataRepository.framework in Frameworks */,
 				0957E30324F0421200E620DE /* ViewLayout.framework in Frameworks */,
@@ -206,6 +229,14 @@
 			isa = PBXFrameworksBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				098C0A8524F28C4A00F0338B /* Extensions.framework in Frameworks */,
+				098C0A6C24F28BB500F0338B /* ContactsKit.framework in Frameworks */,
+				098C0A7A24F28BB600F0338B /* ViewLayout.framework in Frameworks */,
+				098C0A7424F28BB500F0338B /* Resources.framework in Frameworks */,
+				098C0A7824F28BB500F0338B /* Utilities.framework in Frameworks */,
+				098C0A6E24F28BB500F0338B /* ContactsModels.framework in Frameworks */,
+				098C0A7224F28BB500F0338B /* DomainModels.framework in Frameworks */,
+				098C0A7024F28BB500F0338B /* DataRepository.framework in Frameworks */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -351,15 +382,14 @@
 		0909395624F005430025F222 /* Frameworks */ = {
 			isa = PBXGroup;
 			children = (
-				0957E3E324F179D100E620DE /* Extensions.framework */,
-				0957E3CA24F16B1400E620DE /* Utilities.framework */,
-				0957E3C624F16A8900E620DE /* DataRepository.framework */,
-				0957E30224F0421200E620DE /* ViewLayout.framework */,
-				0957E2CE24F039BB00E620DE /* ContactsModels.framework */,
 				0957E2BD24F0380600E620DE /* ContactsKit.framework */,
 				0957E2BE24F0380600E620DE /* ContactsModels.framework */,
+				0957E3C624F16A8900E620DE /* DataRepository.framework */,
 				0957E2AE24F0348600E620DE /* DomainModels.framework */,
-				0909395724F005430025F222 /* Extensions.framework */,
+				0957E3E324F179D100E620DE /* Extensions.framework */,
+				098C0A6B24F28BB500F0338B /* Resources.framework */,
+				0957E3CA24F16B1400E620DE /* Utilities.framework */,
+				0957E30224F0421200E620DE /* ViewLayout.framework */,
 			);
 			name = Frameworks;
 			sourceTree = "<group>";
@@ -550,8 +580,18 @@
 			isa = PBXGroup;
 			children = (
 				098C0A5424F2790400F0338B /* ContactDetailsScreen.swift */,
+				098C0A5F24F27EF100F0338B /* View */,
 			);
 			path = Screens;
+			sourceTree = "<group>";
+		};
+		098C0A5F24F27EF100F0338B /* View */ = {
+			isa = PBXGroup;
+			children = (
+				098C0A6024F27F0500F0338B /* ContactDetailsViewController.swift */,
+				098C0A6224F27F0F00F0338B /* ContactDetailsViewController+ContentView.swift */,
+			);
+			path = View;
 			sourceTree = "<group>";
 		};
 /* End PBXGroup section */
@@ -861,6 +901,8 @@
 			files = (
 				098C0A5524F2790400F0338B /* ContactDetailsScreen.swift in Sources */,
 				098C0A5C24F279B100F0338B /* ContactDetailsFlow.swift in Sources */,
+				098C0A6124F27F0500F0338B /* ContactDetailsViewController.swift in Sources */,
+				098C0A6324F27F0F00F0338B /* ContactDetailsViewController+ContentView.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};

@@ -1,22 +1,22 @@
 //
-//  CalloutLabel.swift
+//  HeadlineLabel.swift
 //  ContactsKit
 //
-//  Created by Daniel Sumara on 21/08/2020.
+//  Created by Daniel Sumara on 23/08/2020.
 //  Copyright © 2020 Daniel Sumara. All rights reserved.
 //
 
 import Foundation
 import UIKit
 
-public final class CalloutLabel: UILabel {
+public final class HeadlineLabel: UILabel {
     
     // MARK: - Initializers
     
     public override init(frame: CGRect) {
         super.init(frame: .zero)
         
-        font = .preferredFont(forTextStyle: .callout)
+        font = .preferredFont(forTextStyle: .headline)
         textColor = .darkGray
         
         numberOfLines = 1

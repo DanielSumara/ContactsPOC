@@ -1,25 +1,25 @@
 //
-//  CalloutLabel.swift
+//  BodyLabel.swift
 //  ContactsKit
 //
-//  Created by Daniel Sumara on 21/08/2020.
+//  Created by Daniel Sumara on 23/08/2020.
 //  Copyright © 2020 Daniel Sumara. All rights reserved.
 //
 
 import Foundation
 import UIKit
 
-public final class CalloutLabel: UILabel {
+public final class BodyLabel: UILabel {
     
     // MARK: - Initializers
     
     public override init(frame: CGRect) {
         super.init(frame: .zero)
         
-        font = .preferredFont(forTextStyle: .callout)
-        textColor = .darkGray
+        font = .preferredFont(forTextStyle: .body)
+        textColor = .black
         
-        numberOfLines = 1
+        numberOfLines = 0
     }
     
     public required init?(coder: NSCoder) { nil }

@@ -14,7 +14,7 @@ public final class FootnoteLabel: UILabel {
     
     // MARK: - Initializers
     
-    override public init(frame: CGRect) {
+    public override init(frame: CGRect) {
         super.init(frame: .zero)
         
         font = .preferredFont(forTextStyle: .footnote)

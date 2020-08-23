@@ -27,6 +27,9 @@
 		0957E33224F109C100E620DE /* FootnoteLabel.swift in Sources */ = {isa = PBXBuildFile; fileRef = 0957E33124F109C100E620DE /* FootnoteLabel.swift */; };
 		0957E33524F10BF600E620DE /* SelectableImageBarButton.swift in Sources */ = {isa = PBXBuildFile; fileRef = 0957E33424F10BF600E620DE /* SelectableImageBarButton.swift */; };
 		0957E33B24F10EA300E620DE /* Utilities.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 0957E33A24F10EA300E620DE /* Utilities.framework */; };
+		098C0A6624F2882F00F0338B /* Separator.swift in Sources */ = {isa = PBXBuildFile; fileRef = 098C0A6524F2882F00F0338B /* Separator.swift */; };
+		098C0A6824F288C500F0338B /* HeadlineLabel.swift in Sources */ = {isa = PBXBuildFile; fileRef = 098C0A6724F288C500F0338B /* HeadlineLabel.swift */; };
+		098C0A6A24F288F200F0338B /* BodyLabel.swift in Sources */ = {isa = PBXBuildFile; fileRef = 098C0A6924F288F200F0338B /* BodyLabel.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
@@ -72,6 +75,9 @@
 		0957E33124F109C100E620DE /* FootnoteLabel.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = FootnoteLabel.swift; sourceTree = "<group>"; };
 		0957E33424F10BF600E620DE /* SelectableImageBarButton.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SelectableImageBarButton.swift; sourceTree = "<group>"; };
 		0957E33A24F10EA300E620DE /* Utilities.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; path = Utilities.framework; sourceTree = BUILT_PRODUCTS_DIR; };
+		098C0A6524F2882F00F0338B /* Separator.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Separator.swift; sourceTree = "<group>"; };
+		098C0A6724F288C500F0338B /* HeadlineLabel.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = HeadlineLabel.swift; sourceTree = "<group>"; };
+		098C0A6924F288F200F0338B /* BodyLabel.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = BodyLabel.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -127,13 +133,14 @@
 		090937A624EFE0490025F222 /* ContactsKit */ = {
 			isa = PBXGroup;
 			children = (
+				0957E2C624F0387E00E620DE /* AvatarView */,
 				0957E33324F10BCA00E620DE /* BarButtons */,
 				0957E32624F0595700E620DE /* Cards */,
-				0957E2C624F0387E00E620DE /* AvatarView */,
 				0957E31624F0483A00E620DE /* Extensions */,
 				0957E30B24F042DE00E620DE /* Labels */,
 				0957E31324F0452700E620DE /* Marks */,
 				0957E2C424F0386A00E620DE /* SupportingFiles */,
+				098C0A6424F2882000F0338B /* Views */,
 			);
 			path = ContactsKit;
 			sourceTree = "<group>";
@@ -213,8 +220,10 @@
 		0957E30B24F042DE00E620DE /* Labels */ = {
 			isa = PBXGroup;
 			children = (
+				098C0A6924F288F200F0338B /* BodyLabel.swift */,
 				0957E31924F053B200E620DE /* CalloutLabel.swift */,
 				0957E33124F109C100E620DE /* FootnoteLabel.swift */,
+				098C0A6724F288C500F0338B /* HeadlineLabel.swift */,
 				0957E30D24F042EA00E620DE /* InitialLabel.swift */,
 				0957E31124F044FA00E620DE /* TitleLabel.swift */,
 			);
@@ -252,6 +261,14 @@
 				0957E33424F10BF600E620DE /* SelectableImageBarButton.swift */,
 			);
 			path = BarButtons;
+			sourceTree = "<group>";
+		};
+		098C0A6424F2882000F0338B /* Views */ = {
+			isa = PBXGroup;
+			children = (
+				098C0A6524F2882F00F0338B /* Separator.swift */,
+			);
+			path = Views;
 			sourceTree = "<group>";
 		};
 /* End PBXGroup section */
@@ -409,11 +426,14 @@
 				0957E33224F109C100E620DE /* FootnoteLabel.swift in Sources */,
 				0957E2C824F0388D00E620DE /* AvatarView.swift in Sources */,
 				0957E2D524F03C4C00E620DE /* AvatarView+Kind.swift in Sources */,
+				098C0A6824F288C500F0338B /* HeadlineLabel.swift in Sources */,
 				0957E31824F0484E00E620DE /* UIStackView+Extensions.swift in Sources */,
+				098C0A6A24F288F200F0338B /* BodyLabel.swift in Sources */,
 				0957E31524F0456300E620DE /* FavoriteView.swift in Sources */,
 				0957E31224F044FA00E620DE /* TitleLabel.swift in Sources */,
 				0957E32824F0596F00E620DE /* CardView.swift in Sources */,
 				0957E31A24F053B200E620DE /* CalloutLabel.swift in Sources */,
+				098C0A6624F2882F00F0338B /* Separator.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};

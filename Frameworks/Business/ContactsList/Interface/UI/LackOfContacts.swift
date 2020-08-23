@@ -45,9 +45,9 @@ final class LackOfContacts: UITableViewCell, Bindable {
         contentView.layout.add(subviews: descriptionLabel)
         
         descriptionLabel.layout
-            .make(.top, equalTo: contentView, .top, constant: 150, priority: nil)
-            .center(.xAxis, with: contentView, constant: 0, priority: nil)
-            .make(.bottom, equalTo: contentView, .bottom, constant: -150, priority: nil)
+            .make(.top, equalTo: contentView, .top, constant: 150)
+            .center(.xAxis, with: contentView, constant: 0)
+            .make(.bottom, equalTo: contentView, .bottom, constant: -150)
     }
     
 }

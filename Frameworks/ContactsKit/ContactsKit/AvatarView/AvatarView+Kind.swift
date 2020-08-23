@@ -23,7 +23,7 @@ extension AvatarView {
         var intrinsicContentSize: CGSize {
             switch self {
             case .thumbnail: return CGSize(width: 48, height: 48)
-            case .large: return CGSize(width: 128, height: 128)
+            case .large: return CGSize(width: 96, height: 96)
             }
         }
         

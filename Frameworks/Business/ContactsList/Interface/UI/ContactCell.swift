@@ -50,32 +50,32 @@ final class ContactCell: UITableViewCell, Bindable {
         let card = CardView()
         
         card.layout.add(to: contentView)
-            .make(.top, equalTo: contentView, .top, constant: 2, priority: nil)
-            .make(.leading, equalTo: contentView, .leading, constant: 8, priority: nil)
-            .make(.trailing, equalTo: contentView, .trailing, constant: -8, priority: nil)
-            .make(.bottom, equalTo: contentView, .bottom, constant: -2, priority: nil)
+            .make(.top, equalTo: contentView, .top, constant: 2)
+            .make(.leading, equalTo: contentView, .leading, constant: 8)
+            .make(.trailing, equalTo: contentView, .trailing, constant: -8)
+            .make(.bottom, equalTo: contentView, .bottom, constant: -2)
         
         card.layout.add(subviews: avatarView, nameLabel, nationalityLabel, favoriteView)
         
         avatarView.layout
-            .make(.top, equalTo: card, .top, constant: 8, priority: nil)
-            .make(.leading, equalTo: card, .leading, constant: 8, priority: nil)
-            .make(.bottom, lessThan: card, .bottom, constant: -8, priority: nil)
+            .make(.top, equalTo: card, .top, constant: 8)
+            .make(.leading, equalTo: card, .leading, constant: 8)
+            .make(.bottom, lessThan: card, .bottom, constant: -8)
         
         nameLabel.layout
-            .make(.top, equalTo: card, .top, constant: 12, priority: nil)
-            .make(.leading, equalTo: avatarView, .trailing, constant: 24, priority: nil)
-            .make(.trailing, equalTo: favoriteView, .leading, constant: -16, priority: nil)
+            .make(.top, equalTo: card, .top, constant: 12)
+            .make(.leading, equalTo: avatarView, .trailing, constant: 24)
+            .make(.trailing, equalTo: favoriteView, .leading, constant: -16)
         
         nationalityLabel.layout
-            .make(.top, equalTo: nameLabel, .bottom, constant: 0, priority: nil)
-            .make(.leading, equalTo: avatarView, .trailing, constant: 24, priority: nil)
-            .make(.trailing, equalTo: favoriteView, .leading, constant: -16, priority: nil)
-            .make(.bottom, lessThan: card, .bottom, constant: -8, priority: nil)
+            .make(.top, equalTo: nameLabel, .bottom, constant: 0)
+            .make(.leading, equalTo: avatarView, .trailing, constant: 24)
+            .make(.trailing, equalTo: favoriteView, .leading, constant: -16)
+            .make(.bottom, lessThan: card, .bottom, constant: -8)
         
         favoriteView.layout
-            .make(.top, equalTo: card, .top, constant: 12, priority: nil)
-            .make(.trailing, equalTo: card, .trailing, constant: -8, priority: nil)
+            .make(.top, equalTo: card, .top, constant: 12)
+            .make(.trailing, equalTo: card, .trailing, constant: -8)
     }
     
 }

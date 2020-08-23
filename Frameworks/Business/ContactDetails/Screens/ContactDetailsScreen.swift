@@ -19,9 +19,7 @@ final class ContactDetailsScreen: Screen {
     // MARK: - Initializers
     
     init() {
-        viewController = UIViewController()
-        viewController.view.backgroundColor = .red
-        viewController.title = "Details"
+        viewController = ContactDetailsViewController()
     }
     
 }

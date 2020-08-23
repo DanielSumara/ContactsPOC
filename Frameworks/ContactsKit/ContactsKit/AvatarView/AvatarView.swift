@@ -67,8 +67,8 @@ public final class AvatarView: UIView, Bindable {
         initialsLabel.layout.embed(in: self)
         imageView.layout.embed(in: self)
         loadingIndicator.layout
-            .make(.top, equalTo: initialsLabel, .top, constant: 0, priority: nil)
-            .make(.trailing, equalTo: initialsLabel, .trailing, constant: 0, priority: nil)
+            .make(.top, equalTo: initialsLabel, .top, constant: 0)
+            .make(.trailing, equalTo: initialsLabel, .trailing, constant: 0)
     }
     
     private func setupAppearance(for data: AvatarProjection) {

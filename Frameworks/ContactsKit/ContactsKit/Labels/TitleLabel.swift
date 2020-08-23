@@ -13,7 +13,7 @@ public final class TitleLabel: UILabel {
     
     // MARK: - Initializers
     
-    override public init(frame: CGRect) {
+    public override init(frame: CGRect) {
         super.init(frame: .zero)
         
         font = .preferredFont(forTextStyle: .headline)

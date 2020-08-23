@@ -49,13 +49,13 @@ final class LoadingCell: UITableViewCell, Bindable {
         contentView.layout.add(subviews: activityIndicator, descriptionLabel)
         
         activityIndicator.layout
-            .make(.top, equalTo: contentView, .top, constant: 150, priority: nil)
-            .make(.bottom, equalTo: descriptionLabel, .top, constant: -8, priority: nil)
-            .center(.xAxis, with: contentView, constant: 0, priority: nil)
+            .make(.top, equalTo: contentView, .top, constant: 150)
+            .make(.bottom, equalTo: descriptionLabel, .top, constant: -8)
+            .center(.xAxis, with: contentView, constant: 0)
         
         descriptionLabel.layout
-            .make(.bottom, equalTo: contentView, .bottom, constant: -150, priority: nil)
-            .center(.xAxis, with: contentView, constant: 0, priority: nil)
+            .make(.bottom, equalTo: contentView, .bottom, constant: -150)
+            .center(.xAxis, with: contentView, constant: 0)
     }
     
 }
