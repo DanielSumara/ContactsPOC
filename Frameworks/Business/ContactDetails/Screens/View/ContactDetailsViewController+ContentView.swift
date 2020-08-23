@@ -45,8 +45,6 @@ extension ContactDetailsViewController {
             
             setupComponents()
             setupLayout()
-            
-            bind(with: 1)
         }
         
         required init?(coder: NSCoder) { nil }
@@ -64,19 +62,19 @@ extension ContactDetailsViewController {
         
         // MARK: - API
         
-        func bind(with data: Any) {
-            avatarView.bind(with: .loading("DS"))
-            nameLabel.text = "Mr Daniel Sumara"
-            nationalityLabel.text = "🇳🇿 New Zealand"
+        func bind(with data: ContactProjection) {
+            avatarView.bind(with: data.avatar)
+            nameLabel.text = data.name
+            nationalityLabel.text = data.nationality
             
-            phoneNumberLabel.text = "06-637-172"
-            cellNumberLabel.text = "040-828-78-68"
+            phoneNumberLabel.text = data.phoneNumber
+            cellNumberLabel.text = data.cellNumber
             
-            emailLabel.text = "lauri.mantyla@example.com"
+            emailLabel.text = data.emailAddress
             
-            streetLabel.text = "Hatanpään Valtatie 5285"
-            cityLabel.text = "35707 Pyhäjärvi"
-            stateLabel.text = "Southern Ostrobothnia (Finland)"
+            streetLabel.text = data.street
+            cityLabel.text = data.city
+            stateLabel.text = data.country
         }
         
         // MARK: - Methods

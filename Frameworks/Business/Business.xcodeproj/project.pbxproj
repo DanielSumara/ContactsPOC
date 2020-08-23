@@ -71,6 +71,16 @@
 		098C0A8324F28C2100F0338B /* Resources.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 098C0A6B24F28BB500F0338B /* Resources.framework */; };
 		098C0A8424F28C4900F0338B /* Extensions.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 0957E3E324F179D100E620DE /* Extensions.framework */; };
 		098C0A8524F28C4A00F0338B /* Extensions.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 0957E3E324F179D100E620DE /* Extensions.framework */; };
+		098C0A8824F2943D00F0338B /* ContactProjection.swift in Sources */ = {isa = PBXBuildFile; fileRef = 098C0A8724F2943D00F0338B /* ContactProjection.swift */; };
+		098C0A8D24F2958C00F0338B /* ContactDetailsViewModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = 098C0A8C24F2958C00F0338B /* ContactDetailsViewModel.swift */; };
+		098C0A8F24F2984F00F0338B /* DefaultContactDetailsViewModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = 098C0A8E24F2984F00F0338B /* DefaultContactDetailsViewModel.swift */; };
+		098C0A9124F2986800F0338B /* ContactDetailsModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = 098C0A9024F2986800F0338B /* ContactDetailsModel.swift */; };
+		098C0A9324F2987200F0338B /* DefaultContactDetailsModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = 098C0A9224F2987200F0338B /* DefaultContactDetailsModel.swift */; };
+		098C0A9524F2988500F0338B /* ContactDetailsEvents.swift in Sources */ = {isa = PBXBuildFile; fileRef = 098C0A9424F2988500F0338B /* ContactDetailsEvents.swift */; };
+		098C0A9724F2988E00F0338B /* ContactDetailsScreenEvents.swift in Sources */ = {isa = PBXBuildFile; fileRef = 098C0A9624F2988E00F0338B /* ContactDetailsScreenEvents.swift */; };
+		098C0A9924F2989A00F0338B /* DefaultContactDetailsEvents.swift in Sources */ = {isa = PBXBuildFile; fileRef = 098C0A9824F2989A00F0338B /* DefaultContactDetailsEvents.swift */; };
+		098C0A9C24F299DE00F0338B /* DomianToInterfaceMapper.swift in Sources */ = {isa = PBXBuildFile; fileRef = 098C0A9B24F299DE00F0338B /* DomianToInterfaceMapper.swift */; };
+		098C0A9E24F299F900F0338B /* DefaultDomainToInterfaceMapper.swift in Sources */ = {isa = PBXBuildFile; fileRef = 098C0A9D24F299F900F0338B /* DefaultDomainToInterfaceMapper.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
@@ -176,6 +186,16 @@
 		098C0A6024F27F0500F0338B /* ContactDetailsViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ContactDetailsViewController.swift; sourceTree = "<group>"; };
 		098C0A6224F27F0F00F0338B /* ContactDetailsViewController+ContentView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = "ContactDetailsViewController+ContentView.swift"; sourceTree = "<group>"; };
 		098C0A6B24F28BB500F0338B /* Resources.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; path = Resources.framework; sourceTree = BUILT_PRODUCTS_DIR; };
+		098C0A8724F2943D00F0338B /* ContactProjection.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ContactProjection.swift; sourceTree = "<group>"; };
+		098C0A8C24F2958C00F0338B /* ContactDetailsViewModel.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ContactDetailsViewModel.swift; sourceTree = "<group>"; };
+		098C0A8E24F2984F00F0338B /* DefaultContactDetailsViewModel.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = DefaultContactDetailsViewModel.swift; sourceTree = "<group>"; };
+		098C0A9024F2986800F0338B /* ContactDetailsModel.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ContactDetailsModel.swift; sourceTree = "<group>"; };
+		098C0A9224F2987200F0338B /* DefaultContactDetailsModel.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = DefaultContactDetailsModel.swift; sourceTree = "<group>"; };
+		098C0A9424F2988500F0338B /* ContactDetailsEvents.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ContactDetailsEvents.swift; sourceTree = "<group>"; };
+		098C0A9624F2988E00F0338B /* ContactDetailsScreenEvents.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ContactDetailsScreenEvents.swift; sourceTree = "<group>"; };
+		098C0A9824F2989A00F0338B /* DefaultContactDetailsEvents.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = DefaultContactDetailsEvents.swift; sourceTree = "<group>"; };
+		098C0A9B24F299DE00F0338B /* DomianToInterfaceMapper.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = DomianToInterfaceMapper.swift; sourceTree = "<group>"; };
+		098C0A9D24F299F900F0338B /* DefaultDomainToInterfaceMapper.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = DefaultDomainToInterfaceMapper.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -537,6 +557,7 @@
 			isa = PBXGroup;
 			children = (
 				098C0A5124F278E500F0338B /* Flow */,
+				098C0A9A24F299C900F0338B /* Infrastructure */,
 				098C0A5224F278E900F0338B /* Interface */,
 				098C0A5324F278ED00F0338B /* Screens */,
 				098C0A4F24F277C800F0338B /* SupportingFiles */,
@@ -572,6 +593,7 @@
 		098C0A5224F278E900F0338B /* Interface */ = {
 			isa = PBXGroup;
 			children = (
+				098C0A8624F2943200F0338B /* Data */,
 			);
 			path = Interface;
 			sourceTree = "<group>";
@@ -580,7 +602,10 @@
 			isa = PBXGroup;
 			children = (
 				098C0A5424F2790400F0338B /* ContactDetailsScreen.swift */,
+				098C0A8A24F2956D00F0338B /* Events */,
+				098C0A8924F2956700F0338B /* Model */,
 				098C0A5F24F27EF100F0338B /* View */,
+				098C0A8B24F2957200F0338B /* ViewModel */,
 			);
 			path = Screens;
 			sourceTree = "<group>";
@@ -592,6 +617,51 @@
 				098C0A6224F27F0F00F0338B /* ContactDetailsViewController+ContentView.swift */,
 			);
 			path = View;
+			sourceTree = "<group>";
+		};
+		098C0A8624F2943200F0338B /* Data */ = {
+			isa = PBXGroup;
+			children = (
+				098C0A8724F2943D00F0338B /* ContactProjection.swift */,
+			);
+			path = Data;
+			sourceTree = "<group>";
+		};
+		098C0A8924F2956700F0338B /* Model */ = {
+			isa = PBXGroup;
+			children = (
+				098C0A9024F2986800F0338B /* ContactDetailsModel.swift */,
+				098C0A9224F2987200F0338B /* DefaultContactDetailsModel.swift */,
+			);
+			path = Model;
+			sourceTree = "<group>";
+		};
+		098C0A8A24F2956D00F0338B /* Events */ = {
+			isa = PBXGroup;
+			children = (
+				098C0A9424F2988500F0338B /* ContactDetailsEvents.swift */,
+				098C0A9624F2988E00F0338B /* ContactDetailsScreenEvents.swift */,
+				098C0A9824F2989A00F0338B /* DefaultContactDetailsEvents.swift */,
+			);
+			path = Events;
+			sourceTree = "<group>";
+		};
+		098C0A8B24F2957200F0338B /* ViewModel */ = {
+			isa = PBXGroup;
+			children = (
+				098C0A8C24F2958C00F0338B /* ContactDetailsViewModel.swift */,
+				098C0A8E24F2984F00F0338B /* DefaultContactDetailsViewModel.swift */,
+			);
+			path = ViewModel;
+			sourceTree = "<group>";
+		};
+		098C0A9A24F299C900F0338B /* Infrastructure */ = {
+			isa = PBXGroup;
+			children = (
+				098C0A9B24F299DE00F0338B /* DomianToInterfaceMapper.swift */,
+				098C0A9D24F299F900F0338B /* DefaultDomainToInterfaceMapper.swift */,
+			);
+			path = Infrastructure;
 			sourceTree = "<group>";
 		};
 /* End PBXGroup section */
@@ -899,10 +969,20 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				098C0A9924F2989A00F0338B /* DefaultContactDetailsEvents.swift in Sources */,
+				098C0A8824F2943D00F0338B /* ContactProjection.swift in Sources */,
 				098C0A5524F2790400F0338B /* ContactDetailsScreen.swift in Sources */,
+				098C0A9524F2988500F0338B /* ContactDetailsEvents.swift in Sources */,
+				098C0A9C24F299DE00F0338B /* DomianToInterfaceMapper.swift in Sources */,
+				098C0A9E24F299F900F0338B /* DefaultDomainToInterfaceMapper.swift in Sources */,
+				098C0A8F24F2984F00F0338B /* DefaultContactDetailsViewModel.swift in Sources */,
+				098C0A9324F2987200F0338B /* DefaultContactDetailsModel.swift in Sources */,
+				098C0A8D24F2958C00F0338B /* ContactDetailsViewModel.swift in Sources */,
 				098C0A5C24F279B100F0338B /* ContactDetailsFlow.swift in Sources */,
 				098C0A6124F27F0500F0338B /* ContactDetailsViewController.swift in Sources */,
+				098C0A9724F2988E00F0338B /* ContactDetailsScreenEvents.swift in Sources */,
 				098C0A6324F27F0F00F0338B /* ContactDetailsViewController+ContentView.swift in Sources */,
+				098C0A9124F2986800F0338B /* ContactDetailsModel.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};

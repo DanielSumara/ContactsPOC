@@ -7,6 +7,8 @@
 //
 
 import Business
+import DomainModels
+import DataRepository
 import Foundation
 import UIKit
 
@@ -14,12 +16,19 @@ final class ContactDetailsScreen: Screen {
     
     // MARK: - Properties
     
+    let events: ContactDetailsScreenEvents
     let viewController: UIViewController
     
     // MARK: - Initializers
     
-    init() {
-        viewController = ContactDetailsViewController()
+    init(contact: Contact, repository: ContactsRepository) {
+        let events = DefaultContactDetailsEvents()
+        
+        let model = DefaultContactDetailsModel(contact: contact, repository: repository)
+        let viewModel = DefaultContactDetailsViewModel(model: model, mapper: DefaultDomainToInterfaceMapper(), events: events, imageRepository: DefaultImagesRepository())
+        
+        self.events = events
+        viewController = ContactDetailsViewController(viewModel: viewModel)
     }
     
 }

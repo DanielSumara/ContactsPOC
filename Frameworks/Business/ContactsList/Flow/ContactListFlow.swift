@@ -51,7 +51,7 @@ public final class ContactListFlow: ModuleFlow {
     // MARK: - Methods
     
     private func showDetails(of contact: Contact) {
-        childFlow = ContactDetailsFlow(presenter: presenter, contact: contact)
+        childFlow = ContactDetailsFlow(presenter: presenter, contact: contact, contactRepository: contactsRepository)
     }
     
     private func show(_ error: Error) {
