@@ -20,10 +20,10 @@ final class ContactsListScreen: Screen {
     
     // MARK: - Initializers
     
-    init(contactsRepository: ContactsRepository) {
+    init(contactsRepository: ContactsRepository, imagesRepository: ImagesRepository) {
         let events = DefaultContactsListEvents()
         let model = DefaultContactsListModel(contactsRepository: contactsRepository)
-        let viewModel = DefaultContactsListViewModel(model: model, imageRepository: DefaultImagesRepository(), events: events)
+        let viewModel = DefaultContactsListViewModel(model: model, imageRepository: imagesRepository, events: events)
         
         self.events = events
         viewController = ContactsListViewController(viewModel: viewModel)

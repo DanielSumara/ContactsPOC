@@ -36,7 +36,7 @@ final class DefaultContactDetailsViewModel: ContactDetailsViewModel {
         self.mapper = mapper
         self.model = model
         
-        _contact = ValueEmitter(value: mapper.contactProjection(from: model.contact, using: .initials(model.contact.name.initials)))
+        _contact = ValueEmitter(value: mapper.contactProjection(from: model.contact, using: .loading(model.contact.name.initials)))
         _isFavorite = ValueEmitter(value: model.contact.isFavorite)
         
         contact = _contact.asObservable()

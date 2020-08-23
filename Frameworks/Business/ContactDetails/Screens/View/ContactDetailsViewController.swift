@@ -46,8 +46,8 @@ final class ContactDetailsViewController: UIViewController {
         bindViewWithViewModel()
     }
     
-    override func viewDidAppear(_ animated: Bool) {
-        super.viewDidAppear(animated)
+    override func viewWillAppear(_ animated: Bool) {
+        super.viewWillAppear(animated)
         
         viewModel.getAvatar()
     }

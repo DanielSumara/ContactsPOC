@@ -79,7 +79,7 @@ final class DefaultContactsListViewModel: ContactsListViewModel {
     
     private func reload() {
         presentedContacts = contacts
-            .filter { contact in contact.isFavorite == _narrowedToFavorites.value }
+            .filter { contact in _narrowedToFavorites.value == false || contact.isFavorite == _narrowedToFavorites.value }
             .map(contactProjection(from:))
     }
     

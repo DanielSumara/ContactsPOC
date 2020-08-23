@@ -18,6 +18,7 @@ public final class ContactListFlow: ModuleFlow {
     // MARK: - Properties
     
     private let contactsRepository: ContactsRepository
+    private let imagesRepository: ImagesRepository
     private let presenter: Presenter
     
     private var childFlow: ModuleFlow? {
@@ -31,13 +32,14 @@ public final class ContactListFlow: ModuleFlow {
     
     public init(using presenter: Presenter, contactsRepository: ContactsRepository) {
         self.contactsRepository = contactsRepository
+        imagesRepository = DefaultImagesRepository()
         self.presenter = presenter
     }
     
     // MARK: - API
     
     public func start() {
-        let screen = ContactsListScreen(contactsRepository: contactsRepository)
+        let screen = ContactsListScreen(contactsRepository: contactsRepository, imagesRepository: imagesRepository)
         screen.events.contactTapped.observe(on: self) { flow, selectedContact in flow.showDetails(of: selectedContact) }
         screen.events.errorOccurred.observe(on: self) { flow, error in flow.show(error) }
         
@@ -51,7 +53,7 @@ public final class ContactListFlow: ModuleFlow {
     // MARK: - Methods
     
     private func showDetails(of contact: Contact) {
-        childFlow = ContactDetailsFlow(presenter: presenter, contact: contact, contactRepository: contactsRepository)
+        childFlow = ContactDetailsFlow(presenter: presenter, contact: contact, contactRepository: contactsRepository, imagesRepository: imagesRepository)
     }
     
     private func show(_ error: Error) {

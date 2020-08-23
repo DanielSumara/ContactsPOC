@@ -21,11 +21,11 @@ final class ContactDetailsScreen: Screen {
     
     // MARK: - Initializers
     
-    init(contact: Contact, repository: ContactsRepository) {
+    init(contact: Contact, repository: ContactsRepository, imagesRepository: ImagesRepository) {
         let events = DefaultContactDetailsEvents()
         
         let model = DefaultContactDetailsModel(contact: contact, repository: repository)
-        let viewModel = DefaultContactDetailsViewModel(model: model, mapper: DefaultDomainToInterfaceMapper(), events: events, imageRepository: DefaultImagesRepository())
+        let viewModel = DefaultContactDetailsViewModel(model: model, mapper: DefaultDomainToInterfaceMapper(), events: events, imageRepository: imagesRepository)
         
         self.events = events
         viewController = ContactDetailsViewController(viewModel: viewModel)
