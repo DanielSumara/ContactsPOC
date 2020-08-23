@@ -81,6 +81,9 @@
 		098C0A9924F2989A00F0338B /* DefaultContactDetailsEvents.swift in Sources */ = {isa = PBXBuildFile; fileRef = 098C0A9824F2989A00F0338B /* DefaultContactDetailsEvents.swift */; };
 		098C0A9C24F299DE00F0338B /* DomianToInterfaceMapper.swift in Sources */ = {isa = PBXBuildFile; fileRef = 098C0A9B24F299DE00F0338B /* DomianToInterfaceMapper.swift */; };
 		098C0A9E24F299F900F0338B /* DefaultDomainToInterfaceMapper.swift in Sources */ = {isa = PBXBuildFile; fileRef = 098C0A9D24F299F900F0338B /* DefaultDomainToInterfaceMapper.swift */; };
+		098C0AA224F2A44600F0338B /* ContactEditFormScreen.swift in Sources */ = {isa = PBXBuildFile; fileRef = 098C0AA124F2A44600F0338B /* ContactEditFormScreen.swift */; };
+		098C0AA524F2A45900F0338B /* ContactEditFormViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 098C0AA424F2A45900F0338B /* ContactEditFormViewController.swift */; };
+		098C0AA724F2A46400F0338B /* ContactEditFormViewController+ContentView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 098C0AA624F2A46400F0338B /* ContactEditFormViewController+ContentView.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
@@ -196,6 +199,9 @@
 		098C0A9824F2989A00F0338B /* DefaultContactDetailsEvents.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = DefaultContactDetailsEvents.swift; sourceTree = "<group>"; };
 		098C0A9B24F299DE00F0338B /* DomianToInterfaceMapper.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = DomianToInterfaceMapper.swift; sourceTree = "<group>"; };
 		098C0A9D24F299F900F0338B /* DefaultDomainToInterfaceMapper.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = DefaultDomainToInterfaceMapper.swift; sourceTree = "<group>"; };
+		098C0AA124F2A44600F0338B /* ContactEditFormScreen.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ContactEditFormScreen.swift; sourceTree = "<group>"; };
+		098C0AA424F2A45900F0338B /* ContactEditFormViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ContactEditFormViewController.swift; sourceTree = "<group>"; };
+		098C0AA624F2A46400F0338B /* ContactEditFormViewController+ContentView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = "ContactEditFormViewController+ContentView.swift"; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -601,11 +607,8 @@
 		098C0A5324F278ED00F0338B /* Screens */ = {
 			isa = PBXGroup;
 			children = (
-				098C0A5424F2790400F0338B /* ContactDetailsScreen.swift */,
-				098C0A8A24F2956D00F0338B /* Events */,
-				098C0A8924F2956700F0338B /* Model */,
-				098C0A5F24F27EF100F0338B /* View */,
-				098C0A8B24F2957200F0338B /* ViewModel */,
+				098C0A9F24F2A41400F0338B /* ContactDetails */,
+				098C0AA024F2A42400F0338B /* ContactEditForm */,
 			);
 			path = Screens;
 			sourceTree = "<group>";
@@ -662,6 +665,36 @@
 				098C0A9D24F299F900F0338B /* DefaultDomainToInterfaceMapper.swift */,
 			);
 			path = Infrastructure;
+			sourceTree = "<group>";
+		};
+		098C0A9F24F2A41400F0338B /* ContactDetails */ = {
+			isa = PBXGroup;
+			children = (
+				098C0A5424F2790400F0338B /* ContactDetailsScreen.swift */,
+				098C0A8A24F2956D00F0338B /* Events */,
+				098C0A8924F2956700F0338B /* Model */,
+				098C0A5F24F27EF100F0338B /* View */,
+				098C0A8B24F2957200F0338B /* ViewModel */,
+			);
+			path = ContactDetails;
+			sourceTree = "<group>";
+		};
+		098C0AA024F2A42400F0338B /* ContactEditForm */ = {
+			isa = PBXGroup;
+			children = (
+				098C0AA124F2A44600F0338B /* ContactEditFormScreen.swift */,
+				098C0AA324F2A44800F0338B /* View */,
+			);
+			path = ContactEditForm;
+			sourceTree = "<group>";
+		};
+		098C0AA324F2A44800F0338B /* View */ = {
+			isa = PBXGroup;
+			children = (
+				098C0AA424F2A45900F0338B /* ContactEditFormViewController.swift */,
+				098C0AA624F2A46400F0338B /* ContactEditFormViewController+ContentView.swift */,
+			);
+			path = View;
 			sourceTree = "<group>";
 		};
 /* End PBXGroup section */
@@ -974,11 +1007,14 @@
 				098C0A5524F2790400F0338B /* ContactDetailsScreen.swift in Sources */,
 				098C0A9524F2988500F0338B /* ContactDetailsEvents.swift in Sources */,
 				098C0A9C24F299DE00F0338B /* DomianToInterfaceMapper.swift in Sources */,
+				098C0AA224F2A44600F0338B /* ContactEditFormScreen.swift in Sources */,
 				098C0A9E24F299F900F0338B /* DefaultDomainToInterfaceMapper.swift in Sources */,
 				098C0A8F24F2984F00F0338B /* DefaultContactDetailsViewModel.swift in Sources */,
+				098C0AA724F2A46400F0338B /* ContactEditFormViewController+ContentView.swift in Sources */,
 				098C0A9324F2987200F0338B /* DefaultContactDetailsModel.swift in Sources */,
 				098C0A8D24F2958C00F0338B /* ContactDetailsViewModel.swift in Sources */,
 				098C0A5C24F279B100F0338B /* ContactDetailsFlow.swift in Sources */,
+				098C0AA524F2A45900F0338B /* ContactEditFormViewController.swift in Sources */,
 				098C0A6124F27F0500F0338B /* ContactDetailsViewController.swift in Sources */,
 				098C0A9724F2988E00F0338B /* ContactDetailsScreenEvents.swift in Sources */,
 				098C0A6324F27F0F00F0338B /* ContactDetailsViewController+ContentView.swift in Sources */,

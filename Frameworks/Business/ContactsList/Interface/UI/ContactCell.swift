@@ -16,7 +16,7 @@ final class ContactCell: UITableViewCell, Bindable {
     // MARK: - Properties
     
     private let avatarView = AvatarView(kind: .thumbnail)
-    private let nameLabel = TitleLabel()
+    private let nameLabel = HeadlineLabel()
     private let nationalityLabel = CalloutLabel()
     private let favoriteView = FavoriteView()
     

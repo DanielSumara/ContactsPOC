@@ -20,7 +20,7 @@ extension ContactDetailsViewController {
         private let contentView = UIView()
         
         private let avatarView = AvatarView(kind: .large)
-        private let nameLabel = TitleLabel()
+        private let nameLabel = HeadlineLabel()
         private let nationalityLabel = CalloutLabel()
         
         private let numbersTitleLabel = HeadlineLabel()

@@ -19,7 +19,7 @@ final class ContactDetailsViewController: UIViewController {
     
     private let favoriteButton = SelectableImageBarButton(image: Icons.star, selectedImage: Icons.starFilled)
     // TODO: - Create "more reactive" control with exposed "tapped" event instead of target/action
-    private let editButton = UIBarButtonItem(barButtonSystemItem: .edit, target: self, action: #selector(editTapped(_:)))
+    private let editButton = UIBarButtonItem(barButtonSystemItem: .edit, target: nil, action: nil)
     
     private let viewModel: ContactDetailsViewModel
     
@@ -27,7 +27,11 @@ final class ContactDetailsViewController: UIViewController {
     
     init(viewModel: ContactDetailsViewModel) {
         self.viewModel = viewModel
+        
         super.init(nibName: nil, bundle: nil)
+        
+        editButton.target = self
+        editButton.action = #selector(editTapped(_:))
     }
     
     required init?(coder: NSCoder) { nil }

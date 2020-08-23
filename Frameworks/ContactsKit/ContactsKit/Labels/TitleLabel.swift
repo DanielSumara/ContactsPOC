@@ -2,7 +2,7 @@
 //  TitleLabel.swift
 //  ContactsKit
 //
-//  Created by Daniel Sumara on 21/08/2020.
+//  Created by Daniel Sumara on 23/08/2020.
 //  Copyright © 2020 Daniel Sumara. All rights reserved.
 //
 
@@ -16,9 +16,7 @@ public final class TitleLabel: UILabel {
     public override init(frame: CGRect) {
         super.init(frame: .zero)
         
-        font = .preferredFont(forTextStyle: .headline)
-        
-        numberOfLines = 3
+        font = .preferredFont(forTextStyle: .title2)
     }
     
     public required init?(coder: NSCoder) { nil }

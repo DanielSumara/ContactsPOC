@@ -43,6 +43,12 @@ public final class ContactDetailsFlow: ModuleFlow {
     
     // MARK: - Methods
     
-    private func edit(_ contact: Contact) {}
+    private func edit(_ contact: Contact) {
+        // INFO: - modalPresenter instance will be released after method scope.
+        /// In case where navigation on modal screen is required there should be created and retained "ChildFlow" to properly handle states.
+        let modalPresenter = DefaultPresenter()
+        modalPresenter.push(ContactEditFormScreen())
+        presenter.present(modalPresenter.viewController)
+    }
     
 }
