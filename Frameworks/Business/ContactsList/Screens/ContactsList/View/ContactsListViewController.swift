@@ -23,6 +23,8 @@ final class ContactsListViewController: UIViewController {
     
     private let viewModel: ContactsListViewModel
     
+    private var visibleIndexPaths: [IndexPath] = []
+    
     // MARK: - Initializers
     
     init(viewModel: ContactsListViewModel) {
@@ -91,6 +93,10 @@ final class ContactsListViewController: UIViewController {
     
     private func updateVisibleContacts() {
         guard let indexes = contentView.indexPathsForVisibleRows else { return }
+        guard indexes != visibleIndexPaths else { return }
+        
+        visibleIndexPaths = indexes
+        
         viewModel.fetchAvatarsFor(contacts: listAdapter.projections(for: indexes))
     }
     

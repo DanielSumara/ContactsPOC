@@ -15,6 +15,31 @@
 		0909378B24EFD9D80025F222 /* ContactsUITests.swift in Sources */ = {isa = PBXBuildFile; fileRef = 0909378A24EFD9D80025F222 /* ContactsUITests.swift */; };
 		090938D424EFEDE50025F222 /* ContactsFlow.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 090938D324EFEDE50025F222 /* ContactsFlow.framework */; };
 		090938D524EFEDE50025F222 /* ContactsFlow.framework in Embed Frameworks */ = {isa = PBXBuildFile; fileRef = 090938D324EFEDE50025F222 /* ContactsFlow.framework */; settings = {ATTRIBUTES = (CodeSignOnCopy, RemoveHeadersOnCopy, ); }; };
+		098C0A1224F2529000F0338B /* Business.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 098C0A0624F2529000F0338B /* Business.framework */; };
+		098C0A1324F2529000F0338B /* Business.framework in Embed Frameworks */ = {isa = PBXBuildFile; fileRef = 098C0A0624F2529000F0338B /* Business.framework */; settings = {ATTRIBUTES = (CodeSignOnCopy, RemoveHeadersOnCopy, ); }; };
+		098C0A1424F2529000F0338B /* ContactsList.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 098C0A0724F2529000F0338B /* ContactsList.framework */; };
+		098C0A1524F2529000F0338B /* ContactsList.framework in Embed Frameworks */ = {isa = PBXBuildFile; fileRef = 098C0A0724F2529000F0338B /* ContactsList.framework */; settings = {ATTRIBUTES = (CodeSignOnCopy, RemoveHeadersOnCopy, ); }; };
+		098C0A1624F2529000F0338B /* ContactsFlow.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 090938D324EFEDE50025F222 /* ContactsFlow.framework */; };
+		098C0A1724F2529000F0338B /* ContactsKit.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 098C0A0824F2529000F0338B /* ContactsKit.framework */; };
+		098C0A1824F2529000F0338B /* ContactsKit.framework in Embed Frameworks */ = {isa = PBXBuildFile; fileRef = 098C0A0824F2529000F0338B /* ContactsKit.framework */; settings = {ATTRIBUTES = (CodeSignOnCopy, RemoveHeadersOnCopy, ); }; };
+		098C0A1924F2529000F0338B /* ContactsModels.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 098C0A0924F2529000F0338B /* ContactsModels.framework */; };
+		098C0A1A24F2529000F0338B /* ContactsModels.framework in Embed Frameworks */ = {isa = PBXBuildFile; fileRef = 098C0A0924F2529000F0338B /* ContactsModels.framework */; settings = {ATTRIBUTES = (CodeSignOnCopy, RemoveHeadersOnCopy, ); }; };
+		098C0A1B24F2529000F0338B /* DataRepository.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 098C0A0A24F2529000F0338B /* DataRepository.framework */; };
+		098C0A1C24F2529000F0338B /* DataRepository.framework in Embed Frameworks */ = {isa = PBXBuildFile; fileRef = 098C0A0A24F2529000F0338B /* DataRepository.framework */; settings = {ATTRIBUTES = (CodeSignOnCopy, RemoveHeadersOnCopy, ); }; };
+		098C0A1D24F2529000F0338B /* DomainModels.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 098C0A0B24F2529000F0338B /* DomainModels.framework */; };
+		098C0A1E24F2529000F0338B /* DomainModels.framework in Embed Frameworks */ = {isa = PBXBuildFile; fileRef = 098C0A0B24F2529000F0338B /* DomainModels.framework */; settings = {ATTRIBUTES = (CodeSignOnCopy, RemoveHeadersOnCopy, ); }; };
+		098C0A1F24F2529000F0338B /* Resources.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 098C0A0C24F2529000F0338B /* Resources.framework */; };
+		098C0A2024F2529000F0338B /* Resources.framework in Embed Frameworks */ = {isa = PBXBuildFile; fileRef = 098C0A0C24F2529000F0338B /* Resources.framework */; settings = {ATTRIBUTES = (CodeSignOnCopy, RemoveHeadersOnCopy, ); }; };
+		098C0A2124F2529000F0338B /* RestModels.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 098C0A0D24F2529000F0338B /* RestModels.framework */; };
+		098C0A2224F2529000F0338B /* RestModels.framework in Embed Frameworks */ = {isa = PBXBuildFile; fileRef = 098C0A0D24F2529000F0338B /* RestModels.framework */; settings = {ATTRIBUTES = (CodeSignOnCopy, RemoveHeadersOnCopy, ); }; };
+		098C0A2324F2529000F0338B /* RestService.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 098C0A0E24F2529000F0338B /* RestService.framework */; };
+		098C0A2424F2529000F0338B /* RestService.framework in Embed Frameworks */ = {isa = PBXBuildFile; fileRef = 098C0A0E24F2529000F0338B /* RestService.framework */; settings = {ATTRIBUTES = (CodeSignOnCopy, RemoveHeadersOnCopy, ); }; };
+		098C0A2524F2529000F0338B /* Extensions.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 098C0A0F24F2529000F0338B /* Extensions.framework */; };
+		098C0A2624F2529000F0338B /* Extensions.framework in Embed Frameworks */ = {isa = PBXBuildFile; fileRef = 098C0A0F24F2529000F0338B /* Extensions.framework */; settings = {ATTRIBUTES = (CodeSignOnCopy, RemoveHeadersOnCopy, ); }; };
+		098C0A2724F2529000F0338B /* Utilities.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 098C0A1024F2529000F0338B /* Utilities.framework */; };
+		098C0A2824F2529000F0338B /* Utilities.framework in Embed Frameworks */ = {isa = PBXBuildFile; fileRef = 098C0A1024F2529000F0338B /* Utilities.framework */; settings = {ATTRIBUTES = (CodeSignOnCopy, RemoveHeadersOnCopy, ); }; };
+		098C0A2924F2529000F0338B /* ViewLayout.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 098C0A1124F2529000F0338B /* ViewLayout.framework */; };
+		098C0A2A24F2529000F0338B /* ViewLayout.framework in Embed Frameworks */ = {isa = PBXBuildFile; fileRef = 098C0A1124F2529000F0338B /* ViewLayout.framework */; settings = {ATTRIBUTES = (CodeSignOnCopy, RemoveHeadersOnCopy, ); }; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
@@ -41,7 +66,19 @@
 			dstPath = "";
 			dstSubfolderSpec = 10;
 			files = (
+				098C0A2A24F2529000F0338B /* ViewLayout.framework in Embed Frameworks */,
+				098C0A2424F2529000F0338B /* RestService.framework in Embed Frameworks */,
+				098C0A1E24F2529000F0338B /* DomainModels.framework in Embed Frameworks */,
+				098C0A1824F2529000F0338B /* ContactsKit.framework in Embed Frameworks */,
+				098C0A2024F2529000F0338B /* Resources.framework in Embed Frameworks */,
+				098C0A1324F2529000F0338B /* Business.framework in Embed Frameworks */,
+				098C0A2224F2529000F0338B /* RestModels.framework in Embed Frameworks */,
+				098C0A1C24F2529000F0338B /* DataRepository.framework in Embed Frameworks */,
+				098C0A2824F2529000F0338B /* Utilities.framework in Embed Frameworks */,
 				090938D524EFEDE50025F222 /* ContactsFlow.framework in Embed Frameworks */,
+				098C0A1524F2529000F0338B /* ContactsList.framework in Embed Frameworks */,
+				098C0A2624F2529000F0338B /* Extensions.framework in Embed Frameworks */,
+				098C0A1A24F2529000F0338B /* ContactsModels.framework in Embed Frameworks */,
 			);
 			name = "Embed Frameworks";
 			runOnlyForDeploymentPostprocessing = 0;
@@ -62,6 +99,18 @@
 		0909378A24EFD9D80025F222 /* ContactsUITests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ContactsUITests.swift; sourceTree = "<group>"; };
 		0909378C24EFD9D80025F222 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
 		090938D324EFEDE50025F222 /* ContactsFlow.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; path = ContactsFlow.framework; sourceTree = BUILT_PRODUCTS_DIR; };
+		098C0A0624F2529000F0338B /* Business.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; path = Business.framework; sourceTree = BUILT_PRODUCTS_DIR; };
+		098C0A0724F2529000F0338B /* ContactsList.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; path = ContactsList.framework; sourceTree = BUILT_PRODUCTS_DIR; };
+		098C0A0824F2529000F0338B /* ContactsKit.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; path = ContactsKit.framework; sourceTree = BUILT_PRODUCTS_DIR; };
+		098C0A0924F2529000F0338B /* ContactsModels.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; path = ContactsModels.framework; sourceTree = BUILT_PRODUCTS_DIR; };
+		098C0A0A24F2529000F0338B /* DataRepository.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; path = DataRepository.framework; sourceTree = BUILT_PRODUCTS_DIR; };
+		098C0A0B24F2529000F0338B /* DomainModels.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; path = DomainModels.framework; sourceTree = BUILT_PRODUCTS_DIR; };
+		098C0A0C24F2529000F0338B /* Resources.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; path = Resources.framework; sourceTree = BUILT_PRODUCTS_DIR; };
+		098C0A0D24F2529000F0338B /* RestModels.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; path = RestModels.framework; sourceTree = BUILT_PRODUCTS_DIR; };
+		098C0A0E24F2529000F0338B /* RestService.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; path = RestService.framework; sourceTree = BUILT_PRODUCTS_DIR; };
+		098C0A0F24F2529000F0338B /* Extensions.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; path = Extensions.framework; sourceTree = BUILT_PRODUCTS_DIR; };
+		098C0A1024F2529000F0338B /* Utilities.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; path = Utilities.framework; sourceTree = BUILT_PRODUCTS_DIR; };
+		098C0A1124F2529000F0338B /* ViewLayout.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; path = ViewLayout.framework; sourceTree = BUILT_PRODUCTS_DIR; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -69,7 +118,20 @@
 			isa = PBXFrameworksBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				098C0A2124F2529000F0338B /* RestModels.framework in Frameworks */,
+				098C0A2724F2529000F0338B /* Utilities.framework in Frameworks */,
+				098C0A1724F2529000F0338B /* ContactsKit.framework in Frameworks */,
+				098C0A1B24F2529000F0338B /* DataRepository.framework in Frameworks */,
+				098C0A1224F2529000F0338B /* Business.framework in Frameworks */,
+				098C0A1624F2529000F0338B /* ContactsFlow.framework in Frameworks */,
+				098C0A1924F2529000F0338B /* ContactsModels.framework in Frameworks */,
+				098C0A2324F2529000F0338B /* RestService.framework in Frameworks */,
+				098C0A1F24F2529000F0338B /* Resources.framework in Frameworks */,
+				098C0A2924F2529000F0338B /* ViewLayout.framework in Frameworks */,
+				098C0A2524F2529000F0338B /* Extensions.framework in Frameworks */,
 				090938D424EFEDE50025F222 /* ContactsFlow.framework in Frameworks */,
+				098C0A1D24F2529000F0338B /* DomainModels.framework in Frameworks */,
+				098C0A1424F2529000F0338B /* ContactsList.framework in Frameworks */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -160,6 +222,18 @@
 		090938D224EFEDE50025F222 /* Frameworks */ = {
 			isa = PBXGroup;
 			children = (
+				098C0A0624F2529000F0338B /* Business.framework */,
+				098C0A0724F2529000F0338B /* ContactsList.framework */,
+				098C0A0824F2529000F0338B /* ContactsKit.framework */,
+				098C0A0924F2529000F0338B /* ContactsModels.framework */,
+				098C0A0A24F2529000F0338B /* DataRepository.framework */,
+				098C0A0B24F2529000F0338B /* DomainModels.framework */,
+				098C0A0C24F2529000F0338B /* Resources.framework */,
+				098C0A0D24F2529000F0338B /* RestModels.framework */,
+				098C0A0E24F2529000F0338B /* RestService.framework */,
+				098C0A0F24F2529000F0338B /* Extensions.framework */,
+				098C0A1024F2529000F0338B /* Utilities.framework */,
+				098C0A1124F2529000F0338B /* ViewLayout.framework */,
 				090938D324EFEDE50025F222 /* ContactsFlow.framework */,
 			);
 			name = Frameworks;
@@ -462,15 +536,16 @@
 			isa = XCBuildConfiguration;
 			buildSettings = {
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
-				CODE_SIGN_STYLE = Manual;
-				DEVELOPMENT_TEAM = "";
+				CODE_SIGN_IDENTITY = "Apple Development";
+				CODE_SIGN_STYLE = Automatic;
+				DEVELOPMENT_TEAM = 2AHNM42WD8;
 				INFOPLIST_FILE = Contacts/Info.plist;
 				LD_RUNPATH_SEARCH_PATHS = (
 					"$(inherited)",
 					"@executable_path/Frameworks",
 				);
 				MARKETING_VERSION = 0.0.1;
-				PRODUCT_BUNDLE_IDENTIFIER = pl.com.sumara.Contacts;
+				PRODUCT_BUNDLE_IDENTIFIER = pl.com.sumara.poc.Contacts;
 				PRODUCT_NAME = "$(TARGET_NAME)";
 				PROVISIONING_PROFILE_SPECIFIER = "";
 				SWIFT_VERSION = 5.0;
@@ -482,15 +557,16 @@
 			isa = XCBuildConfiguration;
 			buildSettings = {
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
-				CODE_SIGN_STYLE = Manual;
-				DEVELOPMENT_TEAM = "";
+				CODE_SIGN_IDENTITY = "Apple Development";
+				CODE_SIGN_STYLE = Automatic;
+				DEVELOPMENT_TEAM = 2AHNM42WD8;
 				INFOPLIST_FILE = Contacts/Info.plist;
 				LD_RUNPATH_SEARCH_PATHS = (
 					"$(inherited)",
 					"@executable_path/Frameworks",
 				);
 				MARKETING_VERSION = 0.0.1;
-				PRODUCT_BUNDLE_IDENTIFIER = pl.com.sumara.Contacts;
+				PRODUCT_BUNDLE_IDENTIFIER = pl.com.sumara.poc.Contacts;
 				PRODUCT_NAME = "$(TARGET_NAME)";
 				PROVISIONING_PROFILE_SPECIFIER = "";
 				SWIFT_VERSION = 5.0;

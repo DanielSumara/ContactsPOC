@@ -12,6 +12,6 @@ import UIKit
 public protocol ImagesRepository: AnyObject {
     
     func status(for url: URL) -> ImageStatus
-    func fetchImage(from url: URL, updates: @escaping (ImageStatus) -> Void)
+    func fetchImages(for urls: [URL], batchUpdates: @escaping () -> Void)
     
 }

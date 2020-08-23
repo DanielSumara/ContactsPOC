@@ -9,6 +9,7 @@
 import Extensions
 import Foundation
 import UIKit
+import Utilities
 
 public final class DefaultImagesRepository: ImagesRepository {
     
@@ -32,10 +33,29 @@ public final class DefaultImagesRepository: ImagesRepository {
         return cache[url].value(or: ImageStatus.uncached)
     }
     
-    public func fetchImage(from url: URL, updates: @escaping (ImageStatus) -> Void) {
-        cache[url] = .loading
-        updates(.loading)
+    // INFO: - Point of synchronization is implemented in this method.
+    /// Not cached url are appended to cache. `batchUpdates` is fired to notify client that state of cache did change.
+    /// Each uncached url is appended to `InvocationGroup` class which aggregates asynchronous invocation and synchronize its completions in `InvocationGroup.invoke` method.
+    public func fetchImages(for urls: [URL], batchUpdates: @escaping () -> Void) {        
+        let uncachedUrls = urls.filter { url in status(for: url).isUncached }
         
+        for url in uncachedUrls {
+            cache[url] = .loading
+        }
+        
+        batchUpdates()
+        
+        let group = InvocationGroup<ImageStatus>()
+        for url in uncachedUrls {
+            group.append(fetchImage(from:updates:), with: url)
+        }
+        
+        group.invoke { _ in batchUpdates() }
+    }
+    
+    // MARK: - Methods
+    
+    private func fetchImage(from url: URL, updates: @escaping (ImageStatus) -> Void) {
         let task = session.dataTask(with: url) { [weak self] data, _, error in
             let updatesWrapper: (ImageStatus) -> Void = { status in DispatchQueue.main.async { updates(status) } }
             
@@ -61,8 +81,6 @@ public final class DefaultImagesRepository: ImagesRepository {
         }
         task.resume()
     }
-    
-    // MARK: - Methods
     
     private func set(_ state: ImageStatus, for url: URL) {
         lock.lock()

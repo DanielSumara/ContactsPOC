@@ -52,6 +52,7 @@
 		098C09F524F1ADC100F0338B /* ContactsListScreenEvents.swift in Sources */ = {isa = PBXBuildFile; fileRef = 098C09F424F1ADC100F0338B /* ContactsListScreenEvents.swift */; };
 		098C09F724F1ADC900F0338B /* ContactsListEvents.swift in Sources */ = {isa = PBXBuildFile; fileRef = 098C09F624F1ADC900F0338B /* ContactsListEvents.swift */; };
 		098C09F924F1ADD400F0338B /* DefaultContactsListEvents.swift in Sources */ = {isa = PBXBuildFile; fileRef = 098C09F824F1ADD400F0338B /* DefaultContactsListEvents.swift */; };
+		098C0A2B24F2567500F0338B /* Utilities.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 0957E3CA24F16B1400E620DE /* Utilities.framework */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
@@ -138,6 +139,7 @@
 			buildActionMask = 2147483647;
 			files = (
 				0909395824F005430025F222 /* Extensions.framework in Frameworks */,
+				098C0A2B24F2567500F0338B /* Utilities.framework in Frameworks */,
 				0957E2CF24F039BB00E620DE /* ContactsModels.framework in Frameworks */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;

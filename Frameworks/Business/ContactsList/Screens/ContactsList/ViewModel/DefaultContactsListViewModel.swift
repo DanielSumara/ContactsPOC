@@ -10,6 +10,7 @@ import Business
 import ContactsModels
 import DataRepository
 import DomainModels
+import Extensions
 import Foundation
 import Utilities
 
@@ -69,16 +70,8 @@ final class DefaultContactsListViewModel: ContactsListViewModel {
     }
     
     func fetchAvatarsFor(contacts: [ContactProjection]) {
-        for contact in contacts {
-            guard case .uncached = imageRepository.status(for: contact.id.picture.thumbnail) else { continue }
-            imageRepository.fetchImage(from: contact.id.picture.thumbnail) { [weak self] status in
-                switch status {
-                case .loaded: self?.reload()
-                case .loading: self?.reload()
-                case .invalid: break // INFO: - Handle by showing error indicator on AvatarView
-                case .uncached: break
-                }
-            }
+        imageRepository.fetchImages(for: contacts.map(\.id.picture.thumbnail)) { [weak self] in
+            self?.reload()
         }
     }
     

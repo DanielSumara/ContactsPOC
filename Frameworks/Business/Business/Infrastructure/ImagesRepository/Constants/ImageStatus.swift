@@ -11,10 +11,21 @@ import UIKit
 
 public enum ImageStatus {
     
+    // MARK: - Cases
+    
     case uncached
     case loading
     case loaded(UIImage)
     
     case invalid(ImageRepositoryError)
+    
+    // MARK: - Getters
+    
+    var isUncached: Bool {
+        switch self {
+        case .uncached: return true
+        default: return false
+        }
+    }
     
 }
