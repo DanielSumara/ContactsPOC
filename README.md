@@ -47,3 +47,18 @@ UI Tests are implemented as prove of concept. You can find code on `Demo` group 
 To run UI test select **ContactsListDemo** target in Xcode, then *Product* > *Test* in menu.
 
 Communication with backend is mocked, but avatars are still loaded from network. Component responsible for loading images should also be mocked for UI tests. 
+
+## Things to improve 
+
+* Networking should be encapsulated in separated module as *specialized* component. 
+* Some *code generation tool* should create constants for resource. 
+* Linters should be part of development process. 
+* To communicate between components should be used some reactive library (`Emitter*` classes are very naive implementation of reactive approach). 
+* Some *service locator* should be used to hide details of module classes. 
+* Error handling should be improved. 
+* Application configuration (App icons, etc.).
+* List with contacts shouldn't be reloaded by calling `UITableView.reloadData` method. There should be some diffing library which allows to compare data snapshots and calculate changes in data source. Only calculated changes should be passed to `UITableView` batch updates. 
+* Layout code can be extracted as *component* from `UIView` classes and reused when application grows. 
+* Some debug logs should be introduced. 
+
+
