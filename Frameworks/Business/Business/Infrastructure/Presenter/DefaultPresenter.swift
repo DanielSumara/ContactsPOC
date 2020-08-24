@@ -34,6 +34,7 @@ public final class DefaultPresenter: Presenter {
         navigationController.navigationBar.shadowImage = UIImage()
         navigationController.navigationBar.barTintColor = .white
         navigationController.navigationBar.isTranslucent = true
+        navigationController.navigationBar.accessibilityIdentifier = "NavigationBar"
         
         navigationController.delegate = navigationDelegate
         

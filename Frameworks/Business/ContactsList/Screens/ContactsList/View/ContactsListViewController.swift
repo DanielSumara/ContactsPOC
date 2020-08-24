@@ -58,6 +58,8 @@ final class ContactsListViewController: UIViewController {
         
         contentView.dataSource = listAdapter
         contentView.delegate = listAdapter
+        
+        favoritesButton.accessibilityIdentifier = "ContactsListView_FavoriteButton"
     }
     
     private func bindViewModelWithView() {

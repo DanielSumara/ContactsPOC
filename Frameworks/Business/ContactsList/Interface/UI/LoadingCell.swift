@@ -40,9 +40,14 @@ final class LoadingCell: UITableViewCell, Bindable {
     
     private func setupComponents() {
         selectionStyle = .none
+        accessibilityIdentifier = "LoadingCell"
+        
         activityIndicator.color = .gray
+        activityIndicator.accessibilityIdentifier = "LoadingCell_ActivityIndicator"
+        
         descriptionLabel.textAlignment = .center
         descriptionLabel.text = "Loading contacts..."
+        descriptionLabel.accessibilityIdentifier = "LoadingCell_DescriptionLabel"
     }
     
     private func setupLayout() {

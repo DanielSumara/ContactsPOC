@@ -83,6 +83,8 @@ extension ContactDetailsViewController {
             backgroundColor = .white
             alwaysBounceVertical = true
             
+            accessibilityIdentifier = "ContactDetailsView"
+            
             nameLabel.textAlignment = .center
             nationalityLabel.textAlignment = .center
             

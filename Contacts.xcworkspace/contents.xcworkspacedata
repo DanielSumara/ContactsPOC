@@ -2,6 +2,13 @@
 <Workspace
    version = "1.0">
    <Group
+      location = "container:Demos"
+      name = "Demos">
+      <FileRef
+         location = "group:ContactsListDemo/ContactsListDemo.xcodeproj">
+      </FileRef>
+   </Group>
+   <Group
       location = "container:Frameworks"
       name = "Framworks">
       <FileRef

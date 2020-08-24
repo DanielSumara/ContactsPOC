@@ -1,12 +1,11 @@
 //
 //  SceneDelegate.swift
-//  Contacts
+//  ContactsListDemo
 //
-//  Created by Daniel Sumara on 21/08/2020.
+//  Created by Daniel Sumara on 24/08/2020.
 //  Copyright © 2020 Daniel Sumara. All rights reserved.
 //
 
-import ContactsFlow
 import UIKit
 
 @available(iOS 13.0, *)

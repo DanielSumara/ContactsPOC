@@ -38,12 +38,17 @@ final class ContactCell: UITableViewCell, Bindable {
         nameLabel.text = data.name
         nationalityLabel.text = data.nationality
         favoriteView.bind(with: data.isFavorite)
+        
+        accessibilityIdentifier = "ContactCell_" + data.id.name.last
     }
     
     // MARK: - Methods
     
     private func setupComponents() {
         selectionStyle = .none
+        
+        nameLabel.accessibilityIdentifier = "ContactCell_NameLabel"
+        nationalityLabel.accessibilityIdentifier = "ContactCell_NationalityLabel"
     }
     
     private func setupLayout() {

@@ -40,6 +40,8 @@ extension ContactsListViewController {
             tableFooterView = UIView()
             
             contentInset.bottom = 16
+            
+            accessibilityIdentifier = "ContactsListView"
         }
         
     }
