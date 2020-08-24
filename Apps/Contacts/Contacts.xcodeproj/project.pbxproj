@@ -11,7 +11,6 @@
 		0909376B24EFD9D70025F222 /* SceneDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = 0909376A24EFD9D70025F222 /* SceneDelegate.swift */; };
 		0909377224EFD9D80025F222 /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 0909377124EFD9D80025F222 /* Assets.xcassets */; };
 		0909377524EFD9D80025F222 /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 0909377324EFD9D80025F222 /* LaunchScreen.storyboard */; };
-		0909378B24EFD9D80025F222 /* ContactsUITests.swift in Sources */ = {isa = PBXBuildFile; fileRef = 0909378A24EFD9D80025F222 /* ContactsUITests.swift */; };
 		090938D424EFEDE50025F222 /* ContactsFlow.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 090938D324EFEDE50025F222 /* ContactsFlow.framework */; };
 		090938D524EFEDE50025F222 /* ContactsFlow.framework in Embed Frameworks */ = {isa = PBXBuildFile; fileRef = 090938D324EFEDE50025F222 /* ContactsFlow.framework */; settings = {ATTRIBUTES = (CodeSignOnCopy, RemoveHeadersOnCopy, ); }; };
 		098C0A1224F2529000F0338B /* Business.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 098C0A0624F2529000F0338B /* Business.framework */; };
@@ -45,13 +44,6 @@
 
 /* Begin PBXContainerItemProxy section */
 		0909377C24EFD9D80025F222 /* PBXContainerItemProxy */ = {
-			isa = PBXContainerItemProxy;
-			containerPortal = 0909375D24EFD9D70025F222 /* Project object */;
-			proxyType = 1;
-			remoteGlobalIDString = 0909376424EFD9D70025F222;
-			remoteInfo = Contacts;
-		};
-		0909378724EFD9D80025F222 /* PBXContainerItemProxy */ = {
 			isa = PBXContainerItemProxy;
 			containerPortal = 0909375D24EFD9D70025F222 /* Project object */;
 			proxyType = 1;
@@ -96,9 +88,6 @@
 		0909377624EFD9D80025F222 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
 		0909377B24EFD9D80025F222 /* ContactsTests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = ContactsTests.xctest; sourceTree = BUILT_PRODUCTS_DIR; };
 		0909378124EFD9D80025F222 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
-		0909378624EFD9D80025F222 /* ContactsUITests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = ContactsUITests.xctest; sourceTree = BUILT_PRODUCTS_DIR; };
-		0909378A24EFD9D80025F222 /* ContactsUITests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ContactsUITests.swift; sourceTree = "<group>"; };
-		0909378C24EFD9D80025F222 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
 		090938D324EFEDE50025F222 /* ContactsFlow.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; path = ContactsFlow.framework; sourceTree = BUILT_PRODUCTS_DIR; };
 		098C0A0624F2529000F0338B /* Business.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; path = Business.framework; sourceTree = BUILT_PRODUCTS_DIR; };
 		098C0A0724F2529000F0338B /* ContactsList.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; path = ContactsList.framework; sourceTree = BUILT_PRODUCTS_DIR; };
@@ -145,13 +134,6 @@
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
-		0909378324EFD9D80025F222 /* Frameworks */ = {
-			isa = PBXFrameworksBuildPhase;
-			buildActionMask = 2147483647;
-			files = (
-			);
-			runOnlyForDeploymentPostprocessing = 0;
-		};
 /* End PBXFrameworksBuildPhase section */
 
 /* Begin PBXGroup section */
@@ -160,7 +142,6 @@
 			children = (
 				0909376724EFD9D70025F222 /* Contacts */,
 				0909377E24EFD9D80025F222 /* ContactsTests */,
-				0909378924EFD9D80025F222 /* ContactsUITests */,
 				0909376624EFD9D70025F222 /* Products */,
 				090938D224EFEDE50025F222 /* Frameworks */,
 			);
@@ -171,7 +152,6 @@
 			children = (
 				0909376524EFD9D70025F222 /* Contacts.app */,
 				0909377B24EFD9D80025F222 /* ContactsTests.xctest */,
-				0909378624EFD9D80025F222 /* ContactsUITests.xctest */,
 			);
 			name = Products;
 			sourceTree = "<group>";
@@ -193,15 +173,6 @@
 				0909378124EFD9D80025F222 /* Info.plist */,
 			);
 			path = ContactsTests;
-			sourceTree = "<group>";
-		};
-		0909378924EFD9D80025F222 /* ContactsUITests */ = {
-			isa = PBXGroup;
-			children = (
-				0909378A24EFD9D80025F222 /* ContactsUITests.swift */,
-				0909378C24EFD9D80025F222 /* Info.plist */,
-			);
-			path = ContactsUITests;
 			sourceTree = "<group>";
 		};
 		0909379824EFDD6B0025F222 /* Resources */ = {
@@ -281,24 +252,6 @@
 			productReference = 0909377B24EFD9D80025F222 /* ContactsTests.xctest */;
 			productType = "com.apple.product-type.bundle.unit-test";
 		};
-		0909378524EFD9D80025F222 /* ContactsUITests */ = {
-			isa = PBXNativeTarget;
-			buildConfigurationList = 0909379524EFD9D80025F222 /* Build configuration list for PBXNativeTarget "ContactsUITests" */;
-			buildPhases = (
-				0909378224EFD9D80025F222 /* Sources */,
-				0909378324EFD9D80025F222 /* Frameworks */,
-				0909378424EFD9D80025F222 /* Resources */,
-			);
-			buildRules = (
-			);
-			dependencies = (
-				0909378824EFD9D80025F222 /* PBXTargetDependency */,
-			);
-			name = ContactsUITests;
-			productName = ContactsUITests;
-			productReference = 0909378624EFD9D80025F222 /* ContactsUITests.xctest */;
-			productType = "com.apple.product-type.bundle.ui-testing";
-		};
 /* End PBXNativeTarget section */
 
 /* Begin PBXProject section */
@@ -313,10 +266,6 @@
 						CreatedOnToolsVersion = 11.6;
 					};
 					0909377A24EFD9D80025F222 = {
-						CreatedOnToolsVersion = 11.6;
-						TestTargetID = 0909376424EFD9D70025F222;
-					};
-					0909378524EFD9D80025F222 = {
 						CreatedOnToolsVersion = 11.6;
 						TestTargetID = 0909376424EFD9D70025F222;
 					};
@@ -337,7 +286,6 @@
 			targets = (
 				0909376424EFD9D70025F222 /* Contacts */,
 				0909377A24EFD9D80025F222 /* ContactsTests */,
-				0909378524EFD9D80025F222 /* ContactsUITests */,
 			);
 		};
 /* End PBXProject section */
@@ -353,13 +301,6 @@
 			runOnlyForDeploymentPostprocessing = 0;
 		};
 		0909377924EFD9D80025F222 /* Resources */ = {
-			isa = PBXResourcesBuildPhase;
-			buildActionMask = 2147483647;
-			files = (
-			);
-			runOnlyForDeploymentPostprocessing = 0;
-		};
-		0909378424EFD9D80025F222 /* Resources */ = {
 			isa = PBXResourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
@@ -385,14 +326,6 @@
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
-		0909378224EFD9D80025F222 /* Sources */ = {
-			isa = PBXSourcesBuildPhase;
-			buildActionMask = 2147483647;
-			files = (
-				0909378B24EFD9D80025F222 /* ContactsUITests.swift in Sources */,
-			);
-			runOnlyForDeploymentPostprocessing = 0;
-		};
 /* End PBXSourcesBuildPhase section */
 
 /* Begin PBXTargetDependency section */
@@ -400,11 +333,6 @@
 			isa = PBXTargetDependency;
 			target = 0909376424EFD9D70025F222 /* Contacts */;
 			targetProxy = 0909377C24EFD9D80025F222 /* PBXContainerItemProxy */;
-		};
-		0909378824EFD9D80025F222 /* PBXTargetDependency */ = {
-			isa = PBXTargetDependency;
-			target = 0909376424EFD9D70025F222 /* Contacts */;
-			targetProxy = 0909378724EFD9D80025F222 /* PBXContainerItemProxy */;
 		};
 /* End PBXTargetDependency section */
 
@@ -620,46 +548,6 @@
 			};
 			name = Release;
 		};
-		0909379624EFD9D80025F222 /* Debug */ = {
-			isa = XCBuildConfiguration;
-			buildSettings = {
-				ALWAYS_EMBED_SWIFT_STANDARD_LIBRARIES = YES;
-				CODE_SIGN_STYLE = Automatic;
-				DEVELOPMENT_TEAM = 2AHNM42WD8;
-				INFOPLIST_FILE = ContactsUITests/Info.plist;
-				LD_RUNPATH_SEARCH_PATHS = (
-					"$(inherited)",
-					"@executable_path/Frameworks",
-					"@loader_path/Frameworks",
-				);
-				PRODUCT_BUNDLE_IDENTIFIER = pl.com.sumara.ContactsUITests;
-				PRODUCT_NAME = "$(TARGET_NAME)";
-				SWIFT_VERSION = 5.0;
-				TARGETED_DEVICE_FAMILY = "1,2";
-				TEST_TARGET_NAME = Contacts;
-			};
-			name = Debug;
-		};
-		0909379724EFD9D80025F222 /* Release */ = {
-			isa = XCBuildConfiguration;
-			buildSettings = {
-				ALWAYS_EMBED_SWIFT_STANDARD_LIBRARIES = YES;
-				CODE_SIGN_STYLE = Automatic;
-				DEVELOPMENT_TEAM = 2AHNM42WD8;
-				INFOPLIST_FILE = ContactsUITests/Info.plist;
-				LD_RUNPATH_SEARCH_PATHS = (
-					"$(inherited)",
-					"@executable_path/Frameworks",
-					"@loader_path/Frameworks",
-				);
-				PRODUCT_BUNDLE_IDENTIFIER = pl.com.sumara.ContactsUITests;
-				PRODUCT_NAME = "$(TARGET_NAME)";
-				SWIFT_VERSION = 5.0;
-				TARGETED_DEVICE_FAMILY = "1,2";
-				TEST_TARGET_NAME = Contacts;
-			};
-			name = Release;
-		};
 /* End XCBuildConfiguration section */
 
 /* Begin XCConfigurationList section */
@@ -686,15 +574,6 @@
 			buildConfigurations = (
 				0909379324EFD9D80025F222 /* Debug */,
 				0909379424EFD9D80025F222 /* Release */,
-			);
-			defaultConfigurationIsVisible = 0;
-			defaultConfigurationName = Release;
-		};
-		0909379524EFD9D80025F222 /* Build configuration list for PBXNativeTarget "ContactsUITests" */ = {
-			isa = XCConfigurationList;
-			buildConfigurations = (
-				0909379624EFD9D80025F222 /* Debug */,
-				0909379724EFD9D80025F222 /* Release */,
 			);
 			defaultConfigurationIsVisible = 0;
 			defaultConfigurationName = Release;

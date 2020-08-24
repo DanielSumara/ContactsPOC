@@ -19,7 +19,7 @@ final class ContactsListUITests: XCTestCase {
     private var app: XCUIApplication!
     
     // MARK: - Lifecycle
-
+    
     override func setUpWithError() throws {
         try super.setUpWithError()
         
@@ -89,6 +89,4 @@ final class ContactsListUITests: XCTestCase {
         XCTAssertTrue(sut.detailsScreen.exists)
     }
     
-    
-
 }

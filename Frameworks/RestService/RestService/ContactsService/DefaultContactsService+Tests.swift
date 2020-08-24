@@ -33,7 +33,6 @@ final class DefaultContactsService_Tests: XCTestCase {
     
     func test_URLIsValid() {
         var invokedInvoked = false
-        var completionInvoked = false
         
         networkSession.invokeStub = { _, completion in
             invokedInvoked = true
@@ -41,8 +40,10 @@ final class DefaultContactsService_Tests: XCTestCase {
             return StubbedNetworkSessionTask()
         }
         
+        let completionInvoked = expectation(description: "Completion invoked")
+        
         sut.getContacts { result in
-            completionInvoked = true
+            completionInvoked.fulfill()
             
             switch result {
             case .failure: break
@@ -51,7 +52,7 @@ final class DefaultContactsService_Tests: XCTestCase {
         }
         
         XCTAssertTrue(invokedInvoked)
-        XCTAssertTrue(completionInvoked)
+        wait(for: [completionInvoked], timeout: 1)
     }
     
     func test_FinishWithValidItem() throws {
