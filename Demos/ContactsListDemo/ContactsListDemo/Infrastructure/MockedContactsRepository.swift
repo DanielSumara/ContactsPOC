@@ -42,7 +42,7 @@ final class MockedContactsRepository: ContactsRepository {
     // MARK: - Methods
     
     private func fetchData() {
-        DispatchQueue.main.asyncAfter(deadline: .now() + 0.1) { [weak self] in
+        DispatchQueue.main.asyncAfter(deadline: .now() + 0.2) { [weak self] in
             self?.fetchedContacts = [.laurMantyla, .marcielePereira, .miraPabst]
             self?.fetchedContacts[2].isFavorite = true
         }

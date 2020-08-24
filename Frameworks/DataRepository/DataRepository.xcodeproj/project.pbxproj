@@ -10,18 +10,14 @@
 		0909382E24EFE1950025F222 /* DataRepository.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 0909382424EFE1950025F222 /* DataRepository.framework */; };
 		0909383524EFE1950025F222 /* DataRepository.h in Headers */ = {isa = PBXBuildFile; fileRef = 0909382724EFE1950025F222 /* DataRepository.h */; settings = {ATTRIBUTES = (Public, ); }; };
 		0957E38F24F1380B00E620DE /* RestModels.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 0957E38D24F1380B00E620DE /* RestModels.framework */; };
-		0957E39024F1380B00E620DE /* RestModels.framework in Embed Frameworks */ = {isa = PBXBuildFile; fileRef = 0957E38D24F1380B00E620DE /* RestModels.framework */; settings = {ATTRIBUTES = (CodeSignOnCopy, RemoveHeadersOnCopy, ); }; };
 		0957E39124F1380B00E620DE /* RestService.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 0957E38E24F1380B00E620DE /* RestService.framework */; };
-		0957E39224F1380B00E620DE /* RestService.framework in Embed Frameworks */ = {isa = PBXBuildFile; fileRef = 0957E38E24F1380B00E620DE /* RestService.framework */; settings = {ATTRIBUTES = (CodeSignOnCopy, RemoveHeadersOnCopy, ); }; };
 		0957E39524F1381000E620DE /* DomainModels.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 0957E39424F1381000E620DE /* DomainModels.framework */; };
-		0957E39624F1381000E620DE /* DomainModels.framework in Embed Frameworks */ = {isa = PBXBuildFile; fileRef = 0957E39424F1381000E620DE /* DomainModels.framework */; settings = {ATTRIBUTES = (CodeSignOnCopy, RemoveHeadersOnCopy, ); }; };
 		0957E39C24F1386D00E620DE /* ContactsRepository.swift in Sources */ = {isa = PBXBuildFile; fileRef = 0957E39B24F1386D00E620DE /* ContactsRepository.swift */; };
 		0957E39F24F138A300E620DE /* ContactsRepositoryError.swift in Sources */ = {isa = PBXBuildFile; fileRef = 0957E39E24F138A300E620DE /* ContactsRepositoryError.swift */; };
 		0957E3A124F1390600E620DE /* DefaultContactsRepository.swift in Sources */ = {isa = PBXBuildFile; fileRef = 0957E3A024F1390600E620DE /* DefaultContactsRepository.swift */; };
 		0957E3A424F13C1900E620DE /* TransportToDomainMapper.swift in Sources */ = {isa = PBXBuildFile; fileRef = 0957E3A324F13C1900E620DE /* TransportToDomainMapper.swift */; };
 		0957E3A624F13C6600E620DE /* DefaultTransportToDomainMapper.swift in Sources */ = {isa = PBXBuildFile; fileRef = 0957E3A524F13C6600E620DE /* DefaultTransportToDomainMapper.swift */; };
 		0957E3AD24F1418D00E620DE /* Utilities.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 0957E3AC24F1418D00E620DE /* Utilities.framework */; };
-		0957E3AE24F1418E00E620DE /* Utilities.framework in Embed Frameworks */ = {isa = PBXBuildFile; fileRef = 0957E3AC24F1418D00E620DE /* Utilities.framework */; settings = {ATTRIBUTES = (CodeSignOnCopy, RemoveHeadersOnCopy, ); }; };
 		0957E3B024F1461C00E620DE /* DefaultContactsRepository+Tests.swift in Sources */ = {isa = PBXBuildFile; fileRef = 0957E3AF24F1461C00E620DE /* DefaultContactsRepository+Tests.swift */; };
 		0957E3B324F1467500E620DE /* Stubbable.swift in Sources */ = {isa = PBXBuildFile; fileRef = 0957E3B224F1467500E620DE /* Stubbable.swift */; };
 		0957E3B524F1469400E620DE /* StubbedContactsService.swift in Sources */ = {isa = PBXBuildFile; fileRef = 0957E3B424F1469400E620DE /* StubbedContactsService.swift */; };
@@ -43,23 +39,6 @@
 			remoteInfo = DataRepository;
 		};
 /* End PBXContainerItemProxy section */
-
-/* Begin PBXCopyFilesBuildPhase section */
-		0957E39324F1380B00E620DE /* Embed Frameworks */ = {
-			isa = PBXCopyFilesBuildPhase;
-			buildActionMask = 2147483647;
-			dstPath = "";
-			dstSubfolderSpec = 10;
-			files = (
-				0957E39224F1380B00E620DE /* RestService.framework in Embed Frameworks */,
-				0957E39624F1381000E620DE /* DomainModels.framework in Embed Frameworks */,
-				0957E39024F1380B00E620DE /* RestModels.framework in Embed Frameworks */,
-				0957E3AE24F1418E00E620DE /* Utilities.framework in Embed Frameworks */,
-			);
-			name = "Embed Frameworks";
-			runOnlyForDeploymentPostprocessing = 0;
-		};
-/* End PBXCopyFilesBuildPhase section */
 
 /* Begin PBXFileReference section */
 		0909382424EFE1950025F222 /* DataRepository.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = DataRepository.framework; sourceTree = BUILT_PRODUCTS_DIR; };
@@ -259,7 +238,6 @@
 				0909382024EFE1950025F222 /* Sources */,
 				0909382124EFE1950025F222 /* Frameworks */,
 				0909382224EFE1950025F222 /* Resources */,
-				0957E39324F1380B00E620DE /* Embed Frameworks */,
 			);
 			buildRules = (
 			);

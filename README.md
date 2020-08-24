@@ -38,4 +38,12 @@ There are no liked 3<sup>rd</sup> party frameworks.
 
 Application target is set to iOS 12.0.
 
+Unit tests - I did try to show how to test each important component of application codebase. Due to time constraints not all cases are covered. 
 
+To run all unit test **Contacts** target in Xcode, then *Product* > *Test* in menu. You can also select single target and run test only for that target. 
+
+UI Tests are implemented as prove of concept. You can find code on `Demo` group in `Contacts.xcworkspace`. 
+
+To run UI test select **ContactsListDemo** target in Xcode, then *Product* > *Test* in menu.
+
+Communication with backend is mocked, but avatars are still loaded from network. Component responsible for loading images should also be mocked for UI tests. 
