@@ -8,10 +8,22 @@
 
 import Foundation
 
-public enum ImageRepositoryError: Error {
+public enum ImageRepositoryError: LocalizedError {
+    
+    // MARK: - Cases
     
     case service(Error)
     case noDataInResponse
     case dataIsNotConvertibleToImage
+    
+    // MARK: - Getters
+    
+    public var errorDescription: String? {
+        switch self {
+        case let .service(error): return error.localizedDescription
+        case .noDataInResponse: return "Lack of data in response"
+        case .dataIsNotConvertibleToImage: return "Data in response is not convertible to image"
+        }
+    }
     
 }

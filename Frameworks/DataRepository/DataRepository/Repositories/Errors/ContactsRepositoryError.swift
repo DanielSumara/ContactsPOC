@@ -8,8 +8,18 @@
 
 import Foundation
 
-public enum ContactsRepositoryError: Error {
+public enum ContactsRepositoryError: LocalizedError {
+
+    // MARK: - Cases
     
     case service(Error)
     
+    // MARK: - Getters
+    
+    public var errorDescription: String? {
+        switch self {
+        case let .service(error): return error.localizedDescription
+        }
+    }
+
 }

@@ -22,8 +22,6 @@
 		0909396824F00C890025F222 /* NavigationControllerDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = 0909396724F00C890025F222 /* NavigationControllerDelegate.swift */; };
 		0909396A24F00E190025F222 /* NavigationControllerDelegate+Tests.swift in Sources */ = {isa = PBXBuildFile; fileRef = 0909396924F00E190025F222 /* NavigationControllerDelegate+Tests.swift */; };
 		0957E29724F02D7700E620DE /* ContactsListViewController+ListAdapter.swift in Sources */ = {isa = PBXBuildFile; fileRef = 0957E29624F02D7700E620DE /* ContactsListViewController+ListAdapter.swift */; };
-		0957E29D24F02EC700E620DE /* ViewSizeCalculator.swift in Sources */ = {isa = PBXBuildFile; fileRef = 0957E29C24F02EC700E620DE /* ViewSizeCalculator.swift */; };
-		0957E2A124F02F1D00E620DE /* DefaultViewSizeCalculator.swift in Sources */ = {isa = PBXBuildFile; fileRef = 0957E2A024F02F1D00E620DE /* DefaultViewSizeCalculator.swift */; };
 		0957E2A824F030CA00E620DE /* UITableView+Extensions.swift in Sources */ = {isa = PBXBuildFile; fileRef = 0957E2A724F030CA00E620DE /* UITableView+Extensions.swift */; };
 		0957E2AD24F0345600E620DE /* ContactProjection.swift in Sources */ = {isa = PBXBuildFile; fileRef = 0957E2AC24F0345600E620DE /* ContactProjection.swift */; };
 		0957E2AF24F0348600E620DE /* DomainModels.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 0957E2AE24F0348600E620DE /* DomainModels.framework */; };
@@ -163,8 +161,6 @@
 		0909396724F00C890025F222 /* NavigationControllerDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = NavigationControllerDelegate.swift; sourceTree = "<group>"; };
 		0909396924F00E190025F222 /* NavigationControllerDelegate+Tests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = "NavigationControllerDelegate+Tests.swift"; sourceTree = "<group>"; };
 		0957E29624F02D7700E620DE /* ContactsListViewController+ListAdapter.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = "ContactsListViewController+ListAdapter.swift"; sourceTree = "<group>"; };
-		0957E29C24F02EC700E620DE /* ViewSizeCalculator.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ViewSizeCalculator.swift; sourceTree = "<group>"; };
-		0957E2A024F02F1D00E620DE /* DefaultViewSizeCalculator.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = DefaultViewSizeCalculator.swift; sourceTree = "<group>"; };
 		0957E2A724F030CA00E620DE /* UITableView+Extensions.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = "UITableView+Extensions.swift"; sourceTree = "<group>"; };
 		0957E2AC24F0345600E620DE /* ContactProjection.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ContactProjection.swift; sourceTree = "<group>"; };
 		0957E2AE24F0348600E620DE /* DomainModels.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; path = DomainModels.framework; sourceTree = BUILT_PRODUCTS_DIR; };
@@ -410,7 +406,6 @@
 			children = (
 				0957E3EF24F199B800E620DE /* ImagesRepository */,
 				0909390924EFF3650025F222 /* Presenter */,
-				0957E29B24F02EB100E620DE /* ViewSizeCalculator */,
 			);
 			path = Infrastructure;
 			sourceTree = "<group>";
@@ -498,15 +493,6 @@
 				0909396924F00E190025F222 /* NavigationControllerDelegate+Tests.swift */,
 			);
 			path = Delegate;
-			sourceTree = "<group>";
-		};
-		0957E29B24F02EB100E620DE /* ViewSizeCalculator */ = {
-			isa = PBXGroup;
-			children = (
-				0957E2A024F02F1D00E620DE /* DefaultViewSizeCalculator.swift */,
-				0957E29C24F02EC700E620DE /* ViewSizeCalculator.swift */,
-			);
-			path = ViewSizeCalculator;
 			sourceTree = "<group>";
 		};
 		0957E2A524F030B800E620DE /* Extensions */ = {
@@ -1001,8 +987,6 @@
 				0957E3F324F199DA00E620DE /* DefaultImagesRepository.swift in Sources */,
 				0957E3F124F199CC00E620DE /* ImagesRepository.swift in Sources */,
 				090938DC24EFF1A90025F222 /* Screen.swift in Sources */,
-				0957E29D24F02EC700E620DE /* ViewSizeCalculator.swift in Sources */,
-				0957E2A124F02F1D00E620DE /* DefaultViewSizeCalculator.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
