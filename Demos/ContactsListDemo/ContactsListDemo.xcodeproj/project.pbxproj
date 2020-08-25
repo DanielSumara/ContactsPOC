@@ -184,7 +184,6 @@
 				098C0B1F24F4130400F0338B /* Screens */,
 				098C0B2024F4130C00F0338B /* Infrastructure */,
 				098C0B2224F4132C00F0338B /* SupportingFiles */,
-				098C0B2124F4132400F0338B /* Tests */,
 			);
 			path = ContactsListDemoUITests;
 			sourceTree = "<group>";
@@ -263,13 +262,6 @@
 				098C0B2924F413F100F0338B /* View.swift */,
 			);
 			path = Infrastructure;
-			sourceTree = "<group>";
-		};
-		098C0B2124F4132400F0338B /* Tests */ = {
-			isa = PBXGroup;
-			children = (
-			);
-			path = Tests;
 			sourceTree = "<group>";
 		};
 		098C0B2224F4132C00F0338B /* SupportingFiles */ = {
